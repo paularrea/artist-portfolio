@@ -16,13 +16,14 @@
 }
 
 
-.nav-list{
+.nav_list{
     display: flex;
     list-style-type: none;
     margin: 0 auto;
     padding-inline-start: 0;
     max-width: 45%;
     justify-content: space-between;
+    background-color: var(--bg);
 }
 
 .nav-item {
@@ -45,4 +46,16 @@
     top: 0;
     right: 0;
     padding: 1rem 3rem;
+}
+
+// actor
+
+.nav_list_actor{
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-inline-start: 0;
+    max-width: 45%;
+    justify-content: space-between;
+    background-color: blue;
 }

@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import headerStyles from "./header.module.scss"
-import Uv from "../UvToggle/uv"
+import headerStyles from "../header.module.scss"
+// import Uv from "../../UvToggle/uv"
 
-const Header = () => {
+const HeaderActor = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -18,13 +18,13 @@ const Header = () => {
     <header className={headerStyles.header}>
       <nav>
         <ul
-          className={headerStyles.nav_list}
+          className={headerStyles.nav_list_actor}
         >
           <li>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/"
+              to="/actor/home"
             >
               HOME
             </Link>
@@ -33,7 +33,7 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/gallery"
+              to="/actor/gallery"
             >
               GALLERY
             </Link>
@@ -42,7 +42,7 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/video"
+              to="/actor/video"
             >
               VIDEO
             </Link>
@@ -51,7 +51,7 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/about"
+              to="/actor/about"
             >
               ABOUT
             </Link>
@@ -60,18 +60,18 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/contact"
+              to="/actor/contact"
             >
               CONTACT
             </Link>
           </li>
         </ul>
       </nav>
-      <div className={headerStyles.uv}>
+      {/* <div className={headerStyles.uv}>
         <Uv />
-      </div>
+      </div> */}
     </header>
   )
 }
 
-export default Header
+export default HeaderActor

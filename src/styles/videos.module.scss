@@ -74,7 +74,7 @@
     width: 90vw;
     max-width: 1200px;
     display: grid;
-    margin: auto;
+    align-self: center;
     grid-gap: 1rem;
     padding: 2rem 0;
 
@@ -102,4 +102,11 @@
         height: 23vw;
     }
     .video_grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+@media (min-width: 1800px) {
+    .video_size{
+        width: 30vw;
+        height: 20vw;
+    }
   }
