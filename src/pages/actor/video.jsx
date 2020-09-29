@@ -34,7 +34,7 @@ const Videos = props => {
         lang="es"
         description="Vídeos de Alex Peracaula. En esta página está el videobook y otros vídeos parodia sobre 'El Ultimo Superviviente'."/> */}
       <div className={styles.container}>
-        <div className={styles.tabs}>
+        <div className={styles.tabs_actor}>
           <div className={styles.tab} onClick={() => onClickTab(1)}>
             <h2
               className={`${styles.tabTitle} ${

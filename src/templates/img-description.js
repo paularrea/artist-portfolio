@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./gallery.template.module.scss"
 
@@ -21,6 +21,7 @@ const ImgDescription = props => {
           className={styles.description}
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
         ></div>
+        <Link to="/gallery">Back to gallery</Link>
       </div>
     </Layout>
   )

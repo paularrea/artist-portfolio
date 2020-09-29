@@ -1,4 +1,8 @@
 .container{
     margin: 0 auto;
+    padding-bottom: 2rem;
     width: 80vw;
+    h1, h2, p{
+        color: var(--textNormal);
+    }
 }

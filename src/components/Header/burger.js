@@ -38,6 +38,16 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
+          to="/video"
+          id="video"
+          className={style.menu_item}
+        >
+          Video
+        </TransitionLink>
+        <TransitionLink
+          entry={{
+            delay: 0.3,
+          }}
           to="/about"
           id="about"
           className={style.menu_item}

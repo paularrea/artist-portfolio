@@ -17,8 +17,8 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/"
-          id="home"
+          to="/actor/home"
+          id="actor-home"
           className={style.menu_item}
         >
           Home
@@ -27,8 +27,8 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/gallery"
-          id="gallery"
+          to="/actor/gallery"
+          id="actor-gallery"
           className={style.menu_item}
         >
           Gallery
@@ -37,8 +37,18 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/about"
-          id="about"
+          to="/actor/video"
+          id="actor-video"
+          className={style.menu_item}
+        >
+          Video
+        </TransitionLink>
+        <TransitionLink
+          entry={{
+            delay: 0.3,
+          }}
+          to="/actor/about"
+          id="actor-about"
           className={style.menu_item}
         >
           About
@@ -47,8 +57,8 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/contact"
-          id="contact"
+          to="/actor/contact"
+          id="actor-contact"
           className={style.menu_item}
         >
           Contact

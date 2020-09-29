@@ -13,18 +13,15 @@ const Header = () => {
           <nav>
             <ul
               className={headerStyles.navList}
-              style={{
-                backgroundColor: "var(--bg)",
-              }}
             >
               <li>
                 <TransitionLink
                  entry={{
                   delay: 0.3
                 }}
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/"
+                  className={headerStyles.navItem_actor}
+                  activeClassName={headerStyles.active_navItem_actor}
+                  to="/actor/home"
                 >
                   HOME
                 </TransitionLink>
@@ -34,9 +31,9 @@ const Header = () => {
                  entry={{
                   delay: 0.3
                 }}
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/gallery"
+                  className={headerStyles.navItem_actor}
+                  activeClassName={headerStyles.active_navItem_actor}
+                  to="/actor/gallery"
                 >
                   GALLERY
                 </TransitionLink>
@@ -46,9 +43,21 @@ const Header = () => {
                  entry={{
                   delay: 0.3
                 }}
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/about"
+                className={headerStyles.navItem_actor}
+                activeClassName={headerStyles.active_navItem_actor}
+                  to="/actor/video"
+                >
+                  VIDEO
+                </TransitionLink>
+              </li>
+              <li>
+                <TransitionLink
+                 entry={{
+                  delay: 0.3
+                }}
+                className={headerStyles.navItem_actor}
+                activeClassName={headerStyles.active_navItem_actor}
+                  to="/actor/about"
                 >
                   ABOUT
                 </TransitionLink>
@@ -58,23 +67,19 @@ const Header = () => {
                  entry={{
                   delay: 0.3
                 }}
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/contact"
+                className={headerStyles.navItem_actor}
+                activeClassName={headerStyles.active_navItem_actor}
+                  to="/actor/contact"
                 >
                   CONTACT
                 </TransitionLink>
               </li>
             </ul>
-            <div className={headerStyles.uv}>
-              <Uv />
-            </div>
           </nav>
         </Media>
         <Media query={{ maxWidth: 950 }}>
-          <div className={headerStyles.burger_container}>
+          <div className={headerStyles.burger_container_actor}>
             <Burger />
-            <Uv />
           </div>
         </Media>
       </header>

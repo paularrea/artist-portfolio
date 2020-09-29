@@ -48,6 +48,18 @@ const Header = () => {
                 }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
+                  to="/actor/video"
+                >
+                  VIDEO
+                </TransitionLink>
+              </li>
+              <li>
+                <TransitionLink
+                 entry={{
+                  delay: 0.3
+                }}
+                  className={headerStyles.navItem}
+                  activeClassName={headerStyles.activeNavItem}
                   to="/about"
                 >
                   ABOUT
