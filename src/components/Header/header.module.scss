@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+
 
 .header{
     padding: 1rem 0;
@@ -6,32 +6,30 @@
 }
 
 .title{
+    position: absolute;
+    background-color: transparent !important;
     color: var(--textTitle);
-    font-size: 7vw;
-    letter-spacing: 1rem;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem ;
+
 }
 
-
-.nav_list{
+.nav-list{
     display: flex;
     list-style-type: none;
     margin: 0 auto;
     padding-inline-start: 0;
-    max-width: 45%;
+    max-width: 30vw;
     justify-content: space-between;
-    background-color: var(--bg);
 }
 
 .nav-item {
     color: var(--btn);
     font-size: 0.9rem;
     text-decoration: none !important;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out !important;
 }
-
 
 .nav-item:hover {
     color:var(--btn-hover);
@@ -48,14 +46,101 @@
     padding: 1rem 3rem;
 }
 
-// actor
 
-.nav_list_actor{
+//burger
+
+.burger_container{
     display: flex;
-    list-style-type: none;
-    margin: 0 auto;
-    padding-inline-start: 0;
-    max-width: 45%;
     justify-content: space-between;
-    background-color: blue;
+    width: 100vw;
+    position: fixed;
+    height: 17vw;
+    top: 0;
+    background-color: var(--bg);
+    z-index: 999;
 }
+
+.menu_item:active{
+    background-color: transparent;
+    border-bottom: 2px solid var(--textNormal);
+  }
+   
+//   .menu_item {
+//     color: var(--textNormal);
+//     font-weight: bolder;
+//     padding-bottom: .1rem;
+//     display: inline;
+//     position: relative;
+//     overflow: hidden;
+//   }
+//   .menu_item:after {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     right: 0;
+//     width: 0;
+//     bottom: -5px;
+//     background: var(--textNormal);
+//     height: 2px;
+//     transition-property: width;
+//     transition-duration: 0.3s;
+//     transition-timing-function: ease-out;
+//   }
+//   .menu_item:hover:after,
+//   .menu_item:focus:after,
+//   .menu_item:active:after {
+//     left: 0;
+//     right: auto;
+//     width: 100%;
+//   }
+   
+
+//sm screen
+@media (max-width: 700px) {
+    .title{
+        font-size: 8vw;
+        letter-spacing: .2rem;
+        padding-bottom: 1rem ;
+        width: 80vw;
+        left: 10vw;
+        top: 25vw;
+    }
+}   
+
+//ipad
+@media (min-width: 700px) {
+    .title{
+        font-size: 6vw;
+        letter-spacing: .3rem;
+        padding-bottom: 1rem ;
+        width: 78vw;
+        left: 9vw;
+        top: 10vw;
+    }
+    
+  }
+
+//ipad
+  @media (min-width: 600px) and (max-width: 950px) {
+    .burger_container{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        position: fixed;
+        height: auto;
+        top: 0;
+        background-color: var(--bg);
+        z-index: 999;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .title{
+        font-size: 6vw;
+        letter-spacing: .3rem;
+        padding-bottom: 1rem ;
+        width: 78vw;
+        left: 9vw;
+        top: 5vw;
+    }
+  }

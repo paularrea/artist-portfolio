@@ -1,3 +1,22 @@
 .uv_label{
     color: var(--textNormal);
+    height: 30px;
+    right: 20px;
+    top: 16px;
+    z-index: 999;     
 }
+
+
+
+@media (max-width: 700px) {
+    .uv_label{
+        font-size: 4vw;   
+        position: fixed;
+    }
+  }
+
+@media (min-width: 700px) {
+    .uv_label{
+        font-size: 1rem;   
+    }
+  }

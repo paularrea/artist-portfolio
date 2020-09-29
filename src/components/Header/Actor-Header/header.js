@@ -1,77 +1,85 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
 import headerStyles from "../header.module.scss"
-// import Uv from "../../UvToggle/uv"
+import Uv from "../../UvToggle/uv"
+import Burger from "./burger"
+import Media from "react-media"
+import TransitionLink from 'gatsby-plugin-transition-link'
 
-const HeaderActor = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const Header = () => {
   return (
-    <header className={headerStyles.header}>
-      <nav>
-        <ul
-          className={headerStyles.nav_list_actor}
-        >
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/actor/home"
+    <div>
+      <header className={headerStyles.header}>
+        <Media query={{ minWidth: 950 }}>
+          <nav>
+            <ul
+              className={headerStyles.navList}
+              style={{
+                backgroundColor: "var(--bg)",
+              }}
             >
-              HOME
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/actor/gallery"
-            >
-              GALLERY
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/actor/video"
-            >
-              VIDEO
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/actor/about"
-            >
-              ABOUT
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/actor/contact"
-            >
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      {/* <div className={headerStyles.uv}>
-        <Uv />
-      </div> */}
-    </header>
+              <li>
+                <TransitionLink
+                 entry={{
+                  delay: 0.3
+                }}
+                  className={headerStyles.navItem}
+                  activeClassName={headerStyles.activeNavItem}
+                  to="/"
+                >
+                  HOME
+                </TransitionLink>
+              </li>
+              <li>
+                <TransitionLink
+                 entry={{
+                  delay: 0.3
+                }}
+                  className={headerStyles.navItem}
+                  activeClassName={headerStyles.activeNavItem}
+                  to="/gallery"
+                >
+                  GALLERY
+                </TransitionLink>
+              </li>
+              <li>
+                <TransitionLink
+                 entry={{
+                  delay: 0.3
+                }}
+                  className={headerStyles.navItem}
+                  activeClassName={headerStyles.activeNavItem}
+                  to="/about"
+                >
+                  ABOUT
+                </TransitionLink>
+              </li>
+              <li>
+                <TransitionLink
+                 entry={{
+                  delay: 0.3
+                }}
+                  className={headerStyles.navItem}
+                  activeClassName={headerStyles.activeNavItem}
+                  to="/contact"
+                >
+                  CONTACT
+                </TransitionLink>
+              </li>
+            </ul>
+            <div className={headerStyles.uv}>
+              <Uv />
+            </div>
+          </nav>
+        </Media>
+        <Media query={{ maxWidth: 950 }}>
+          <div className={headerStyles.burger_container}>
+            <Burger />
+            <Uv />
+          </div>
+        </Media>
+      </header>
+    </div>
   )
 }
 
-export default HeaderActor
+export default Header
