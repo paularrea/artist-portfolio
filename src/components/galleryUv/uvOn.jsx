@@ -11,10 +11,10 @@ const breakpointColumnsObj = {
   500: 1,
 }
 
-const UvOn = (props) => {
-  const data = useStaticQuery(graphql`
+const UvOn = () => {
+  const uvOn = useStaticQuery(graphql`
     query {
-      allMarkdownRemark (
+      allMarkdownRemark(
         sort: { fields: [frontmatter___title], order: DESC }
         filter: { frontmatter: { description: { eq: "uvOn" } } }
       ) {
@@ -39,27 +39,26 @@ const UvOn = (props) => {
       }
     }
   `)
-
   return (
-      <div className={styles.gallery_container}>
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className={styles.my_masonry_grid}
-          columnClassName={styles.my_masonry_grid_column}
-        >
-          {data.allMarkdownRemark.edges.map(edge => {
-            const featuredImage = edge.node.frontmatter.featuredImage
-            return (
-              <div>
-                <Link to={`/gallery/${edge.node.fields.slug}`}>
-                  {featuredImage && (
-                    <Img fluid={featuredImage.childImageSharp.fluid} />
-                  )}
-                </Link>
-              </div>
-            )
-          })}
-        </Masonry>
+    <div className={styles.gallery_container}>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className={styles.my_masonry_grid}
+        columnClassName={styles.my_masonry_grid_column}
+      >
+        {uvOn.allMarkdownRemark.edges.map(edge => {
+          const featuredImage = edge.node.frontmatter.featuredImage
+          return (
+            <div>
+              <Link to={`/gallery/${edge.node.fields.slug}`}>
+                {featuredImage && (
+                  <Img fluid={featuredImage.childImageSharp.fluid} />
+                )}
+              </Link>
+            </div>
+          )
+        })}
+      </Masonry>
     </div>
   )
 }
