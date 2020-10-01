@@ -12,8 +12,8 @@ function Uv() {
           UV
           <Switch
             style={{ color: "var(--switcher)" }}
-            checked={theme === "dark"}
-            onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+            checked={theme === "light"}
+            onChange={e => toggleTheme(e.target.checked ? "light" : "dark")}
             name="checkedA"
             inputProps={{ "aria-label": "secondary checkbox" }}
           />

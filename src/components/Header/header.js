@@ -3,9 +3,10 @@ import headerStyles from "./header.module.scss"
 import Uv from "../UvToggle/uv"
 import Burger from "./burger"
 import Media from "react-media"
-import TransitionLink from 'gatsby-plugin-transition-link'
+import TransitionLink from "gatsby-plugin-transition-link"
+import "./switcher.css"
 
-const Header = () => {
+const Header = props => {
   return (
     <div>
       <header className={headerStyles.header}>
@@ -19,9 +20,9 @@ const Header = () => {
             >
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/"
@@ -31,9 +32,9 @@ const Header = () => {
               </li>
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/gallery"
@@ -43,21 +44,21 @@ const Header = () => {
               </li>
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
-                  to="/actor/video"
+                  to="/video"
                 >
                   VIDEO
                 </TransitionLink>
               </li>
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/about"
@@ -67,9 +68,9 @@ const Header = () => {
               </li>
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/contact"
@@ -78,15 +79,13 @@ const Header = () => {
                 </TransitionLink>
               </li>
             </ul>
-            <div className={headerStyles.uv}>
-              <Uv />
-            </div>
+            <div className={headerStyles.uv}>{props.uvToggle}</div>
           </nav>
         </Media>
         <Media query={{ maxWidth: 950 }}>
           <div className={headerStyles.burger_container}>
             <Burger />
-            <Uv />
+            {props.uvToggle}
           </div>
         </Media>
       </header>

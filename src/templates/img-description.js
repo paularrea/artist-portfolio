@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import styles from "./gallery.template.module.scss"
 
 const ImgDescription = props => {
+  
   return (
     <Layout>
       <div className={styles.container}>
@@ -17,11 +18,13 @@ const ImgDescription = props => {
             }
           />
         </div>
-        <div
-          className={styles.description}
-          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-        ></div>
-        <Link to="/gallery">Back to gallery</Link>
+        <div>
+          <div
+            className={styles.description}
+            dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+          ></div>
+          <Link className={styles.link} to="/gallery">Back to gallery</Link>
+        </div>
       </div>
     </Layout>
   )

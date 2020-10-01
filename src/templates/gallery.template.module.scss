@@ -18,6 +18,18 @@
     color: var(--textNormal);
 }
 
+.link{
+    margin: 2rem;
+    color: var(--textImportant);
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--textImportant);
+}
+
+.link:hover{
+    font-weight: bold;
+    border-bottom: 2px solid var(--textImportant);
+}
+
 @media (max-width: 600px) {
     .container{
         display: block;

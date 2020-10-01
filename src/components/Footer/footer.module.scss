@@ -2,6 +2,7 @@
     width: 100%;
     background-color:var(--bg-footer);
     color: var(--textNormal);
+    color: #3b3b3b;
 }
 
 .content{
@@ -31,7 +32,7 @@
 
   @media (max-width: 700px) {
     .content div{
-        font-size: 4vw;
+        font-size: 3.3vw;
     }
     .container a{
         margin-right: 2vw;
@@ -45,7 +46,7 @@
 
 @media (min-width: 700px) {
     .content div{
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .container{
         padding: 1rem 6rem;

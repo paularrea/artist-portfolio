@@ -22,13 +22,6 @@ function About() {
             tempore quo ad nulla animi magnam exercitationem accusantium eos
             tempora, fugit nisi? Omnis!
           </p>
-          <p>
-            Magnam exercitationem accusantium eos
-            tempora, fugit nisi? Omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            perspiciatis eligendi libero veniam explicabo ratione delectus ipsam
-            tempore quo ad nulla animi magnam exercitationem accusantium eos
-            tempora, fugit nisi? Omnis!
-          </p>
           <Link to="/">Painter site</Link>
         </div>
     </ActorLayout>

@@ -1,19 +1,53 @@
-
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
-import '../../styles/index.scss'
+import "../../styles/index.scss"
+import Switch from "@material-ui/core/Switch"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 import layoutStyles from "./layout.module.scss"
+import headerStyles from "../Header/header.module.scss"
+import "../UvToggle/switcher.css"
 
-const Layout = (props) => {
+const Layout = ({children, setDarkOn = () => {}}) => {
+  const [uv, setUv] = useState()
+
+  const changeUv = theme => {
+    if (theme === "light") {
+      setUv("dark")
+      setDarkOn(true)
+    } else {
+      setUv("light")
+      setDarkOn(false)
+    }
+  }
+  
+  const uvToggle = (
+    <ThemeToggler>
+      {({ theme, toggleTheme }) => (
+        <div className={headerStyles.uv_label}>
+          UV
+          <Switch
+            style={{ color: "var(--switcher)" }}
+            checked={theme === "light"}
+            onChange={e => {
+              toggleTheme(e.target.checked ? "light" : "dark")
+              changeUv(theme)
+            }}
+            name="checkedA"
+            inputProps={{ "aria-label": "secondary checkbox" }}
+          />
+        </div>
+      )}
+    </ThemeToggler>
+  )
 
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
-      <Header />
-        <main>{props.children}</main>
+        <Header uv={uv} uvToggle={uvToggle} />
+        <main>{children}</main>
       </div>
       <Footer />
     </div>
