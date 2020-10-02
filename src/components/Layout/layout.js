@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
@@ -10,18 +10,7 @@ import layoutStyles from "./layout.module.scss"
 import headerStyles from "../Header/header.module.scss"
 import "../UvToggle/switcher.css"
 
-const Layout = ({children, setDarkOn = () => {}}) => {
-  const [uv, setUv] = useState()
-
-  const changeUv = theme => {
-    if (theme === "light") {
-      setUv("dark")
-      setDarkOn(true)
-    } else {
-      setUv("light")
-      setDarkOn(false)
-    }
-  }
+const Layout = ({children, changeUv = () => {}}) => {
   
   const uvToggle = (
     <ThemeToggler>
@@ -46,7 +35,7 @@ const Layout = ({children, setDarkOn = () => {}}) => {
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
-        <Header uv={uv} uvToggle={uvToggle} />
+        <Header uvToggle={uvToggle} />
         <main>{children}</main>
       </div>
       <Footer />
