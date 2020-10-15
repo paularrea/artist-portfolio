@@ -2,6 +2,7 @@
 
 body {
     --bg: white;
+    --bg-header: rgba(255, 255, 255, .95);
     --bg-footer: whitesmoke;
     --bg-container:whitesmoke;
     --bg-input:white;
@@ -28,6 +29,7 @@ body {
     -webkit-font-smoothing: antialiased;
   
     --bg: rgb(41, 41, 41);
+    --bg-header:  rgba(41, 41, 41, .9);
     --bg-footer: rgb(61, 61, 61);
     --bg-container:rgb(61, 61, 61);
     --bg-input:rgb(93, 93, 93);

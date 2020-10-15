@@ -1,6 +1,5 @@
 import React from "react"
 import headerStyles from "./header.module.scss"
-import Uv from "../UvToggle/uv"
 import Burger from "./burger"
 import Media from "react-media"
 import TransitionLink from "gatsby-plugin-transition-link"
@@ -8,15 +7,12 @@ import "./switcher.css"
 
 const Header = props => {
   return (
-    <div>
+    <div className={headerStyles.container}>
       <header className={headerStyles.header}>
         <Media query={{ minWidth: 950 }}>
-          <nav>
+          <nav className={headerStyles.nav}>
             <ul
               className={headerStyles.navList}
-              style={{
-                backgroundColor: "var(--bg)",
-              }}
             >
               <li>
                 <TransitionLink
@@ -79,7 +75,7 @@ const Header = props => {
                 </TransitionLink>
               </li>
             </ul>
-            <div className={headerStyles.uv}>{props.uvToggle}</div>
+            <div className={headerStyles.uv}>{props.uvToggle}</div> 
           </nav>
         </Media>
         <Media query={{ maxWidth: 950 }}>

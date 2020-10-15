@@ -1,9 +1,10 @@
 
-
 .header{
-    padding: 1rem 0;
-    padding-bottom: 2rem;
-    position: relative;
+    padding: 2rem 0;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    background-color: var(--bg-header);
 }
 
 .title{
@@ -16,7 +17,7 @@
 
 .navList{
     font-weight: bolder;
-    background-color: whitesmoke;
+    background-color: transparent;
     display: flex;
     list-style-type: none;
     margin: 0 auto;
@@ -147,6 +148,7 @@
         background-color: var(--bg);
         z-index: 999;
     }
+    
   }
 
   @media (min-width: 1200px) {

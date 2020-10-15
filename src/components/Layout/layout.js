@@ -32,11 +32,12 @@ const Layout = ({children, changeUv = () => {}}) => {
     </ThemeToggler>
   )
 
+
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
         <Header uvToggle={uvToggle} />
-        <main>{children}</main>
+        <main className={layoutStyles.pages}>{children}</main>
       </div>
       <Footer />
     </div>

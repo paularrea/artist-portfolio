@@ -1,7 +1,6 @@
 import React, { useState } from "react"
+import UvSwitch from "../components/galleryUv/UVswitch"
 import Layout from "../components/Layout/layout"
-import UvOn from "../components/galleryUv/uvOn"
-import UvOff from "../components/galleryUv/uvOff"
 
 const Gallery = () => {
   const [darkOn, setDarkOn] = useState("true")
@@ -18,7 +17,7 @@ const Gallery = () => {
   }
 
   return (
-    <Layout changeUv={changeUv}>{darkOn && (uv === 'dark') ? <UvOn /> : <UvOff />}</Layout>
+    <Layout changeUv={changeUv}><UvSwitch darkOn={darkOn} uv={uv}/></Layout>
   )
 }
 

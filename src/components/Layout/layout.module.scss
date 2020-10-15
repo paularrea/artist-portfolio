@@ -1,7 +1,6 @@
 .container{
     margin: 0 auto;
     width: 100vw;
-    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -10,6 +9,10 @@
 
 .content{
     flex-grow: 1;
+}
+
+.pages{
+    margin-top: 6rem;
 }
 
 // actor layout

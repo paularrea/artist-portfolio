@@ -1,11 +1,18 @@
 .uv_label{
     color: var(--textNormal);
-    height: 30px;
-    right: 20px;
-    top: 16px;
-    z-index: 999;     
+    top: 1rem;
+    right: 1rem;
+    z-index: 995; 
+    position: fixed;    
 }
 
+.uv_label_template{
+    color: var(--textNormal);
+    top: 0;     
+    right: 0;
+    z-index: 999; 
+    position: fixed; 
+}
 
 
 @media (max-width: 700px) {
@@ -13,10 +20,34 @@
         font-size: 4vw;   
         position: fixed;
     }
+    .uv_label_template{
+        font-size: 4vw;   
+        position: fixed;
+        top: 16px;
+        right: 20px;
+       
+    }
   }
 
 @media (min-width: 700px) {
     .uv_label{
         font-size: 1rem;   
     }
+    .uv_label_template{
+        font-size: 1rem; 
+        position: fixed;
+        top: 18px;
+        right: 54px;
+    }
   }
+
+@media (min-width:700px) and (max-width:950px){
+    .uv_label_template{
+        font-size: 1rem; 
+        position: fixed;
+        top: 0;
+        padding: 2% 5%;
+        right: 0;
+        background-color:var(--bg); 
+    }
+}
