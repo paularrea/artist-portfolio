@@ -12,7 +12,7 @@ const ActorLayout = (props) => {
     <div className={layoutStyles.actor_bg}>
       <div className={layoutStyles.content}>
       <ActorHeader />
-        <main>{props.children}</main>
+        <main className={layoutStyles.pages}>{props.children}</main>
       </div>
       <ActorFooter />
     </div>

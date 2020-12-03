@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import Layout from "../../components/Layout/layout"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import styles from "../../styles/gallery.module.scss"
 import Masonry from "react-masonry-css"
 import Dialog from "@material-ui/core/Dialog"
@@ -70,7 +69,7 @@ const Gallery = props => {
       columnClassName={styles.my_masonry_grid_column}
     >
       {sortedImages.map((image) => (
-        <div style={{ width: '100%' }} onClick={() => onOpen(image.node.fluid.src)}>
+        <div style={{ width: '100%' }} onClick={() => onOpen(image.node.fluid.src)} onKeyDown={() => onOpen(image.node.fluid.src)} aria-hidden="true">
           <Img
             alt="pau requesens"
             fluid={image.node.fluid}

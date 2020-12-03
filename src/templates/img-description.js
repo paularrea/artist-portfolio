@@ -1,25 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import { Link, graphql, navigate } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./gallery.template.module.scss"
 import UvTemplate from "../components/UvToggle/uvTemplate"
 
 const ImgDescription = props => {
-  const onClick = e => {
-    e.preventDefault()
-    const containUV = () => {
-      let url = window.location.href
-      if (url.indexOf("uv") > -1) {
-        navigate(url.replace(/u.*/, ""))
-        console.log(url.replace(/u.*/, ""), "uv must be replaced")
-      } else {
-        navigate(url.concat("uv"))
-        console.log(url.concat("uv"), "uv must be added")
-      }
-    }
-    containUV()
-  }
 
   return (
     <div>

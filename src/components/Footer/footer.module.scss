@@ -6,15 +6,67 @@
 }
 
 .content{
+    max-width: 1200px;
+    width: 90vw;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+    padding: 2vw 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color:var(--bg-footer);
-    color: var(--textNormal)
+    color: var(--textImportant);
+    p, a {
+        margin: .3vw 0;
+        color: var(--textNormal);
+        font-size: 14px;
+    }
+    a:hover{
+        font-weight: bolder;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .contentOne{
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 10vw;
+        }
+    }
+    .contentTwo{
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 10vw;
+        }
+    }
 }
-.icons{
-    display: flex;
-    justify-content: space-between;
+
+
+.navList{
+    list-style-type: none;
+    padding: 0;
+    li{
+        margin: .3vw 0;
+        color: var(--textNormal);
+        font-size: 14px;
+    }
+    li:hover{
+        font-weight: bolder;
+    }
+}
+
+.requesens{
+    h2{
+        font-size: 25px;
+    }
+}
+
+.copyright{
+    position: absolute;
+    bottom: 2vw;
 }
 
 .container a{
@@ -22,40 +74,35 @@
     text-decoration:none;
 }
 
-.normal_link{
-    color: var(--normal-link);
-  }
-  
-  .normal_link:hover{
-    font-weight: bolder;
-  }
+  @media (max-width: 850px) {
 
-  @media (max-width: 700px) {
-    .content div{
-        font-size: 3.3vw;
+    .content{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        padding: 2rem;
+        padding-bottom: 8rem;
+        .contentOne{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 40vw;
+            }
+        }
+        .contentTwo{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 40vw;
+            }
+        }
     }
-    .container a{
-        margin-right: 2vw;
+    .requesens{
+        height: 6rem;
     }
-    .container{
-        padding: 1rem 2rem;
-        height: 10vh;
+    .copyright{
+        position: absolute;
+        bottom: 4rem;
     }
-    
-  }
 
-@media (min-width: 700px) {
-    .content div{
-        font-size: .8rem;
-    }
-    .container{
-        padding: 1rem 6rem;
-    }
-    .icons{
-        width: 10vw;
-    }
-    .container a{
-        margin-right: 2vw;
-    }
-    
   }

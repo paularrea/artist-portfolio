@@ -49,7 +49,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images/gallery`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,

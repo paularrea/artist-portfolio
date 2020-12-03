@@ -1,6 +1,5 @@
 import React from "react"
-import headerStyles from "../header.module.scss"
-import Uv from "../../UvToggle/uv"
+import headerStyles from "./actor.header.module.scss"
 import Burger from "./burger"
 import Media from "react-media"
 import TransitionLink from 'gatsby-plugin-transition-link'

@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 999;
     width: 100vw;
-    background-color: var(--bg-header);
+    background-color: whitesmoke;
 }
 
 .title{
@@ -68,8 +68,8 @@
 
 .active_navItem_actor {
     color: black;
+    border-bottom: 2px solid black;
 }
-
 
 
 //burger

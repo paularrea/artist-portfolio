@@ -35,7 +35,7 @@ const Videos = props => {
         description="Vídeos de Alex Peracaula. En esta página está el videobook y otros vídeos parodia sobre 'El Ultimo Superviviente'."/> */}
       <div className={styles.container}>
         <div className={styles.tabs_actor}>
-          <div className={styles.tab} onClick={() => onClickTab(1)}>
+        <div aria-hidden="true" className={styles.tab} onClick={() => onClickTab(1)} onKeyDown={() => onClickTab(1)}>
             <h2
               className={`${styles.tabTitle} ${
                 selected === 1 ? styles.selected : ""
@@ -44,7 +44,7 @@ const Videos = props => {
               "before 33"
             </h2>
           </div>
-          <div className={styles.tab} onClick={() => onClickTab(2)}>
+          <div aria-hidden="true" className={styles.tab} onClick={() => onClickTab(2)} onKeyDown={() => onClickTab(2)}>
             <h2
               className={`${styles.tabTitle} ${
                 selected === 2 ? styles.selected : ""
