@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import UvSwitch from "../components/galleryUv/UVswitch"
+import UvSwitch from "../components/galleryUv/uvSwitch"
 import Layout from "../components/Layout/layout"
 
 const Gallery = () => {

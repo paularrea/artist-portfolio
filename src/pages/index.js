@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import IntroVideo from "../components/Intro Video/IntroVideo"
+import IntroVideo from "../components/Video/introVideo"
 import Logo from "../components/Header/requesens"
 
 const Home = () => {
