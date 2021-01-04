@@ -16,7 +16,7 @@ const UvOff = () => {
     query {
       allMarkdownRemark(
         sort: { fields: [frontmatter___title], order: DESC }
-        filter: { frontmatter: { description: { eq: "uvOff" } } }
+        filter: { frontmatter: { description: { eq: "uvOff" }, collection: { eq: "33" } } }
       ) {
         edges {
           node {

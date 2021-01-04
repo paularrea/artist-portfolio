@@ -46,6 +46,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        collection
         featuredImage {
           childImageSharp {
             fluid {

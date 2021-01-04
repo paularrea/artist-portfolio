@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.shadow{
+    box-shadow: px 6px 11px 0px #696969c7;
+    -webkit-box-shadow: 6px 6px 11px 0px #696969c7;
+    -moz-box-shadow: 6px 6px 11px 0px #696969c7;
+}
+
 .my_masonry_grid {
     display: -webkit-box; /* Not needed if autoprefixing */
     display: -ms-flexbox; /* Not needed if autoprefixing */

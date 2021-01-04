@@ -66,7 +66,7 @@ const UvSwitch = (props) => {
   const uvOn = data.uvOn.edges.map(edge => {
     const featuredImage = edge.node.frontmatter.featuredImage
     return (
-      <div>
+      <div className={styles.shadow}>
         <Link to={`/gallery/${edge.node.fields.slug}`}>
           {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
         </Link>
@@ -77,7 +77,7 @@ const UvSwitch = (props) => {
   const uvOff = data.uvOff.edges.map(edge => {
     const featuredImage = edge.node.frontmatter.featuredImage
     return (
-      <div>
+      <div className={styles.shadow}>
         <Link to={`/gallery/${edge.node.fields.slug}`}>
           {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
         </Link>

@@ -16,7 +16,7 @@ const UvOn = () => {
     query {
       allMarkdownRemark(
         sort: { fields: [frontmatter___title], order: DESC }
-        filter: { frontmatter: { description: { eq: "uvOn" } } }
+        filter: { frontmatter: { description: { eq: "uvOn" }, collection: { eq: "33" } } }
       ) {
         edges {
           node {
