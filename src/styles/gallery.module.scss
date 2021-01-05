@@ -1,13 +1,51 @@
+@import './variables';
+@import './mixins';
+
 .gallery_container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.hide {
+    display: none !important;
+}
+
+.tabs {
+    display: flex;
+    margin: 0 auto;
+    color: var(--btn);
+    
+    .tab {
+        cursor: pointer;
+        margin: 0 20px;
+        .tabTitle {
+            font-size: 18px;
+            font-weight: normal;
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+        .tabTitle:hover {
+            color: var(--btn-hover);
+            border-bottom: 2px solid var(--btn-hover)
+        }
+        .selected {
+            font-weight: bold;
+            color: var(--active-btn);
+            border-bottom: 2px solid var(--active-btn);
+        }
+    }
+}
 
 .shadow{
-    box-shadow: px 6px 11px 0px #696969c7;
-    -webkit-box-shadow: 6px 6px 11px 0px #696969c7;
-    -moz-box-shadow: 6px 6px 11px 0px #696969c7;
+    transition: all .6s ease-in-out;
+}
+
+.shadow:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 6px 25px 10px #696969c7;
+    -webkit-box-shadow: 0px 6px 25px 10px #696969c7;
+    -moz-box-shadow: 0px 6px 25px 10px #696969c7;
 }
 
 .my_masonry_grid {
