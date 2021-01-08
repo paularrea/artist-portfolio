@@ -8,13 +8,11 @@
 
 .content{
     flex-grow: 1;
-
-
 }
 
 .pages{
     margin: 0 auto;
-    margin-top: 6rem;
+    padding-top: 6rem;
 }
 
 // actor layout
@@ -28,4 +26,10 @@
     flex-direction: column;
     min-height: 100vh;
     
+}
+
+@media (max-width: 700px) {
+    .pages{
+        padding-top: 1rem;
+    }
 }

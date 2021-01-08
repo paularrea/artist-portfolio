@@ -8,7 +8,7 @@ import style from "./carousel.module.scss"
 
 const CarouselIntro = () => {
   return (
-      <Carousel className={style.container} autoPlay>
+      <Carousel autoPlay className={style.container} >
         <div>
           <img alt="carousel 1" src={carousel1} />
         </div>

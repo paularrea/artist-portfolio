@@ -21,7 +21,7 @@ const ImgDescription = props => {
               }
             />
           </div>
-          <div>
+          <div className={styles.detail_info}>
             <div
               className={styles.description}
               dangerouslySetInnerHTML={{

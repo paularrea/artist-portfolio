@@ -3,3 +3,14 @@
     width: 70vw;
     height: auto;
 }
+
+.carousel .carousel-status{
+    color: red !important;
+    display: none !important; 
+}
+
+@media (max-width: 800px) {
+    .container{
+        width: 100vw;
+    }
+}

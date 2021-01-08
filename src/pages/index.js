@@ -28,8 +28,8 @@ const Home = () => {
           </div>
           <div className={style.bullet_container}>
             <div className={style.bullet}>
-              <img src={logo1} alt="" />
-              <h5>First title</h5>
+              <img src={logo1} alt="logo 1" />
+              <h5>FIRST TITLE</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ducimus, similique id! Vel, quibusdam pariatur. Enim sint nulla
@@ -37,16 +37,16 @@ const Home = () => {
               </p>
             </div>
             <div className={style.bullet}>
-              <img src={logo1} alt="" />
-              <h5>Second title</h5>
+              <img src={logo1} alt="logo 2" />
+              <h5>SECOND TITLE</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ducimus, similique id! Vel, quibusdam pariatur. Enim sint nulla.
               </p>
             </div>
             <div className={style.bullet}>
-              <img src={logo1} alt="" />
-              <h5>Dark peace</h5>
+              <img src={logo1} alt="black peace logo" />
+              <h5>DARK PEACE</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ducimus, similique id! Vel, quibusdam pariatur. Enim sint nulla
