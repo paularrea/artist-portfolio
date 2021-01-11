@@ -1,47 +1,44 @@
 import React from "react"
-import Logo from "../components/Header/requesens"
 import Layout from "../components/Layout/layout"
 import { Link } from "gatsby"
 import style from "../styles/about.module.scss"
+import studio1 from "../images/carousel/carousel1.jpg"
+import studio2 from "../images/carousel/carousel2.jpg"
 
 const About = () => {
-
   return (
-    <div>
-      <Layout>
-        <Logo />
-        <div className={style.container}>
-          <div className={style.img_container}>
-          </div>
-          <div className={style.description}>
-            <h1>About</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              perspiciatis eligendi Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Corrupti perspiciatis eligendi libero veniam
-              explicabo ratione delectus ipsam tempore quo ad nulla animi magnam
-              exercitationem accusantium eos tempora, fugit nisi? Omnis! libero
-              veniam explicabo ratione delectus ipsam tempore quo ad nulla animi
-              magnam exercitationem accusantium eos tempora, fugit nisi?
-            </p>
-            <p>
-              Eligendi libero veniam explicabo ratione delectus ipsam tempore
-              quo ad nulla animi magnam exercitationem accusantium eos tempora,
-              fugit nisi? Omnis!
-            </p>
-            <p>
-              Magnam exercitationem accusantium eos tempora, fugit nisi? Omnis!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              perspiciatis eligendi libero veniam explicabo ratione delectus
-              ipsam tempore quo ad nulla animi magnam exercitationem accusantium
-              eos tempora, fugit nisi? Omnis!
-            </p>
-            <Link to="/actor/home">Actor site</Link>
-          </div>
-        </div>
-      </Layout>
-    </div>
+    <Layout>
+      <div className={style.container}>
+        <div className={style.title}>
+          <h1>Know me better</h1>
+        </div>{" "}
+      <div className={style.description}>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+          voluptate accusamus reprehenderit ipsum, facilis odit maxime explicabo
+          veniam officia assumenda amet, quas suscipit. Corrupti dolorem
+          praesentium dolorum obcaecati, aperiam accusantium.
+        </p>
+        <Link to="/actor/home">Actor site</Link>
+      </div>
+        <div className={style.parallax}></div>
+        <div className={style.title2}>
+          <h1>The studio</h1>
+        </div>{" "}
+        <div className={style.description}>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+          voluptate accusamus reprehenderit ipsum, facilis odit maxime explicabo
+          veniam officia assumenda amet, quas suscipit. Corrupti dolorem
+          praesentium dolorum obcaecati, aperiam accusantium.
+        </p>
+      </div>
+      <div className={style.studio_imgs}>
+        <img src={studio1} alt="studio1"/>
+        <img src={studio2} alt="studio2"/>
+      </div>
+      </div>
+    </Layout>
   )
 }
 export default About
-

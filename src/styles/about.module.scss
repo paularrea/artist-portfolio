@@ -1,58 +1,100 @@
 .container{
+    width: 100vw;
+}
+
+.title{
     margin: 0 auto;
-    padding-bottom: 2rem;
-    width: 60vw;
-    height: 60vh;
-    h1, h2, p{
-        color: var(--textNormal);
+    width: 90vw;
+    h1{
+        color: var(--textTitle);
+        font-size: 36px;
+        margin: 0;
     }
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-.img_container{
-    margin: 5vw;
-    width: 160vw;
-    height: 100%;
-    background-image: url('../images/profile.png');
+.title2{
+    padding-top: 4rem;
+    margin: 0 auto;
+    width: 90vw;
+    h1{
+        color: var(--textTitle);
+        font-size: 36px;
+        margin: 0;
+    }
+}
+.parallax {
+    background-image: url("../images/pauPintor.jpg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-position-y: -6rem;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+  }
+.img{
+    height: 100vh;
 }
-
-
-@media (max-width: 1400px) {
-    .container{
-        width: 90vw;
+.description{
+    padding-bottom: 8rem;
+    width: 90vw;
+    margin: 0 auto;
+    p{
+        color: var(--textNormal);
+        max-width: 800px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    a{
+        color: var(--textImportant);
+        border-bottom: 2px solid var(--btn);
+    }
+    a:hover{
+        color: var(--btn);  
+    }
+}
+.studio_imgs{
+    display: flex;
+    img{
+        width: 50vw;
         height: auto;
     }
-    .img_container{
-        margin: 0;
-        margin-right: 5vw;
-        width: 100vw;
-        height: 70vh;
-    }
-    .description{
-        width: 100%;
-        margin: 5vw 0;
-        color: var(--textNormal);
-    }
 }
 
+@media (max-width: 450px) {
+    .container{
+        padding-top: 4rem;
+    }
+}
 @media (max-width: 800px) {
-    .container{
-        display: block;
-        width: 90vw;
-        height: auto;
-    }
-    .img_container{
-        margin: 0;
-        width: 90vw;
-        height: 90vh;
+    .parallax {
+        background-image: url("../images/pauPintor.jpg");
+        height: 30vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .studio_imgs{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100vw;
+            height: auto;
+        }
     }
     .description{
-        width: 100%;
-        margin: 5vw 0;
-        color: var(--textNormal);
+        padding-bottom: 4rem;
+        p{
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    .title{
+        h1{
+            font-size: 32px;
+        }
+    }
+    .title2{
+        h1{
+            font-size: 32px;
+        }
     }
 }

@@ -2,7 +2,7 @@ import React from "react"
 import headerStyles from "./header.module.scss"
 import Burger from "./burger"
 import Media from "react-media"
-import TransitionLink from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "./switcher.css"
 
 const Header = props => {
@@ -15,7 +15,7 @@ const Header = props => {
               className={headerStyles.navList}
             >
               <li>
-                <TransitionLink
+                <AniLink
                   entry={{
                     delay: 0.3,
                   }}
@@ -24,10 +24,10 @@ const Header = props => {
                   to="/"
                 >
                   HOME
-                </TransitionLink>
+                </AniLink>
               </li>
               <li>
-                <TransitionLink
+                <AniLink
                   entry={{
                     delay: 0.3,
                   }}
@@ -36,10 +36,10 @@ const Header = props => {
                   to="/gallery"
                 >
                   GALLERY
-                </TransitionLink>
+                </AniLink>
               </li>
               <li>
-                <TransitionLink
+                <AniLink
                   entry={{
                     delay: 0.3,
                   }}
@@ -48,10 +48,10 @@ const Header = props => {
                   to="/video"
                 >
                   VIDEO
-                </TransitionLink>
+                </AniLink>
               </li>
               <li>
-                <TransitionLink
+                <AniLink
                   entry={{
                     delay: 0.3,
                   }}
@@ -60,10 +60,10 @@ const Header = props => {
                   to="/about"
                 >
                   ABOUT
-                </TransitionLink>
+                </AniLink>
               </li>
               <li>
-                <TransitionLink
+                <AniLink
                   entry={{
                     delay: 0.3,
                   }}
@@ -72,7 +72,7 @@ const Header = props => {
                   to="/contact"
                 >
                   CONTACT
-                </TransitionLink>
+                </AniLink>
               </li>
             </ul>
             <div className={headerStyles.uv}>{props.uvToggle}</div> 
