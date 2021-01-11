@@ -8,6 +8,7 @@ section{
 
 .intro_text{
     padding-bottom: 8rem;
+    width: 80%;
     h2{
         font-size: 42px;
         margin: 0;
@@ -17,7 +18,7 @@ section{
         font-size: 22px;
         line-height: 32px;
         margin: 0;
-        padding: 2rem 0;
+        padding: 3rem 0;
         color: var(--textNormal);
     }
     button{
@@ -25,7 +26,8 @@ section{
         background-color: transparent;
         border: 1px solid var(--btn);
         a{
-            color: var(--btn)
+            color: var(--btn);
+            
         }
     }
     button:hover{
@@ -49,6 +51,7 @@ section{
     text-align: center;
     padding: 0 1rem;
     width: 40%;
+    max-width: 400px;
     h5{
         font-size: 20px;
         font-weight: bold;

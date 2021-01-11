@@ -25,7 +25,7 @@ export default function Contact() {
           //   title: 'Your message has been sent',
           //   text: 'I will answer you as soon as possible!',
           // })
-          alert('Your message has been sent')
+          alert("Your message has been sent")
           console.log(result.text)
         },
         error => {
@@ -34,7 +34,7 @@ export default function Contact() {
           //   title: 'Oops...',
           //   text: 'Something went wrong!',
           // })
-          alert('Something went wrong...')
+          alert("Something went wrong...")
           console.log(error.text)
         }
       )
@@ -42,53 +42,17 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className={styles.email_container}>
-        <div className={styles.email_wrapper}>
-          <h1 className={styles.email_form_title}>SEND ME A MESSAGE</h1>
-          <form className={styles.test_mailing} onSubmit={sendEmail}>
-            <br />
-            <div style={{ fontSize: "1.2rem", height: "100%" }}>
-              <div className={styles.name_email_wrapper}>
-                <input
-                  name="user_name"
-                  type="text"
-                  id="name"
-                  // onChange={this.nameChange}
-                  required
-                  placeholder="Name"
-                  className={styles.name_email_inputs}
-                  label="name"
-                />
-
-                <input
-                  name="user_email"
-                  type="text"
-                  // onChange={this.emailChange}
-                  required
-                  placeholder="Email"
-                  className={styles.name_email_inputs}
-                  id="email"
-                  label="email"
-                />
-              </div>
-              <textarea
-                id="message"
-                name="message"
-                // onChange={this.messageChange}
-                placeholder="Put your message here"
-                required
-                className={styles.message_input}
-                label="message"
-                multiline
-                rowsMax={4}
-              />
-            </div>
-            <div className={styles.btn_container}>
-              <button type="submit" value="submit" className={styles.btn}>
-                Submit
-              </button>
-            </div>
-          </form>
+      <div className={styles.contact}>
+        <div className={styles.email_container}>
+          <h2>Say hello</h2>
+          <p>
+            Before any artwork became a part of the collection, it went through
+            a process of careful consideration and discussion, and sometimes
+            even was an issue of lively dispute. We will be happy if you would
+            like to contact us and continue the discussion! We look forward to
+            your questions, comments and suggestions.
+          </p>
+          <a href="">hello@requesens.com</a>
         </div>
       </div>
     </Layout>

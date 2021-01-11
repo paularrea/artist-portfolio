@@ -1,0 +1,11 @@
+.carousel-status{
+    visibility: hidden;
+}
+
+.carousel .thumb{
+    border: none;
+}
+
+.carousel .thumb.selected{
+    border: 2px solid var(--btn);
+}
