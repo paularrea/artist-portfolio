@@ -3,6 +3,7 @@
 }
 
 .title{
+    padding-top: 3rem;
     margin: 0 auto;
     width: 90vw;
     h1{
@@ -12,7 +13,7 @@
     }
 }
 .title2{
-    padding-top: 4rem;
+    padding-top: 6rem;
     margin: 0 auto;
     width: 90vw;
     h1{
@@ -22,18 +23,15 @@
     }
 }
 .parallax {
-    background-image: url("../images/pauPintor.jpg");
-    height: 50vh;
+    background-image: url("../images/PauPintor.jpg");
+    height: 80vh;
     background-attachment: fixed;
-    background-position-y: -6rem;
+    background-position-y: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
   }
-.img{
-    height: 100vh;
-}
 .description{
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
     width: 90vw;
     margin: 0 auto;
     p{
@@ -41,6 +39,8 @@
         max-width: 800px;
         font-size: 22px;
         line-height: 32px;
+        margin: 0;
+        padding: 1.5rem 0;
     }
     a{
         color: var(--textImportant);

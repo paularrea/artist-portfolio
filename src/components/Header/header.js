@@ -1,21 +1,20 @@
 import React from "react"
 import headerStyles from "./header.module.scss"
+import { useIntl, Link } from "gatsby-plugin-intl"
 import Burger from "./burger"
 import Media from "react-media"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "./switcher.css"
 
 const Header = props => {
+  const intl = useIntl()
   return (
     <div className={headerStyles.container}>
       <header className={headerStyles.header}>
         <Media query={{ minWidth: 950 }}>
           <nav className={headerStyles.nav}>
-            <ul
-              className={headerStyles.navList}
-            >
+            <ul className={headerStyles.navList}>
               <li>
-                <AniLink
+                <Link
                   entry={{
                     delay: 0.3,
                   }}
@@ -23,11 +22,11 @@ const Header = props => {
                   activeClassName={headerStyles.activeNavItem}
                   to="/"
                 >
-                  HOME
-                </AniLink>
+                  {intl.formatMessage({ id: "nav.home" })}
+                </Link>
               </li>
               <li>
-                <AniLink
+                <Link
                   entry={{
                     delay: 0.3,
                   }}
@@ -35,11 +34,11 @@ const Header = props => {
                   activeClassName={headerStyles.activeNavItem}
                   to="/gallery"
                 >
-                  GALLERY
-                </AniLink>
+                  {intl.formatMessage({ id: "nav.gallery" })}
+                </Link>
               </li>
               <li>
-                <AniLink
+                <Link
                   entry={{
                     delay: 0.3,
                   }}
@@ -47,11 +46,11 @@ const Header = props => {
                   activeClassName={headerStyles.activeNavItem}
                   to="/video"
                 >
-                  VIDEO
-                </AniLink>
+                  {intl.formatMessage({ id: "nav.video" })}
+                </Link>
               </li>
               <li>
-                <AniLink
+                <Link
                   entry={{
                     delay: 0.3,
                   }}
@@ -59,11 +58,11 @@ const Header = props => {
                   activeClassName={headerStyles.activeNavItem}
                   to="/about"
                 >
-                  ABOUT
-                </AniLink>
+                  {intl.formatMessage({ id: "nav.about" })}
+                </Link>
               </li>
               <li>
-                <AniLink
+                <Link
                   entry={{
                     delay: 0.3,
                   }}
@@ -71,11 +70,20 @@ const Header = props => {
                   activeClassName={headerStyles.activeNavItem}
                   to="/contact"
                 >
-                  CONTACT
-                </AniLink>
+                  {intl.formatMessage({ id: "nav.contact" })}
+                </Link>
               </li>
+              <div className={headerStyles.lang_container}>
+                <Link activeClassName={headerStyles.activeLang} language="en">
+                  EN
+                </Link>
+                /
+                <Link activeClassName={headerStyles.activeLang} language="es">
+                  ES
+                </Link>
+              </div>
             </ul>
-            <div className={headerStyles.uv}>{props.uvToggle}</div> 
+            <div className={headerStyles.uv}>{props.uvToggle}</div>
           </nav>
         </Media>
         <Media query={{ maxWidth: 950 }}>

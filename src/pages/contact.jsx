@@ -1,10 +1,14 @@
 import React from "react"
+import { useIntl, Link } from "gatsby-plugin-intl"
 import styles from "../styles/contact.module.scss"
 import Layout from "../components/Layout/layout"
+import SEO from "../components/seo"
 
 export default function Contact() {
+  const intl = useIntl()
   return (
     <Layout>
+      <SEO title={intl.formatMessage({ id: "seo.contact" })} />
       <div className={styles.contact}>
         <div className={styles.email_container}>
           <h2>Say hello</h2>

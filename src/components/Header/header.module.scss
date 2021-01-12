@@ -6,7 +6,6 @@
     width: 100vw;
     background-color: var(--bg-header);
 }
-
 .title{
     display: flex;
     justify-content: center;
@@ -15,11 +14,9 @@
     text-decoration: none;
     transition: all 1s ease-out;
 }
-
 .title:hover{
     font-style: italic;
 }
-
 .navList{
     font-weight: bolder;
     background-color: transparent;
@@ -30,7 +27,6 @@
     max-width: 30vw;
     justify-content: space-between;
 }
-
 .navItem {
     color: var(--btn);
     font-size: 0.9rem;
@@ -39,16 +35,26 @@
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out !important;
 }
-
 .navItem:hover {
     color:var(--btn-hover);
 }
-
 .activeNavItem {
     color: var(--active-btn);
     border-bottom: 2px solid var(--active-btn);
 }
-
+.lang_container{
+    color: var(--btn);
+    a{
+        color: var(--btn) !important;
+    }
+    a:hover{
+        color:var(--btn-hover) !important;
+    }
+    .activeLang{
+        color: var(--active-btn) !important;
+        border-bottom: 2px solid var(--active-btn);
+    }
+}
 .uv{
     position: absolute;
     top: 0;

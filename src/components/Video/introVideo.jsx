@@ -1,8 +1,9 @@
 import React from "react"
 import videoStyle from "./introVideo.module.scss"
-import surfVideo from "../../videos/JOSIE.mp4"
+import teaser from "../../videos/teaser.mp4"
 
-function IntroVideo() {
+function IntroVideo(props) {
+  console.log(props, "props")
   return (
     <video
       className={videoStyle.container}
@@ -11,8 +12,8 @@ function IntroVideo() {
       autoPlay
       muted
     >
-      <source src={surfVideo} type="video/mp4" />
-      <source src={surfVideo} type="video/ogg" />
+      <source src={teaser} type="video/mp4" />
+      <source src={teaser} type="video/ogg" />
       Your browser does not support the video tag.
     </video>
   )

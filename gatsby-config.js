@@ -14,6 +14,7 @@
         path: `${__dirname}/src/`,
       },
     },
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -39,6 +40,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`en`, `es`],
+        defaultLanguage: `en`,
+        redirect: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

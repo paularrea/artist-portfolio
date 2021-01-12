@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import styles from "../styles/videos.module.scss"
+import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/Layout/layout"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 import YouTube from "react-youtube"
 import Loader from "react-loader-spinner"
 
@@ -23,16 +24,14 @@ const videosBefore33 = [
 ]
 
 const Videos = props => {
+  const intl = useIntl()
   const [videoLoaded, setVideoLoaded] = useState(false)
   const [selected, setSelectedTab] = useState(1)
   const onClickTab = value => setSelectedTab(value)
 
   return (
     <Layout page={"videos"}>
-      {/* <SEO
-        title="Vídeos Alex Peracaula"
-        lang="es"
-        description="Vídeos de Alex Peracaula. En esta página está el videobook y otros vídeos parodia sobre 'El Ultimo Superviviente'."/> */}
+        <SEO title={intl.formatMessage({ id: "seo.video" })} />
       <div className={styles.container}>
         <div className={styles.tabs}>
           <div aria-hidden="true" className={styles.tab} onClick={() => onClickTab(1)} onKeyDown={() => onClickTab(2)}>

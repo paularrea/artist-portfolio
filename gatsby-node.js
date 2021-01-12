@@ -1,4 +1,5 @@
 const path = require("path")
+const fs = require("fs-extra")
 
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
