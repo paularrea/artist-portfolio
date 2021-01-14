@@ -2,45 +2,24 @@
     width: 100vw;
 }
 
-.title{
-    padding-top: 3rem;
-    margin: 0 auto;
-    width: 90vw;
-    h1{
+.aboutText{
+    padding-bottom: 6rem;
+    width: 60vw;
+    padding-left: 5vw;
+    h2{
+        font-size: 30px;
+        margin: 20px 0;
+        letter-spacing: 2px;
+        font-weight: 500;
         color: var(--textTitle);
-        font-size: 36px;
-        margin: 0;
     }
-}
-.title2{
-    padding-top: 6rem;
-    margin: 0 auto;
-    width: 90vw;
-    h1{
-        color: var(--textTitle);
-        font-size: 36px;
-        margin: 0;
-    }
-}
-.parallax {
-    background-image: url("../images/PauPintor.jpg");
-    height: 80vh;
-    background-attachment: fixed;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-  }
-.description{
-    padding-bottom: 5rem;
-    width: 90vw;
-    margin: 0 auto;
     p{
-        color: var(--textNormal);
-        max-width: 800px;
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 300;
         margin: 0;
-        padding: 1.5rem 0;
+        color: var(--textNormal);
+        padding-bottom: 2rem;
     }
     a{
         color: var(--textImportant);
@@ -50,6 +29,17 @@
         color: var(--btn);  
     }
 }
+
+.parallax {
+    background-image: url("../images/PauPintor.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 6rem;
+  }
+
 .studio_imgs{
     display: flex;
     img{

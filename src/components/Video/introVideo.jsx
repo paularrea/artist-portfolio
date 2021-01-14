@@ -1,9 +1,8 @@
 import React from "react"
 import videoStyle from "./introVideo.module.scss"
-import teaser from "../../videos/teaser.mp4"
+import teaserColor from "../../videos/teaserColor.mp4"
 
-function IntroVideo(props) {
-  console.log(props, "props")
+function IntroVideo() {
   return (
     <video
       className={videoStyle.container}
@@ -12,8 +11,8 @@ function IntroVideo(props) {
       autoPlay
       muted
     >
-      <source src={teaser} type="video/mp4" />
-      <source src={teaser} type="video/ogg" />
+      <source src={teaserColor} type="video/mp4" />
+      <source src={teaserColor} type="video/ogg" />
       Your browser does not support the video tag.
     </video>
   )

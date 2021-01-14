@@ -12,28 +12,18 @@ const About = () => {
     <Layout>
       <SEO title={intl.formatMessage({ id: "seo.about" })} />
       <div className={style.container}>
-        <div className={style.title}>
-          <h1>Know me better</h1>
-        </div>{" "}
-        <div className={style.description}>
+      <div className={style.aboutText}>
+          <h2>{intl.formatMessage({ id: "about.title1" })}</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            voluptate accusamus reprehenderit ipsum, facilis odit maxime
-            explicabo veniam officia assumenda amet, quas suscipit. Corrupti
-            dolorem praesentium dolorum obcaecati, aperiam accusantium.
+          {intl.formatMessage({ id: "about.description1" })}
           </p>
           <Link to="/actor/home">Actor site</Link>
         </div>
         <div className={style.parallax}></div>
-        <div className={style.title2}>
-          <h1>The studio</h1>
-        </div>{" "}
-        <div className={style.description}>
+        <div className={style.aboutText}>
+          <h2>{intl.formatMessage({ id: "about.title2" })}</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            voluptate accusamus reprehenderit ipsum, facilis odit maxime
-            explicabo veniam officia assumenda amet, quas suscipit. Corrupti
-            dolorem praesentium dolorum obcaecati, aperiam accusantium.
+          {intl.formatMessage({ id: "about.description2" })}
           </p>
         </div>
         <div className={style.studio_imgs}>

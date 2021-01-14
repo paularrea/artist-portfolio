@@ -10,8 +10,8 @@ import layoutStyles from "./layout.module.scss"
 import headerStyles from "../Header/header.module.scss"
 import "../UvToggle/switcher.css"
 
-const Layout = ({children, changeUv = () => {}}) => {
-  
+const Layout = ({ children, changeUv = () => {} }) => {
+
   const uvToggle = (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
@@ -31,7 +31,6 @@ const Layout = ({children, changeUv = () => {}}) => {
       )}
     </ThemeToggler>
   )
-
 
   return (
     <div className={layoutStyles.container}>

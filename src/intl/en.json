@@ -16,12 +16,26 @@
     "home":{
         "intro": "R3SURR3CT is the metamorphosis of a human being that is reborn personally and artistically, a creation deeply intimate.",
         "process" : {
-            "name" : "The Process",
+            "name" : "THE PROCESS",
             "text" : "Este ha sido un proceso introspectivo que parte del amor. LOVE, és querer la propia imperfección. Amar lo que eres y amar lo que haces te llena de PEACE. Y esta comunión entre amor y paz inapelablemente te eleva a la GLORY, un estado de inspiración absoluta."
         },
         "concept" : {
-            "name" : "The Concept",
+            "name" : "THE CONCEPT",
             "text" : "El concepto “DARK peace” es dotar a las obras de alma. Como en la vida, las cosas más hermosas no se perciben a simple vista. La luz ultravioleta transporta las obras a otra dimensión. Juega con el interruptor y descubre la esencia de las obras."
+        },
+        "bullet" : {
+            "name1" : "RELÁMPAGO",
+            "description1" : "Es el poder creativo que reside dentro de mi.",
+            "name2" : "FUEGO DERRITIÉNDOSE",
+            "description2" : "Es el frágil equilibrio entre la tensión y la relajación.",
+            "name3" : "CALAVERA PIRATA",
+            "description3" : "Es vivir la pintura sin normas ni fronteras, con absoluta libertad para encontrar los tesoros ocultos del alma."
         }
+    },
+    "about":{
+        "title1" : "Know me better",
+        "description1" : "lorem ",
+        "title2" : "The Studio",
+        "description2" : "Este proyecto ha sido materializado en el espacio històrico industrial del REC."
     }
   }
