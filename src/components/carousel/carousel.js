@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel"
 import carousel1 from "../../images/carousel/carousel1.jpg"
 import carousel2 from "../../images/carousel/carousel2.jpg"
 import carousel3 from "../../images/carousel/carousel3.jpg"
+import carousel4 from "../../images/carousel/carousel4.jpg"
 import style from "./carousel.module.scss"
 import "./modifyCarousel.css"
 
@@ -18,6 +19,9 @@ const CarouselIntro = () => {
         </div>
         <div>
           <img alt="carousel 3" src={carousel3} />
+        </div>
+        <div>
+          <img alt="carousel 3" src={carousel4} />
         </div>
       </Carousel>
   )
