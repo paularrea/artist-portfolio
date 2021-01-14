@@ -8,24 +8,24 @@
   }
 
 .container{
-    padding: 3rem 0;
     width: 90vw;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: top;
+    padding-top: 3rem;
+    height: 90vh;
 }
 
 .img{
     width:30vw;
-    max-height: 70vh;
+    max-height: auto;
 }
 
 .description{
-    width: 30vw;
-    margin: 2rem;
+    width: 25vw;
+    margin: 0 2rem;
     color: var(--textNormal);
 }
 
@@ -42,7 +42,6 @@
 }
 
 .detail_info{
-    padding: 1rem;
     padding-bottom: 2rem;
 }
 

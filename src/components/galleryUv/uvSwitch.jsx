@@ -18,7 +18,7 @@ const UvSwitch = props => {
   const data = useStaticQuery(graphql`
     query {
       uvOn: allMarkdownRemark(
-        sort: { fields: [frontmatter___title], order: DESC }
+        sort: { fields: [frontmatter___title], order: ASC }
         filter: {
           frontmatter: { description: { eq: "uvOn" }, collection: { eq: "33" } }
         }
@@ -43,7 +43,7 @@ const UvSwitch = props => {
         }
       }
       uvOff: allMarkdownRemark(
-        sort: { fields: [frontmatter___title], order: DESC }
+        sort: { fields: [frontmatter___title], order: ASC }
         filter: {
           frontmatter: {
             description: { eq: "uvOff" }
@@ -71,7 +71,7 @@ const UvSwitch = props => {
         }
       }
       b33UvOn: allMarkdownRemark(
-        sort: { fields: [frontmatter___title], order: DESC }
+        sort: { fields: [frontmatter___title], order: ASC}
         filter: {
           frontmatter: {
             description: { eq: "uvOn" }
@@ -99,7 +99,7 @@ const UvSwitch = props => {
         }
       }
       b33UvOff: allMarkdownRemark(
-        sort: { fields: [frontmatter___title], order: DESC }
+        sort: { fields: [frontmatter___title], order: ASC}
         filter: {
           frontmatter: {
             description: { eq: "uvOff" }

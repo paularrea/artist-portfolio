@@ -1,13 +1,13 @@
 @import './variables';
 
 body {
-    --bg: white;
-    --bg-header: rgba(255, 255, 255, .95);
-    --bg-footer: whitesmoke;
+    --bg:  whitesmoke;
+    --bg-header: whitesmoke;
+    --bg-footer: rgb(240, 240, 240);
     --bg-container:whitesmoke;
-    --bg-input:white;
+    --bg-input:whitesmoke;
     --bg-btn-hover:rgb(41, 41, 41);
-    --color-btn-hover:white;
+    --color-btn-hover:whitesmoke;
 
     --switcher:whitesmoke;
     --switcher-track:rgb(41, 41, 41);
@@ -39,18 +39,18 @@ body {
     --bg-btn-hover:rgb(245, 245, 245);
     --color-btn-hover:rgb(93, 93, 93);
 
-    --switcher:#c83a3a;
-    --switcher-track:#c83a3ab9;
+    --switcher:#A966DA;
+    --switcher-track:#A966DAb9;
 
     --textNormal: rgb(221, 221, 221);
     --textImportant:white;
     --textTitle: rgb(165, 165, 165);
 
-    --btn:#c83a3a; 
+    --btn:#A966DA; 
     --btn-hover:whitesmoke;
     --active-btn:white;
 
-    --spinner:#c83a3a;
+    --spinner:#A966DA;
     --filterImg:invert(60%);
     --filterVideo:grayscale(100%);
   }

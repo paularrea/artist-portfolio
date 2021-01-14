@@ -54,7 +54,7 @@ const Home = props => {
             </div>
           </div>
         </section>
-        <CarouselIntro />
+        {/* <CarouselIntro /> */}
       </Layout>
     </div>
   )
