@@ -27,12 +27,19 @@
     }
     h3{
         font-size: 16px;
+        margin: 0;
     }
     .contentOne{
         display: flex;
+        margin: 0;
+        width: 30vw;
         justify-content: space-between;
         div{
-            width: 10vw;
+            width: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
         }
     }
     .contentTwo{
@@ -48,6 +55,8 @@
 .navList{
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
     li{
         margin: .3vw 0;
         color: var(--textNormal);
@@ -61,6 +70,7 @@
 .requesens{
     h2{
         font-size: 25px;
+        margin: 0;
     }
 }
 
@@ -78,15 +88,27 @@
 
     .content{
         display: block;
+        justify-content: center;
+        align-items: flex-start;
         max-width: 100%;
         height: auto;
-        padding: 2rem;
+        padding: 1rem;
         padding-bottom: 8rem;
+        h3{
+        padding: 0;
+        margin: 0;
+        }
         .contentOne{
             display: flex;
+            margin: 0 auto;
+            width: auto;
             justify-content: space-between;
             div{
-                width: 40vw;
+                width: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: center;
             }
         }
         .contentTwo{

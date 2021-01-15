@@ -6,21 +6,13 @@ import SEO from "../components/seo"
 import YouTube from "react-youtube"
 import Loader from "react-loader-spinner"
 
-const videos33 = [
-  "w0NcyiahpzI",
-  "AV5m2W9MH_w",
-  "5DCk1i15s8Y",
-  "8nyVAJhPAEs",
-  "5sMrU6zA2kE",
-]
-
-const videosBefore33 = [
-  "O_4zKb0xn0o",
-  "u0b89tU0nag",
-  "-1hhBmlEDSE",
-  "g1olyrnNuF8",
-  "5sGKQnpZLFg",
-  "w0NcyiahpzI",
+const makingOff = [
+  "sMTo46GvIU4",
+  "BwEHXWFgoMg",
+  "BOt582m3vPY",
+  "zHXe55y_dLs",
+  "Jp8krgaxdB8",
+  "CmAyIGN5Qvs"
 ]
 
 const Videos = props => {
@@ -33,27 +25,6 @@ const Videos = props => {
     <Layout page={"videos"}>
         <SEO title={intl.formatMessage({ id: "seo.video" })} />
       <div className={styles.container}>
-        <div className={styles.tabs}>
-          <div aria-hidden="true" className={styles.tab} onClick={() => onClickTab(1)} onKeyDown={() => onClickTab(2)}>
-            <h2
-              className={`${styles.tabTitle} ${
-                selected === 1 ? styles.selected : ""
-              }`}
-            >
-              "before 33"
-            </h2>
-          </div>
-          <div aria-hidden="true" className={styles.tab} onClick={() => onClickTab(2)} onKeyDown={() => onClickTab(2)}>
-            <h2
-              className={`${styles.tabTitle} ${
-                selected === 2 ? styles.selected : ""
-              }`}
-            >
-              "33"
-            </h2>
-          </div>
-        </div>
-
         <div
           className={`${styles.loader_container} ${
             videoLoaded ? styles.hide : ""
@@ -68,51 +39,22 @@ const Videos = props => {
             className={videoLoaded ? styles.hide : ""}
           />
         </div>
-        <div
-          className={`${styles.video_grid} ${
-            selected !== 1 ? styles.hide : ""
-          }`}
-        >
-          {videosBefore33.map(id => (
-            <>
-              <YouTube
-                videoId={id}
-                className={`${styles.video_size} ${
-                  selected !== 1 ? styles.hide : ""
-                }`}
+        <div className={styles.principalVideo}>
+        <YouTube
+                videoId="sMTo46GvIU4"
+                className={styles.principal_size}
                 onReady={() => setVideoLoaded(true)}
               />
-            </>
-          ))}
         </div>
-
+        <h3>THE MAKING OF</h3>
         <div
-          className={`${styles.loader_container} ${
-            videoLoaded ? styles.hide : ""
-          } ${selected !== 2 ? styles.hide : ""}`}
+          className={styles.video_grid}
         >
-          <Loader
-            type="TailSpin"
-            color="grey"
-            height={40}
-            width={40}
-            timeout={3000}
-            className={videoLoaded ? styles.hide : ""}
-          />
-        </div>
-
-        <div
-          className={`${styles.video_grid} ${
-            selected !== 2 ? styles.hide : ""
-          }`}
-        >
-          {videos33.map(id => (
+          {makingOff.map(id => (
             <>
               <YouTube
                 videoId={id}
-                className={`${styles.video_size} ${
-                  selected !== 2 ? styles.hide : ""
-                }`}
+                className={styles.video_size}
                 onReady={() => setVideoLoaded(true)}
               />
             </>

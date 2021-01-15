@@ -19,12 +19,12 @@ const Footer = () => {
         <div className={footerStyles.content}>
           <div className={footerStyles.requesens}>
             <h2>REQUESENS</h2>
-            <p>Some text displayed here.</p>
-            <div  className={footerStyles.copyright}>
+            <p>T'estimo</p>
+            <div className={footerStyles.copyright}>
               <p>
                 © {new Date().getFullYear()}, by
                 {` `}
-                {data.site.siteMetadata.author}.<br/> All Rights Reserved.
+                {data.site.siteMetadata.author}.<br /> All Rights Reserved.
               </p>
             </div>
           </div>
@@ -85,12 +85,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3>New Business</h3>
+              <h3>Contact me</h3>
               <p>hello@requesens.com</p>
               <p>+34 606 54 50 00</p>
-            </div>
-          </div>
-          <div className={footerStyles.contentTwo}>
+            </div>{" "}
             <div>
               <h3>Follow</h3>
               <a
@@ -102,11 +100,6 @@ const Footer = () => {
               </a>
               <p>Facebook</p>
               <p>Youtube</p>
-            </div>
-            <div>
-              <h3>Legal</h3>
-              <p>Terms</p>
-              <p>Privacy</p>
             </div>
           </div>
         </div>

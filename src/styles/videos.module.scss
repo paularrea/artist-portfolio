@@ -5,11 +5,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .loader_container {
     margin: 0 auto;
     margin-top: 50px;
+}
+
+.principalVideo{
+    margin: 0 auto;
+    padding: 2rem 0 4rem 0;
+}
+.principal_size{
+    width: 60vw;
+    height: 35vw;
 }
 
 .video_container {
@@ -26,47 +36,6 @@
     div:first-child {
         @include mobile {
             max-height: 30vh !important;
-        }
-    }
-}
-
-.video_container.change {
-    opacity: 1;
-    transition: all 1s;
-}
-
-.h2 {
-    margin-top: 20px;
-}
-
-.h2_2 {
-    margin: 40px 0;
-}
-
-
-.tabs {
-    display: flex;
-    margin: 0 auto;
-    color: var(--btn);
-    
-    .tab {
-        cursor: pointer;
-        margin: 0 20px;
-        .tabTitle {
-            font-size: 18px;
-            font-weight: normal;
-            @include mobile {
-                font-size: 14px;
-            }
-        }
-        .tabTitle:hover {
-            color: var(--btn-hover);
-            border-bottom: 2px solid var(--btn-hover)
-        }
-        .selected {
-            font-weight: bold;
-            color: var(--active-btn);
-            border-bottom: 2px solid var(--active-btn);
         }
     }
 }
@@ -101,50 +70,49 @@
 }
 
 .video_grid{
-    width: 90vw;
-    max-width: 1200px;
-    display: grid;
-    align-self: center;
-    grid-gap: 1rem;
-    padding: 2rem 0;
-
+    display: flex;
+    scroll-behavior: smooth;
+    width: 99vw;
+    margin-left: 2vw;
+    overflow-x: scroll;
+    
 }
-
-.video_grid div{
-    margin: 0 auto;
+h3{
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: var(--textImportant);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
 }
 
 .hide {
     display: none !important;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    .container{
+        padding-top: 2rem;
+        padding-bottom: .2rem;
+    }
     .video_size{
         width: 90vw;
         height: 25vh;
     }
-    .video_grid { grid-template-columns: repeat(1, 1fr); }
-  }
-
-@media (min-width: 400px) {
-    .video_size{
-        width: 90vw;
+    .principal_size{
+        width: 100vw;
         height: 35vh;
     }
-    .video_grid { grid-template-columns: repeat(1, 1fr); }
-  }
-
-@media (min-width: 900px) {
-    .video_size{
-        width: 35vw;
-        height: 23vw;
+    .principalVideo{
+        margin: 0 auto;
+        padding: 2rem 0;
     }
-    .video_grid { grid-template-columns: repeat(2, 1fr); }
-  }
 
-@media (min-width: 1800px) {
-    .video_size{
-        width: 30vw;
-        height: 20vw;
+    h3{
+        padding-left: 5vw;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
     }
   }

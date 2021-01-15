@@ -134,7 +134,7 @@ const UvSwitch = props => {
     return (
       <div className={styles.shadow}>
         <Link to={`/gallery/${edge.node.fields.slug}`}>
-          {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
+          {featuredImage && <Img key={edge.id} fluid={featuredImage.childImageSharp.fluid} />}
         </Link>
       </div>
     )
@@ -145,7 +145,7 @@ const UvSwitch = props => {
     return (
       <div className={styles.shadow}>
         <Link to={`/gallery/${edge.node.fields.slug}`}>
-          {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
+          {featuredImage && <Img key={edge.id} fluid={featuredImage.childImageSharp.fluid} />}
         </Link>
       </div>
     )
@@ -156,7 +156,7 @@ const UvSwitch = props => {
     return (
       <div className={styles.shadow}>
         <Link to={`/gallery/${edge.node.fields.slug}`}>
-          {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
+          {featuredImage && <Img key={edge.id} fluid={featuredImage.childImageSharp.fluid} />}
         </Link>
       </div>
     )
@@ -167,7 +167,7 @@ const UvSwitch = props => {
     return (
       <div className={styles.shadow}>
         <Link to={`/gallery/${edge.node.fields.slug}`}>
-          {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
+          {featuredImage && <Img key={edge.id} fluid={featuredImage.childImageSharp.fluid} />}
         </Link>
       </div>
     )

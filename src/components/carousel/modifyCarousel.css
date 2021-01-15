@@ -11,5 +11,5 @@
 }
 
 .thumbs{
-    visibility: hidden !important;
+    display: none !important;
 }

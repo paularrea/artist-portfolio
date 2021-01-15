@@ -69,6 +69,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/images/carousel/mobile`,
+        name: "carousel",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name:'before33',
