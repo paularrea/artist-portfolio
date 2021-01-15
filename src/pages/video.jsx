@@ -12,23 +12,21 @@ const makingOff = [
   "BOt582m3vPY",
   "zHXe55y_dLs",
   "Jp8krgaxdB8",
-  "CmAyIGN5Qvs"
+  "CmAyIGN5Qvs",
 ]
 
 const Videos = props => {
   const intl = useIntl()
   const [videoLoaded, setVideoLoaded] = useState(false)
-  const [selected, setSelectedTab] = useState(1)
-  const onClickTab = value => setSelectedTab(value)
 
   return (
     <Layout page={"videos"}>
-        <SEO title={intl.formatMessage({ id: "seo.video" })} />
+      <SEO title={intl.formatMessage({ id: "seo.video" })} />
       <div className={styles.container}>
         <div
           className={`${styles.loader_container} ${
             videoLoaded ? styles.hide : ""
-          } ${selected !== 1 ? styles.hide : ""}`}
+          }`}
         >
           <Loader
             type="TailSpin"
@@ -40,16 +38,14 @@ const Videos = props => {
           />
         </div>
         <div className={styles.principalVideo}>
-        <YouTube
-                videoId="sMTo46GvIU4"
-                className={styles.principal_size}
-                onReady={() => setVideoLoaded(true)}
-              />
+          <YouTube
+            videoId="sMTo46GvIU4"
+            className={styles.principal_size}
+            onReady={() => setVideoLoaded(true)}
+          />
         </div>
         <h3>THE MAKING OF</h3>
-        <div
-          className={styles.video_grid}
-        >
+        <div className={styles.video_grid}>
           {makingOff.map(id => (
             <>
               <YouTube
