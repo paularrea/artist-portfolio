@@ -1,5 +1,5 @@
 import React from "react"
-import { useIntl, Link } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import styles from "../styles/contact.module.scss"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
@@ -19,7 +19,13 @@ export default function Contact() {
             like to contact us and continue the discussion! We look forward to
             your questions, comments and suggestions.
           </p>
-          <a href="">hello@requesens.com</a>
+          <a
+            href="mailto:hello@requesens.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@requesens.com
+          </a>
         </div>
       </div>
     </Layout>

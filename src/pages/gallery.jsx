@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useIntl, Link } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import UvSwitch from "../components/galleryUv/uvSwitch"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
