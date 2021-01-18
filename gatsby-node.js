@@ -31,12 +31,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  res.data.allMarkdownRemark.edges.forEach((edge)=>{
+  const posts = res.data.allMarkdownRemark.edges;
+  posts.forEach((edge, index)=>{
       createPage({
           component: descriptionTemplate,
           path: `/gallery/${edge.node.fields.slug}`,
           context: {
-              slug: edge.node.fields.slug
+              slug: edge.node.fields.slug,
+              prev: index === 0 ? null : posts[index-1].edge,
+              next: index === (posts.length-1) ? null : posts[index+1].edge
           }
       })
   })

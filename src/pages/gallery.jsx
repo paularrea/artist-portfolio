@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const Gallery = () => {
   const intl = useIntl()
-  const [darkOn, setDarkOn] = useState("true")
+  const [darkOn, setDarkOn] = useState(false)
   const [uv, setUv] = useState("dark")
 
   const changeUv = theme => {

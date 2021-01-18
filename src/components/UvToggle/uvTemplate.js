@@ -30,9 +30,9 @@ function UvTemplate() {
           UV
           <Switch
             style={{ color: "var(--switcher)" }}
-            checked={theme === "light"}
+            checked={theme === "dark"}
             onClick={onClick}
-            onChange={e => toggleTheme(e.target.checked ? "light" : "dark")}
+            onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
             name="checkedA"
             inputProps={{ "aria-label": "secondary checkbox" }}
           />

@@ -19,9 +19,9 @@ const Layout = ({ children, changeUv = () => {} }) => {
           UV
           <Switch
             style={{ color: "var(--switcher)" }}
-            checked={theme === "light"}
+            checked={theme === "dark"}
             onChange={e => {
-              toggleTheme(e.target.checked ? "light" : "dark")
+              toggleTheme(e.target.checked ? "dark" : "light")
               changeUv(theme)
             }}
             name="checkedA"

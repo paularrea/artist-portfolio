@@ -5,7 +5,8 @@ import Img from "gatsby-image"
 import styles from "./gallery.template.module.scss"
 import UvTemplate from "../components/UvToggle/uvTemplate"
 
-const ImgDescription = props => {
+const ImgDescription = (props) => {
+  console.log(props.pageContext)
 
   return (
     <div>
