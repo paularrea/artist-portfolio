@@ -1,0 +1,10 @@
+.MuiSvgIcon-root{
+    font-size: 3rem !important;
+    fill: var(--btn);
+    color: var(--btn) !important;
+}
+
+.MuiSvgIcon-root:visited { text-decoration: none; color:var(--btn) !important; }
+.MuiSvgIcon-root:hover { text-decoration: none; color:var(--btn) !important; }
+.MuiSvgIcon-root:focus { text-decoration: none; color:var(--btn) !important; }
+.MuiSvgIcon-root:hover, .MuiSvgIcon-root:active { text-decoration: none; color:var(--btn) !important }

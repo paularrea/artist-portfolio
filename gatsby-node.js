@@ -19,7 +19,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const descriptionTemplate = path.resolve("./src/templates/img-description.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark{
         edges {
           node {
             fields {
@@ -38,8 +38,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
           path: `/gallery/${edge.node.fields.slug}`,
           context: {
               slug: edge.node.fields.slug,
-              prev: index === 0 ? null : posts[index-1].edge,
-              next: index === (posts.length-1) ? null : posts[index+1].edge
+              prev: index === 0 ? null : posts[index-1].node,
+              next: index === (posts.length-1) ? null : posts[index+1].node
           }
       })
   })

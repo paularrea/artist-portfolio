@@ -7,10 +7,32 @@
     }
   }
 
+.arrows_container{
+    width: 100vw;
+    top: 0;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.arrow{
+   font-size: 20px;
+   background-color: var(--bg);
+   padding: 20% 1%;
+}
+.arrow:hover{
+    background-color: var(--bg-arrow);
+}
+
 .container{
+    position: relative;
     width: 90vw;
     margin: 0 auto;
     display: flex;
+    z-index: 99;
     flex-direction: row;
     justify-content: center;
     align-items: top;
@@ -21,6 +43,7 @@
 .img{
     width:30vw;
     max-height: auto;
+    margin-bottom: 4rem;
 }
 
 .description{
@@ -49,7 +72,11 @@
     .container{
         display: block;
         width: 90vw;
+        height: auto;
         padding: 0;
+    }
+    .arrows_container{
+        top: 30%;
     }
     .img{
         width:90vw;
