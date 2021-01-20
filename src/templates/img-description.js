@@ -1,23 +1,54 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout/layout"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./gallery.template.module.scss"
-import UvTemplate from "../components/UvToggle/uvTemplate"
+import { navigate } from "gatsby"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import ArrowLeft from "@material-ui/icons/ArrowLeft"
+import Switch from "@material-ui/core/Switch"
 import ArrowRight from "@material-ui/icons/ArrowRight"
 import "./icons.css"
+import darkPeace from "../images/pngs/darkPeace.png"
+import darkPeace2 from "../images/pngs/darkPeace2.png"
 
 const ImgDescription = props => {
-  console.log(props.pageContext)
+  const [mode, setMode] = useState("")
+
+  useEffect(() => {
+    function checkMode() {
+      const theme = localStorage.getItem("theme")
+      if (theme === "light") {
+        setMode("light")
+      } else if (theme === "dark") {
+        setMode("dark")
+      }
+    }
+    window.addEventListener("storage", checkMode())
+    return () => {
+      window.removeEventListener("storage", checkMode())
+    }
+  }, [mode])
 
   let next = props.pageContext.next
   let prev = props.pageContext.prev
+  let seeInLightMode = props.pageContext.slug.replace(/u.*/, "")
+  let seeInDarkMode = props.pageContext.slug.concat("uv")
+
+  const routeChange = () => {
+    if (mode === "dark") {
+      navigate(`/gallery/${seeInLightMode}`)
+    } else if (mode === "light") {
+      navigate(`/gallery/${seeInDarkMode}`)
+    }
+  }
 
   return (
-    <div>
+    <div className={styles.containerBig}>
+      <div className={styles.darkSquare}>
+
+      </div>
       <Layout>
-        <UvTemplate />
         <div className={styles.container}>
           <div className={styles.arrows_container}>
             <div className={styles.arrow}>
@@ -36,15 +67,15 @@ const ImgDescription = props => {
             </div>
           </div>
           <div>
-                <Img
-            className={styles.img}
-            fluid={
-              props.data.markdownRemark.frontmatter.featuredImage
-                .childImageSharp.fluid
-            }
-          />
+            <Img
+              className={styles.img}
+              fluid={
+                props.data.markdownRemark.frontmatter.featuredImage
+                  .childImageSharp.fluid
+              }
+            />
           </div>
-      
+
           <div className={styles.detail_info}>
             <div
               className={styles.description}
@@ -52,9 +83,34 @@ const ImgDescription = props => {
                 __html: props.data.markdownRemark.html,
               }}
             ></div>
+              <div className={styles.templateToggle}>
+              <ThemeToggler>
+                {({ theme, toggleTheme }) => (
+                  <div className={styles.uv_label}>
+                    <div>
+                      <img
+                        src={theme === "dark" ? darkPeace2 : darkPeace}
+                        alt="dark peace logo"
+                      />
+                    </div>
+                    <Switch
+                      style={{ color: "var(--switcher)" }}
+                      checked={theme === "dark"}
+                      onClick={routeChange}
+                      onChange={e => {
+                        toggleTheme(e.target.checked ? "dark" : "light")
+                      }}
+                      name="checkedA"
+                      inputProps={{ "aria-label": "secondary checkbox" }}
+                    />
+                  </div>
+                )}
+              </ThemeToggler>
+            </div>
             <Link className={styles.link} to="/gallery/">
               Back to gallery
             </Link>
+          
           </div>
         </div>
       </Layout>

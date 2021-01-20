@@ -89,7 +89,7 @@ const Header = props => {
         <Media query={{ maxWidth: 950 }}>
           <div className={headerStyles.burger_container}>
             <Burger />
-            {props.uvToggle}
+            <div>{props.uvToggle}</div>
           </div>
         </Media>
       </header>

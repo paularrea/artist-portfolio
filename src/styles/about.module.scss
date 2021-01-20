@@ -88,11 +88,23 @@
         line-height: 34px;
         color: var(--textNormal);
     }
+    div{
+      height: 9.5rem;
+    }
     img{
-        width: 3rem;
+        width: 6rem;
         margin-bottom: 20px;
         filter: var(--filterImg);
     }
+}
+.llamp{
+    width: 7rem !important;
+}
+.darkPeace{
+    width: 9rem !important;
+}
+.flama{
+    width: 4rem !important;
 }
 .parallax {
     background-image: url("../images/aboutPau.jpg");
@@ -158,9 +170,21 @@
                 line-height: 25px;
                 color: var(--textNormal);
             }
+            div{
+                height: 5.5rem;
+              }
             img{
                 width: 3rem;
             }
+        }
+        .llamp{
+            width: 4rem !important;
+        }
+        .darkPeace{
+            width: 6rem !important;
+        }
+        .flama{
+            width: 2.5rem !important;
         }
     .parallax {
         height: 100vh;

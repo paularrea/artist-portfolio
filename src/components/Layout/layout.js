@@ -9,14 +9,14 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import layoutStyles from "./layout.module.scss"
 import headerStyles from "../Header/header.module.scss"
 import "../UvToggle/switcher.css"
+import darkPeace from "../../images/pngs/darkPeace.png"
+import darkPeace2 from "../../images/pngs/darkPeace2.png"
 
 const Layout = ({ children, changeUv = () => {} }) => {
-
   const uvToggle = (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
         <div className={headerStyles.uv_label}>
-          UV
           <Switch
             style={{ color: "var(--switcher)" }}
             checked={theme === "dark"}
@@ -27,6 +27,12 @@ const Layout = ({ children, changeUv = () => {} }) => {
             name="checkedA"
             inputProps={{ "aria-label": "secondary checkbox" }}
           />
+          <div>
+            <img
+              src={theme === "dark" ? darkPeace2 : darkPeace}
+              alt="dark peace logo"
+            />
+          </div>
         </div>
       )}
     </ThemeToggler>

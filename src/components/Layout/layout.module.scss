@@ -13,6 +13,8 @@
 .pages{
     margin: 0 auto;
     padding-top: 4rem;
+    background-color: var(--bg);
+    transition: background-color 0.8s ease-out,
 }
 
 // actor layout

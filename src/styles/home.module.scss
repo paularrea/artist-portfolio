@@ -9,6 +9,11 @@ section{
 .intro_text{
     width: 100%;
     text-align: center;
+    img{
+        width: 30vw;
+        padding-bottom: 2rem;
+        filter: var(--filterImg);
+    }
     h2{
         font-size: 30px;
         margin: 20px 0;
@@ -72,6 +77,10 @@ section{
     }
     .intro_text{
         text-align: left;
+        img{
+            width: 70vw;
+            padding-bottom: 2rem;
+        }
         h2{
             font-size: 30px;
             margin: 20px 0;

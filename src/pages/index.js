@@ -5,6 +5,7 @@ import IntroVideo from "../components/Video/introVideo"
 import Logo from "../components/Header/requesens"
 import style from "../styles/home.module.scss"
 import SEO from "../components/seo"
+import resurrect from "../images/pngs/resurrect.png"
 
 const Home = props => {
   const intl = useIntl()
@@ -16,7 +17,7 @@ const Home = props => {
         <IntroVideo />
         <section>
           <div className={style.intro_text}>
-            <h2>R3SURR3CT</h2>
+          <img src={resurrect} alt="resurrect logo"/>
             <p>{intl.formatMessage({ id: "home.intro" })}</p>
           <div className={style.intro_text2}>
             <h4>{intl.formatMessage({ id: "home.process.name" })}</h4>

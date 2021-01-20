@@ -4,6 +4,7 @@
     color: var(--textNormal);
     color: #3b3b3b;
     z-index: 9999999999;
+    transition: background-color 0.8s ease-out,
 }
 
 .content{
@@ -18,6 +19,7 @@
     align-items: flex-start;
     background-color:var(--bg-footer);
     color: var(--textImportant);
+    transition: background-color 0.8s ease-out,
     p, a {
         margin: .3vw 0;
         color: var(--textNormal);
