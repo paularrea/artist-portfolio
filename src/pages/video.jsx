@@ -5,6 +5,7 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import YouTube from "react-youtube"
 import Loader from "react-loader-spinner"
+import resurrect from "../images/pngs/resurrect.png"
 
 const makingOff = [
   "sMTo46GvIU4",
@@ -38,6 +39,7 @@ const Videos = props => {
           />
         </div>
         <div className={styles.principalVideo}>
+          <img src={resurrect} alt="resurrect logo"/>
           <YouTube
             videoId="sMTo46GvIU4"
             className={styles.principal_size}

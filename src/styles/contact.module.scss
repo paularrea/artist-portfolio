@@ -1,25 +1,164 @@
 /* email */
 .contact{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     position: relative;
     height: 100vh;
 }
+.ull{
+    position: absolute;
+    filter: var(--filterImg);
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25vh;
+    right: 20vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.trentatres{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5vw;
+    left: 5vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.creu{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 20vw;
+    height: 20vw;
+    top: 17vw;
+    left: 25vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.peace{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 8vw;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30vw;
+    left: 5vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.love{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3vw;
+    left: 30vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.background1{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 10vw;
+    height: 10vw;
+    top: 15vw;
+    left: 10vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.background2{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 6vw;
+    height: 6vw;
+    top: 10vw;
+    left: 40vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.background3{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 8vw;
+    height: 8vw;
+    top: 5vw;
+    left: 50vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.background4{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 10vw;
+    height: 10vw;
+    top: 10vw;
+    right: 5vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.background5{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 12vw;
+    height: 12vw;
+    top: 30vw;
+    right: 60vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
 .email_container{
     position: absolute;
     right: 0;
-    top: 30vh;
+    top: 40vh;
     width: 50vw;
     max-width: 700px;
     text-align: right;
     h2{
+        font-size: 18px;
+        margin: 0;
+        letter-spacing: 2px;
+        padding-bottom: 1rem;
+        font-weight: 500;
         color: var(--textTitle);
-        font-size: 42px;
     }
     p{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 300;
+        margin: 0;
         color: var(--textNormal);
-        font-size: 22px;
-        line-height: 32px;
+        padding-bottom: 1rem;
     }
     a{
         color: var(--textImportant);
@@ -40,18 +179,25 @@
    .email_container{
     position: absolute;
     left: 5vw;
-    top: 40vh;
+    top: 50vh;
     width: 90vw;
     max-width: 700px;
     text-align: left;
     h2{
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 1rem;
+        letter-spacing: 2px;
+        font-weight: 500;
         color: var(--textTitle);
-        font-size: 28px;
     }
     p{
-        color: var(--textNormal);
-        font-size: 18px;
+        font-size: 22px;
         line-height: 28px;
+        font-weight: 300;
+        margin: 0;
+        color: var(--textNormal);
+        padding-bottom: 1rem;
     }
     a{
         color: var(--textImportant);
@@ -61,4 +207,34 @@
         color: var(--btn);  
     }
    }  
+   .background1{
+       top: 20vh;
+       right: 20vw;
+   }
+   .background2{
+    top: 15vh;
+    right: 20vw;
+}
+.background3{
+    top: 45vh;
+    right: 20vw;
+}
+.background4{
+    top: 25vh;
+    right: 70vw;
+}
+.background5{
+    top: 20vh;
+    right: 20vw;
+}
+   .ull{
+    top: 38vh;
+    left: 60vw;
+    width: 5rem;
+    height: 5rem;
+   }
+   .trentatres{
+    top: 50vw;
+    left: 50vw;
+   }
  }

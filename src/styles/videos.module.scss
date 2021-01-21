@@ -14,8 +14,15 @@
 }
 
 .principalVideo{
+    img{
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        width: 20vw;
+        filter: var(--filterImg);
+    }
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 2rem 0 4rem 0;
 }
 .principal_size{
     width: 60vw;

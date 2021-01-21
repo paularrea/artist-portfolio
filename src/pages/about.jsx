@@ -8,13 +8,6 @@ import SEO from "../components/seo"
 import Media from "react-media"
 import Carousel from "../components/carousel/carousel"
 
-import darkPeace from "../images/pngs/darkPeace.png"
-import darkPeace2 from "../images/pngs/darkPeace2.png"
-import llamp from "../images/pngs/llamp.png"
-import llamp2 from "../images/pngs/llamp2.png"
-import flama from "../images/pngs/flama.png"
-import flama2 from "../images/pngs/flama2.png"
-
 const About = () => {
   const intl = useIntl()
   const data = useStaticQuery(graphql`
@@ -52,44 +45,6 @@ const About = () => {
           <Link to="/actor/home">Actor site</Link>
         </div>
         <div className={style.parallax}></div>
-        <div className={style.bullet_container}>
-          <div className={style.bullet}>
-            <div>
-              <img
-                className={style.llamp}
-                src={localStorage.theme === "dark" ? llamp2 : llamp}
-                alt="llamp"
-              />
-            </div>
-
-            <h5>{intl.formatMessage({ id: "home.bullet.name1" })}</h5>
-            <p>{intl.formatMessage({ id: "home.bullet.description1" })}</p>
-          </div>
-          <div className={style.bullet}>
-            <div>
-              <img
-                className={style.flama}
-                src={localStorage.theme === "dark" ? flama2 : flama}
-                alt="flama"
-              />
-            </div>
-
-            <h5>{intl.formatMessage({ id: "home.bullet.name2" })}</h5>
-            <p>{intl.formatMessage({ id: "home.bullet.description2" })}</p>
-          </div>
-          <div className={style.bullet}>
-            <div>
-              <img
-                className={style.darkPeace}
-                src={localStorage.theme === "dark" ? darkPeace2 : darkPeace}
-                alt="darkPeace"
-              />
-            </div>
-
-            <h5>{intl.formatMessage({ id: "home.bullet.name3" })}</h5>
-            <p>{intl.formatMessage({ id: "home.bullet.description3" })}</p>
-          </div>
-        </div>
         <div className={style.aboutText2}>
           <h2>{intl.formatMessage({ id: "about.title2" })}</h2>
           <p>{intl.formatMessage({ id: "about.description2" })}</p>

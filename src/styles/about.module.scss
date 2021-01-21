@@ -5,7 +5,7 @@
     padding-top: 1rem;
     padding-bottom: 6rem;
     width: 95vw;
-    height: auto;
+    height: 100vh;
     margin: 0 auto;
     text-align: justify;
     h2{
@@ -33,7 +33,7 @@
     }
 }
 .aboutText2{
-    padding-bottom: 4rem;
+    padding: 8rem 0 4rem 0;
     width: 95vw;
     height: auto;
     margin: 0 auto;
@@ -47,64 +47,13 @@
         color: var(--textTitle);
     }
     p{
-        font-size: 30px;
-        line-height: 35px;
+        font-size: 40px;
+        line-height: 56px;
         font-weight: 300;
+        padding-top: 2rem;
         margin: 0;
         color: var(--textNormal);
-        padding-bottom: 1rem;
     }
-}
-.bullet_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    width: 60vw;
-    min-width: 900px;
-    padding: 8rem 0;
-}
-
-.bullet{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    h5{
-        letter-spacing: 2px;
-        color: var(--textImportant);
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        margin: 10px 0;
-    }
-    p{
-        max-width: 300px;
-        width: 25vw;
-        margin: 0 auto;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 34px;
-        color: var(--textNormal);
-    }
-    div{
-      height: 9.5rem;
-    }
-    img{
-        width: 6rem;
-        margin-bottom: 20px;
-        filter: var(--filterImg);
-    }
-}
-.llamp{
-    width: 7rem !important;
-}
-.darkPeace{
-    width: 9rem !important;
-}
-.flama{
-    width: 4rem !important;
 }
 .parallax {
     background-image: url("../images/aboutPau.jpg");
@@ -147,45 +96,7 @@
     .siteImg{
         width: 100vw !important;
     }
-    .bullet_container{
-        flex-direction: column;
-        padding: 4rem 0;
-        min-width: 200px;
-        }
-        .bullet{
-            width: 100%;
-            padding: 0;
-            padding-bottom: 4rem;
-            h5{
-                font-size: 18px;
-                font-weight: bold;
-                margin: 0;
-                padding-top: 1rem;
-                color: var(--textImportant);
-            }
-            p{
-                margin: 0;
-                width: 60vw;
-                font-size: 16px;
-                line-height: 25px;
-                color: var(--textNormal);
-            }
-            div{
-                height: 5.5rem;
-              }
-            img{
-                width: 3rem;
-            }
-        }
-        .llamp{
-            width: 4rem !important;
-        }
-        .darkPeace{
-            width: 6rem !important;
-        }
-        .flama{
-            width: 2.5rem !important;
-        }
+    
     .parallax {
         height: 100vh;
         background-attachment: fixed;
@@ -206,6 +117,7 @@
         padding-bottom: 6rem;
         width: 90vw;
         margin: 0 auto;
+        height: auto;
         text-align: left;
         h2{
             font-size: 18px;
@@ -234,5 +146,14 @@
     .aboutText2{
         padding-bottom: 2rem;
         max-width: 400px;
+        p{
+            font-size: 25px;
+            padding: 0;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 300;
+            margin: 0;
+            color: var(--textNormal);
+        }
     }
 }

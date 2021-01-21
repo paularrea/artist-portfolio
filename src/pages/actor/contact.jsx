@@ -2,10 +2,7 @@ import React from "react"
 import emailjs from "emailjs-com"
 import styles from "../../styles/contact.module.scss"
 import ActorLayout from "../../components/Layout/Actor-Layout/actor-layout"
-// import Swal from 'sweetalert2'
-// import withReactContent from 'sweetalert2-react-content'
 
-// const MySwal = withReactContent(Swal)
 
 export default function Contact() {
   function sendEmail(e) {

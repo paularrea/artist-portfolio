@@ -1,5 +1,6 @@
 .container{
     width: 100%;
+    padding-top: 1rem;
     background-color:var(--bg-footer);
     color: var(--textNormal);
     color: #3b3b3b;
@@ -25,6 +26,9 @@
         color: var(--textNormal);
         font-size: 14px;
     }
+    a{
+        font-size: 14px;  
+    }
     a:hover{
         font-weight: bolder;
     }
@@ -45,13 +49,27 @@
           align-items: center;
         }
     }
-    .contentTwo{
-        display: flex;
-        justify-content: space-between;
-        div{
-            width: 10vw;
-        }
+}
+
+.requesensLogo{
+    filter: var(--filterImg);
+    width: 12vw;
+    height: auto;
+    img{
+        max-width: 100%;
+        max-height: 100%;
     }
+
+}
+.tqContainer{
+        filter: var(--filterImg);
+        width: 7vw;
+        height: auto;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+
 }
 
 
@@ -88,7 +106,9 @@
 }
 
   @media (max-width: 850px) {
-
+.container{
+    padding-top: 4rem;
+}
     .content{
         display: block;
         justify-content: center;
@@ -96,38 +116,40 @@
         max-width: 100%;
         height: auto;
         padding: 1rem;
-        padding-bottom: 8rem;
+        padding-bottom: 10rem;
         h3{
         padding: 0;
         margin: 0;
         }
         .contentOne{
             display: flex;
-            margin: 0 auto;
-            width: auto;
+            width: 60vw;
             justify-content: space-between;
+            padding-bottom: 1rem;
             div{
                 width: auto;
               display: flex;
               flex-direction: column;
-              justify-content: flex-start;
+              justify-content: left;
               align-items: center;
-            }
-        }
-        .contentTwo{
-            display: flex;
-            justify-content: space-between;
-            div{
-                width: 40vw;
             }
         }
     }
     .requesens{
         height: 6rem;
+        margin-bottom: 1rem;
     }
     .copyright{
         position: absolute;
         bottom: 4rem;
     }
-
+    .requesensLogo{
+        width: 60vw;
+    }
+    .tqContainer{
+        width: 30vw;
+    }
+    .contactMobile{
+        padding-bottom: 2rem;
+    }
   }
