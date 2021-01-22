@@ -14,10 +14,9 @@ function Logo() {
   return (
     <div>
       <h1>
-        <Link
+        <button
           style={styles}
           className={headerStyles.title}
-          to="/"
           onMouseOut={() => setHover(false)}
           onMouseOver={() => setHover(true)}
         >
@@ -31,7 +30,8 @@ function Logo() {
             className={headerStyles.logo}
             alt="Lletres logo"
           />}
-        </Link>
+    
+        </button>
       </h1>
     </div>
   )

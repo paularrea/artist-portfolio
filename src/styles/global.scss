@@ -26,8 +26,8 @@ body {
     background-color: var(--bg);
 
     --filterImg:invert(10%);
-    --filterWhite: invert(95%);
-    --filterBlack: invert(10%);
+    --filterWhite: invert(97%);
+    --filterBlack: invert(30%);
     --filterVideo:grayscale(0%);
   }
   
@@ -57,6 +57,6 @@ body {
     --spinner:#A966DA;
     --filterImg:invert(90%);
     --filterWhite: invert(100%);
-    --filterBlack: invert(10%);
+    --filterBlack: invert(14%);
     --filterVideo:grayscale(100%);
   }

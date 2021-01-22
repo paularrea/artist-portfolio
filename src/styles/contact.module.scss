@@ -20,6 +20,134 @@
         max-height: 100%;
     }
 }
+.ull2{
+    position: absolute;
+    filter: var(--filterImg);
+    width: 7vw;
+    height: 7vw;
+    transform: rotate(-20deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70vh;
+    right: 50vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.ull3{
+    position: absolute;
+    filter: var(--filterImg);
+    width: 5vw;
+    height: 5vw;
+    transform: rotate(20deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25vh;
+    right: 55vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.ull4{
+    position: absolute;
+    filter: var(--filterImg);
+    width: 5vw;
+    height: 5vw;
+    transform: rotate(10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75vh;
+    right: 85vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+// glory
+.glory{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70vh;
+    right: 30vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.glory2{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 5vw;
+    height: 5vw;
+    transform: rotate(50deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 6vh;
+    right: 0vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.glory3{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 10vw;
+    height: 10vw;
+    transform: rotate(-40deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25vh;
+    right: 82vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.glory4{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 4.5vw;
+    height: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7vh;
+    right: 26vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.glory5{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 7vw;
+    height: 7vw;
+    transform: rotate(-10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 62vh;
+    right: 66vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+// Trentatres
 .trentatres{
     position: absolute;
     filter: var(--filterBlack);
@@ -30,6 +158,69 @@
     align-items: center;
     top: 5vw;
     left: 5vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.trentatres2{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 27vw;
+    left: 1vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.trentatres3{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 3vw;
+    height: 3vw;
+    transform: rotate(-20deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40vw;
+    left: 10vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.trentatres4{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 3vw;
+    height: 3vw;
+    transform: rotate(-40deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7vw;
+    right: 5vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.trentatres5{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 2vw;
+    transform: rotate(20deg);
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10vw;
+    left: 47vw;
     img{
         max-width: 100%;
         max-height: 100%;
@@ -47,12 +238,77 @@
         max-height: 100%;
     }
 }
+// peace
 .peace{
+    position: absolute;
+    filter: var(--filterBlack);
+    width:3vw;
+    height: 3vw;
+    display: flex;
+    transform: rotate(30deg);
+    justify-content: center;
+    align-items: center;
+    top: 5vw;
+    left: 75vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.peace2{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    transform: rotate(19deg);
+    justify-content: center;
+    align-items: center;
+    top: 3vw;
+    left: 20vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.peace3{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    transform: rotate(-6deg);
+    justify-content: center;
+    align-items: center;
+    top: 26vw;
+    left: 39vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.peace4{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 12vw;
+    left: 15vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.peace5{
     position: absolute;
     filter: var(--filterBlack);
     width: 8vw;
     height: 8vw;
     display: flex;
+    transform: rotate(9deg);
     justify-content: center;
     align-items: center;
     top: 30vw;
@@ -65,19 +321,84 @@
 .love{
     position: absolute;
     filter: var(--filterBlack);
-    width: 10vw;
-    height: 10vw;
+    width: 3vw;
+    height: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 3vw;
+    left: 10vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.love2{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    transform: rotate(30deg);
+    align-items: center;
+    top: 15vw;
+    left: 55vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.love3{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    transform: rotate(20deg);
+    justify-content: center;
+    align-items: center;
+    top: 40vw;
+    left: 65vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.love4{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    transform: rotate(9deg);
+    justify-content: center;
+    align-items: center;
+    top: 5vw;
     left: 30vw;
     img{
         max-width: 100%;
         max-height: 100%;
     }
 }
-.background1{
+.love5{
+    position: absolute;
+    filter: var(--filterBlack);
+    width: 10vw;
+    height: 10vw;
+    transform: rotate(25deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 39vw;
+    left: 20vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+// Estrellas
+.estrella1{
     position: absolute;
     filter: var(--filterWhite);
     width: 10vw;
@@ -89,7 +410,7 @@
         max-height: 100%;
     }
 }
-.background2{
+.estrella2{
     position: absolute;
     filter: var(--filterWhite);
     width: 6vw;
@@ -101,7 +422,7 @@
         max-height: 100%;
     }
 }
-.background3{
+.estrella3{
     position: absolute;
     filter: var(--filterWhite);
     width: 8vw;
@@ -113,7 +434,7 @@
         max-height: 100%;
     }
 }
-.background4{
+.estrella4{
     position: absolute;
     filter: var(--filterWhite);
     width: 10vw;
@@ -125,13 +446,97 @@
         max-height: 100%;
     }
 }
-.background5{
+.estrella5{
     position: absolute;
     filter: var(--filterWhite);
-    width: 12vw;
-    height: 12vw;
-    top: 30vw;
+    width: 9vw;
+    height: 9vw;
+    top: 2vw;
+    right: 15vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.estrella6{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 7vw;
+    height: 7vw;
+    top: 5vw;
     right: 60vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.estrella7{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 4vw;
+    height: 4vw;
+    top: 2vw;
+    left: 80vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.estrella8{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 4vw;
+    height: 4vw;
+    top: 5vw;
+    left: 12vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.estrella9{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 4vw;
+    height: 4vw;
+    top: 35vw;
+    right: 75vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.estrella10{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 4vw;
+    height: 4vw;
+    top: 20vw;
+    right: 35vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.estrella11{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 4vw;
+    height: 4vw;
+    top: 2vw;
+    right: 55vw;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.estrella12{
+    position: absolute;
+    filter: var(--filterWhite);
+    width: 4vw;
+    height: 4vw;
+    top: 2vw;
+    left: 1vw;
     img{
         max-width: 100%;
         max-height: 100%;
@@ -140,7 +545,7 @@
 .email_container{
     position: absolute;
     right: 0;
-    top: 40vh;
+    top: 45vh;
     width: 50vw;
     max-width: 700px;
     text-align: right;
@@ -181,6 +586,7 @@
     left: 5vw;
     top: 50vh;
     width: 90vw;
+    height: auto;
     max-width: 700px;
     text-align: left;
     h2{
@@ -207,34 +613,60 @@
         color: var(--btn);  
     }
    }  
-   .background1{
+   .estrella1{
        top: 20vh;
        right: 20vw;
    }
-   .background2{
+   .estrella2{
     top: 15vh;
     right: 20vw;
 }
-.background3{
-    top: 45vh;
+.estrella3{
+    top: 17vh;
     right: 20vw;
 }
-.background4{
+.estrella4{
     top: 25vh;
     right: 70vw;
 }
-.background5{
+.estrella5{
     top: 20vh;
     right: 20vw;
 }
    .ull{
-    top: 38vh;
+    top: 35vh;
     left: 60vw;
     width: 5rem;
     height: 5rem;
    }
    .trentatres{
-    top: 50vw;
-    left: 50vw;
+    width: 6vw;
+    height: 6vw;
+    top: 45vw;
+    left: 80vw;
    }
+   .creu{
+    width: 35vw;
+    height: 35vw;
+    top: 60vw;
+    left: 15vw;
+}
+.peace{
+    width: 15vw;
+    height: 15vw;
+    top: 20vw;
+    left: 15vw;
+}
+.love{
+    width: 15vw;
+    height: 15vw;
+    top: 35vw;
+    left: 30vw;
+}
+.glory{
+    width: 15vw;
+    height: 15vw;
+    top: 20vw;
+    left: 65vw;
+}
  }
