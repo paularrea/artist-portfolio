@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import headerStyles from "./header.module.scss"
-import { Link } from "gatsby"
 import Requesens from "../../images/pngs/requesensLletres.png"
 import Firma from "../../images/pngs/requesensFirma.png"
 
@@ -19,6 +18,8 @@ function Logo() {
           className={headerStyles.title}
           onMouseOut={() => setHover(false)}
           onMouseOver={() => setHover(true)}
+          onBlur={() => setHover(false)}
+          onFocus={() => setHover(true)}
         >
           {hover ? <img
             src={Firma}

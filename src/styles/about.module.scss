@@ -16,13 +16,16 @@
         font-weight: 500;
         color: var(--textTitle);
     }
-    p{
+    p, b{
         font-size: 30px;
         line-height: 35px;
         font-weight: 300;
         margin: 0;
         color: var(--textNormal);
         padding-bottom: 1rem;
+    }
+    b{
+        font-weight: 500;
     }
     a{
         color: var(--textImportant);
