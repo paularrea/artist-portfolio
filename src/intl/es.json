@@ -25,11 +25,39 @@
         },
         "bullet" : {
             "name1" : "RELÁMPAGO",
-            "description1" : "Es el poder creativo que reside dentro de mi.",
+            "description1" : {
+                "text1" : "La ",
+                "bold1" : "acción ",
+                "text2" : "es creación."
+            },
             "name2" : "FUEGO DERRITIÉNDOSE",
-            "description2" : "Es el frágil equilibrio entre la tensión y la relajación.",
+            "description2" : {
+                "text1" : "El delicado ",
+                "bold1" : "equilibrio ",
+                "text2" : "entre tensión y relajación."
+            },
             "name3" : "CALAVERA PIRATA",
-            "description3" : "Es vivir la pintura sin normas ni fronteras, con absoluta libertad para encontrar los tesoros ocultos del alma."
+            "description3" : {
+                "text1" : "Vivir la pintura sin normas ni fronteras. (con absoluta ",
+                "bold1" : "libertad ",
+                "text2" : "para encontrar los tesoros ocultos del alma)."
+            },
+            "name4" : "ESTRELLA",
+            "description4" : {
+                "bold1" : "Creer ",
+                "text1" : "en la creatividad ilimitada del universo."
+            },            
+            "name5" : "NÚMERO ÁUREO",
+            "description5" : {
+                "text1" : "Perfectamente ",
+                "bold1" : "imperfecto ",
+                "text2" : "descubro la belleza."
+            },            
+            "name6" : "SUPER",
+            "description6" : {
+                "bold1" : "Actitud. ",
+                "text1" : "Ser la mejor versión de uno mismo (y evolucionar constantemente)."
+            }
         }
     },
     "about":{

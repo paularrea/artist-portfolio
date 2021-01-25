@@ -4,9 +4,19 @@ import { useIntl, Link } from "gatsby-plugin-intl"
 import Burger from "./burger"
 import Media from "react-media"
 import "./switcher.css"
+import { navigate } from "gatsby"
+
+
 
 const Header = props => {
-  const intl = useIntl()
+  const intl = useIntl();
+  
+  const changeBg = () => {
+    localStorage.setItem("theme", 'light');
+    navigate('/gallery')
+    let underline = document.getElementsByClassName('navItem');
+    underline.add('activeNavItem')
+  }
   return (
     <div className={headerStyles.container}>
       <header className={headerStyles.header}>
@@ -26,16 +36,16 @@ const Header = props => {
                 </Link>
               </li>
               <li>
-                <Link
+                <button
+                  onClick={()=>changeBg()}
                   entry={{
                     delay: 0.3,
                   }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
-                  to="/gallery"
                 >
                   {intl.formatMessage({ id: "nav.gallery" })}
-                </Link>
+                </button>
               </li>
               <li>
                 <Link

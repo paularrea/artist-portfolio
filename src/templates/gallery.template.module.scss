@@ -80,13 +80,17 @@ position: relative;
 .link{
     margin: 2rem;
     color: var(--textImportant);
+    padding: 0;
     padding-bottom: 3px;
-    border-bottom: 1px solid var(--textImportant);
+    border-bottom: 1.5px solid var(--textImportant) !important;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 .link:hover{
     font-weight: bold;
-    border-bottom: 2px solid var(--textImportant);
+    transform: scale(1.05);
+    border-bottom: 2px solid var(--textImportant) !important;
 }
 .templateToggle{
     margin: 2rem;

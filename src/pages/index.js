@@ -30,6 +30,7 @@ const Home = props => {
   const [hoverEstrella, setHoverEstrella] = useState(false)
 
   const intl = useIntl()
+  
   return (
     <div style={{ position: "relative" }}>
       <Layout>
@@ -66,7 +67,13 @@ const Home = props => {
                 alt="llamp"
               />
               <h5>{intl.formatMessage({ id: "home.bullet.name1" })}</h5>
-              <p>{intl.formatMessage({ id: "home.bullet.description1" })}</p>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description1.text1" })}
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description1.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description1.text2" })}
+              </p>
             </button>
 
             <button
@@ -82,7 +89,13 @@ const Home = props => {
                 alt="flama"
               />
               <h5>{intl.formatMessage({ id: "home.bullet.name2" })}</h5>
-              <p>{intl.formatMessage({ id: "home.bullet.description2" })}</p>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description2.text1" })}
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description2.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description2.text2" })}
+              </p>
             </button>
 
             <button
@@ -98,7 +111,13 @@ const Home = props => {
                 alt="calavera logo"
               />
               <h5>{intl.formatMessage({ id: "home.bullet.name3" })}</h5>
-              <p>{intl.formatMessage({ id: "home.bullet.description3" })}</p>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description3.text1" })}
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description3.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description3.text2" })}
+              </p>
             </button>
           </div>
           <div className={style.bullet_container2}>
@@ -115,7 +134,12 @@ const Home = props => {
                 alt="llamp"
               />
               <h5>{intl.formatMessage({ id: "home.bullet.name1" })}</h5>
-              <p>{intl.formatMessage({ id: "home.bullet.description1" })}</p>
+              <p>
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description4.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description4.text1" })}
+              </p>
             </button>
 
             <button
@@ -131,7 +155,13 @@ const Home = props => {
                 alt="flama"
               />
               <h5>{intl.formatMessage({ id: "home.bullet.name2" })}</h5>
-              <p>{intl.formatMessage({ id: "home.bullet.description2" })}</p>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description5.text1" })}
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description5.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description5.text2" })}
+              </p>
             </button>
 
             <button
@@ -147,7 +177,12 @@ const Home = props => {
                 alt="darkPeace"
               />
               <h5>{intl.formatMessage({ id: "home.bullet.name3" })}</h5>
-              <p>{intl.formatMessage({ id: "home.bullet.description3" })}</p>
+              <p>
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description6.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description6.text1" })}
+              </p>
             </button>
           </div>
 

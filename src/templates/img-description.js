@@ -43,11 +43,16 @@ const ImgDescription = props => {
     }
   }
 
+  const changeBg = () => {
+    localStorage.setItem("theme", "light")
+    navigate("/gallery")
+    let underline = document.getElementsByClassName("navItem")
+    underline.add("activeNavItem")
+  }
+
   return (
     <div className={styles.containerBig}>
-      <div className={styles.darkSquare}>
-
-      </div>
+      <div className={styles.darkSquare}></div>
       <Layout>
         <div className={styles.container}>
           <div className={styles.arrows_container}>
@@ -83,7 +88,7 @@ const ImgDescription = props => {
                 __html: props.data.markdownRemark.html,
               }}
             ></div>
-              <div className={styles.templateToggle}>
+            <div className={styles.templateToggle}>
               <ThemeToggler>
                 {({ theme, toggleTheme }) => (
                   <div className={styles.uv_label}>
@@ -107,16 +112,22 @@ const ImgDescription = props => {
                 )}
               </ThemeToggler>
             </div>
-            <Link className={styles.link} to="/gallery/">
+            <button
+              className={styles.link}
+              onClick={() => changeBg()}
+              entry={{
+                delay: 0.3,
+              }}
+            >
               Back to gallery
-            </Link>
-          
+            </button>
           </div>
         </div>
       </Layout>
     </div>
   )
 }
+
 export default ImgDescription
 
 export const query = graphql`
