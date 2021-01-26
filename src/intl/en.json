@@ -14,49 +14,50 @@
         "contact":"CONTACT"
     },
     "home":{
-        "intro": "R3SURR3CT is the metamorphosis of a human being that is reborn personally and artistically, a creation deeply intimate.",
+        "intro": "R3SURR3CT is the metamorphosis of a human being that is personally and artistically reborn. A deeply intimate creation.",
         "process" : {
             "name" : "THE PROCESS",
-            "text" : "Este ha sido un proceso introspectivo que parte del amor. LOVE, és querer la propia imperfección. Amar lo que eres y amar lo que haces te llena de PEACE. Y esta comunión entre amor y paz inapelablemente te eleva a la GLORY, un estado de inspiración absoluta."
+            "text" : "This has been an introspective process that starts from love. LOVE is to love one's own imperfection. Loving what you are and loving what you do fills you with PEACE. And this communion between love and peace inevitably elevates you to GLORY, a state of absolute inspiration."
         },
         "concept" : {
             "name" : "THE CONCEPT",
-            "text" : "El concepto “DARK peace” es dotar a las obras de alma. Como en la vida, las cosas más hermosas no se perciben a simple vista. La luz ultravioleta transporta las obras a otra dimensión. Juega con el interruptor y descubre la esencia de las obras."
+            "text" : "The DARK PEACE concept is to give the works of art a soul. As in life, the most beautiful things are not perceived with the naked eye. The ultraviolet light transports the works to another dimension. Play with the switch and discover the essence of the works. "
         },
         "bullet" : {
-            "name1" : "RELÁMPAGO",
+            "title" : "PHILOSOPHY",
+            "name1" : "LIGHTNING",
             "description1" : {
-                "text1" : "La ",
-                "bold1" : "acción ",
-                "text2" : "es creación."
+                "text1" : " ",
+                "bold1" : "Action ",
+                "text2" : "is creation."
             },
-            "name2" : "FUEGO DERRITIÉNDOSE",
+            "name2" : "MELTING FIRE",
             "description2" : {
-                "text1" : "El delicado ",
-                "bold1" : "equilibrio ",
-                "text2" : "entre tensión y relajación."
+                "text1" : "The delicate ",
+                "bold1" : "balance ",
+                "text2" : "between tension and relaxation. "
             },
-            "name3" : "CALAVERA PIRATA",
+            "name3" : "PIRATE SKULL",
             "description3" : {
-                "text1" : "Vivir la pintura sin normas ni fronteras. (con absoluta ",
-                "bold1" : "libertad ",
-                "text2" : "para encontrar los tesoros ocultos del alma)."
+                "text1" : "To live painting without rules or frontiers, with absolute ",
+                "bold1" : "freedom",
+                "text2" : "."
             },
-            "name4" : "ESTRELLA",
+            "name4" : "STAR",
             "description4" : {
-                "bold1" : "Creer ",
-                "text1" : "en la creatividad ilimitada del universo."
+                "bold1" : "Believe ",
+                "text1" : "in the unlimited creativity of the universe."
             },            
-            "name5" : "NÚMERO ÁUREO",
+            "name5" : "GOLDEN RATIO",
             "description5" : {
-                "text1" : "Perfectamente ",
-                "bold1" : "imperfecto ",
-                "text2" : "descubro la belleza."
+                "text1" : "Everything is perfectly ",
+                "bold1" : "imperfect ",
+                "text2" : "."
             },            
             "name6" : "SUPER",
             "description6" : {
-                "bold1" : "Actitud. ",
-                "text1" : "Ser la mejor versión de uno mismo (y evolucionar constantemente)."
+                "bold1" : "Attitude. ",
+                "text1" : "The best version of yourself."
             }
         }
     },
@@ -103,6 +104,10 @@
             "bold19" : "pinta."
         }, 
         "title2" : "THE STUDIO",
-        "description2" : "Este proyecto ha sido materializado en el espacio històrico industrial del REC."
+        "description2" : "The velvety light that floods this studio, the history of its walls and its surroundings, catapults any inspiration to another level. REsurreCt."
+    },
+    "contact" : {
+        "title" : "SAY HELLO",
+        "text" : "Before any artwork became a part of the collection, it went through a process of careful consideration and discussion, and sometimes even was an issue of lively dispute. We will be happy if you would like to contact us and continue the discussion! We look forward to your questions, comments and suggestions."
     }
   }

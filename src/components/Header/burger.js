@@ -5,7 +5,19 @@ import "./burger.css"
 
 import style from "./header.module.scss"
 
+import { navigate } from "gatsby"
+
 class Burger extends React.Component {
+  constructor(props) {
+    super(props);
+    this.changeBg = this.changeBg.bind(this);
+  }
+
+  changeBg() {
+    localStorage.setItem("theme", 'light');
+    navigate('/gallery')
+  }
+
   showSettings(event) {
     event.preventDefault()
   }
@@ -24,20 +36,18 @@ class Burger extends React.Component {
         >
           Home
         </TransitionLink>
-        <TransitionLink
+        <button
           entry={{
             delay: 0.3,
           }}
-          to="/gallery"
+          onClick={this.changeBg}
           id="gallery"
-          className={style.menu_item}
+          className='button_burger'
         >
           Gallery
-        </TransitionLink>
+        </button>
         <TransitionLink
-          entry={{
-            delay: 0.3,
-          }}
+       
           to="/video"
           id="video"
           className={style.menu_item}

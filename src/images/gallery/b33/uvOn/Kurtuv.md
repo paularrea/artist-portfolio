@@ -1,6 +1,6 @@
 ---
 title: "Kurt"
-date: 7
+date: 87
 description: uvOn
 collection: "b33"
 featuredImage: ./Kurtuv.jpg

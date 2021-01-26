@@ -1,6 +1,6 @@
 ---
 title: "Res"
-date: 10
+date: 102
 description: uvOff
 collection: "b33"
 featuredImage: ./Res.jpg

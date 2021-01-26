@@ -19,7 +19,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const descriptionTemplate = path.resolve("./src/templates/img-description.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark{
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }){
         edges {
           node {
             fields {

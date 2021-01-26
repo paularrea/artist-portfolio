@@ -1,8 +1,9 @@
 import React, { useState } from "react"
-import { useIntl, Link } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/Layout/layout"
 import IntroVideo from "../components/Video/introVideo"
 import Logo from "../components/Header/requesens"
+import {navigate} from "gatsby"
 import style from "../styles/home.module.scss"
 import SEO from "../components/seo"
 import resurrect from "../images/pngs/resurrect.png"
@@ -30,7 +31,14 @@ const Home = props => {
   const [hoverEstrella, setHoverEstrella] = useState(false)
 
   const intl = useIntl()
-  
+
+  const changeBg = () => {
+    localStorage.setItem("theme", 'light');
+    navigate('/gallery')
+    let underline = document.getElementsByClassName('navItem');
+    underline.add('activeNavItem')
+  }
+
   return (
     <div style={{ position: "relative" }}>
       <Layout>
@@ -51,7 +59,7 @@ const Home = props => {
             <p>{intl.formatMessage({ id: "home.concept.text" })}</p>
           </div>
           <div className={style.philosophy}>
-            <h4>PHILOSOPHY</h4>
+            <h4>{intl.formatMessage({ id: "home.bullet.title" })}</h4>
           </div>
           <div className={style.bullet_container}>
             <button
@@ -133,7 +141,7 @@ const Home = props => {
                 src={hoverEstrella ? estrella2 : estrella}
                 alt="llamp"
               />
-              <h5>{intl.formatMessage({ id: "home.bullet.name1" })}</h5>
+              <h5>{intl.formatMessage({ id: "home.bullet.name4" })}</h5>
               <p>
                 <b>
                   {intl.formatMessage({ id: "home.bullet.description4.bold1" })}
@@ -154,7 +162,7 @@ const Home = props => {
                 src={hoverSimbol ? simbol2 : simbol}
                 alt="flama"
               />
-              <h5>{intl.formatMessage({ id: "home.bullet.name2" })}</h5>
+              <h5>{intl.formatMessage({ id: "home.bullet.name5" })}</h5>
               <p>
                 {intl.formatMessage({ id: "home.bullet.description5.text1" })}
                 <b>
@@ -176,7 +184,7 @@ const Home = props => {
                 src={hoverSuper ? super2 : super1}
                 alt="darkPeace"
               />
-              <h5>{intl.formatMessage({ id: "home.bullet.name3" })}</h5>
+              <h5>{intl.formatMessage({ id: "home.bullet.name6" })}</h5>
               <p>
                 <b>
                   {intl.formatMessage({ id: "home.bullet.description6.bold1" })}
@@ -185,10 +193,9 @@ const Home = props => {
               </p>
             </button>
           </div>
-
-          <Link className={style.toGallery} to="/gallery">
+          <button className={style.toGallery} onClick={() => changeBg()}>
             SEE THE GALLERY
-          </Link>
+          </button>
           <div className={style.creu}>
             <img src={creu} alt="colom creu" />
           </div>

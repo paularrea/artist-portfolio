@@ -5,8 +5,14 @@ import TransitionLink from "gatsby-plugin-transition-link"
 import testimo from "../../images/pngs/testimo.png"
 import requesens from "../../images/pngs/requesensLletres.png"
 import Media from "react-media"
+import { navigate } from "gatsby"
 
 const Footer = () => {
+  const changeBg = () => {
+    localStorage.setItem("theme", "light")
+    navigate("/gallery")
+  }
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -51,14 +57,7 @@ const Footer = () => {
                     </TransitionLink>
                   </li>
                   <li>
-                    <TransitionLink
-                      entry={{
-                        delay: 0.3,
-                      }}
-                      to="/gallery"
-                    >
-                      Gallery
-                    </TransitionLink>
+                    <button onClick={() => changeBg()}>Gallery</button>
                   </li>
                   <li>
                     <TransitionLink

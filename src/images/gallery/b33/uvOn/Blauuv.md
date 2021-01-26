@@ -1,6 +1,6 @@
 ---
 title: "Blau"
-date: 2
+date: 82
 description: uvOn
 collection: "b33"
 featuredImage: ./Blauuv.jpg

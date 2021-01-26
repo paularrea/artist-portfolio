@@ -2,8 +2,13 @@
 .contact{
     width: 90vw;
     margin: 0 auto;
-    position: relative;
     height: 100vh;
+    position: relative;
+
+}
+.logo_container{
+    position: relative;
+    margin-top: 2rem;
 }
 .ull{
     position: absolute;
@@ -45,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 25vh;
+    top: 18vh;
     right: 55vw;
     img{
         max-width: 100%;
@@ -61,8 +66,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 75vh;
-    right: 85vw;
+    top: 45vh;
+    right: 70vw;
     img{
         max-width: 100%;
         max-height: 100%;
@@ -546,19 +551,19 @@
     position: absolute;
     right: 0;
     top: 45vh;
-    width: 50vw;
-    max-width: 700px;
+    width: 90vw;
+    max-width: 650px;
     text-align: right;
     h2{
         font-size: 18px;
         margin: 0;
+        padding: 1rem 0;
         letter-spacing: 2px;
-        padding-bottom: 1rem;
         font-weight: 500;
         color: var(--textTitle);
     }
     p{
-        font-size: 30px;
+        font-size: 25px;
         line-height: 35px;
         font-weight: 300;
         margin: 0;
@@ -573,13 +578,39 @@
         color: var(--btn);  
     }
    }
-
+   @media (min-width: 700px) and (max-width: 1100px){
+    .email_container{
+        position: absolute;
+        right: 0;
+        top: 37vh;
+    }
+    .ull{
+        width: 9rem;
+        height: 9rem;
+        top: 25vh;
+        right: 20vw;
+    }
+    .ull2, .ull3, .ull4{
+        width: 5rem;
+        height: 5rem;
+    }
+    .ull3{
+        top: 0vh;
+        right: 40vw;
+    }
+    .ull4{
+        top: 35vh;
+    }
+   }
    @media (max-width: 700px) {
     .contact{
         width: 90vw;
         margin: 0 auto;
         position: inherit;
         height: 100vh;
+    }
+    .logo_container{
+    margin-top: 2rem;
     }
    .email_container{
     position: absolute;
@@ -590,15 +621,16 @@
     max-width: 700px;
     text-align: left;
     h2{
-        font-size: 18px;
+        font-size: 16px;
+        color: var(--textTitle);
         margin: 0;
-        padding-bottom: 1rem;
         letter-spacing: 2px;
+        padding-bottom: 1rem;
         font-weight: 500;
         color: var(--textTitle);
     }
     p{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 28px;
         font-weight: 300;
         margin: 0;
@@ -614,30 +646,94 @@
     }
    }  
    .estrella1{
-       top: 20vh;
+       top: 2vh;
        right: 20vw;
+       width: 3rem;
+       height: 3rem;
    }
    .estrella2{
-    top: 15vh;
-    right: 20vw;
-}
-.estrella3{
-    top: 17vh;
-    right: 20vw;
-}
+    top: 6vh;
+    right: 10vw;
+    width: 2rem;
+    height: 2rem;
+    }
+    .estrella3{
+    top: 3vh;
+    right: 10vw;
+    width: 2rem;
+    height: 2rem;
+    }
 .estrella4{
-    top: 25vh;
-    right: 70vw;
+    top: 20vh;
+    right: 55vw;
+    width: 2.2rem;
+    height: 2.2rem;
 }
 .estrella5{
-    top: 20vh;
-    right: 20vw;
+    top: 1vh;
+    right: 4vw;
+    width: 3rem;
+    height: 3rem;
+}
+.estrella6{
+    top: 1vh;
+    right: 55vw;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.estrella7{
+    top: 11vh;
+    right: 35vw;
+    width: 3rem;
+    height: 3rem;
+}
+.estrella8{
+    top: 12vh;
+    right: 45vw;
+    width: 3rem;
+    height: 3rem;
+}
+.estrella9{
+    top: 2vh;
+    right: 80vw;
+    width: 2rem;
+    height: 2rem;
+}
+.estrella10{
+    top: 14vh;
+    right: 5vw;
+    width: 3rem;
+    height: 3rem;
+}
+.estrella11{
+    top: 10vh;
+    right: 15vw;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.estrella12{
+    top: 15vh;
+    right: 75vw;
+    width: 3rem;
+    height: 3rem;
 }
    .ull{
-    top: 35vh;
+    top: 85vh;
     left: 60vw;
     width: 5rem;
     height: 5rem;
+   }
+   .ull3, .ull4{
+       display: none;
+   }
+   .ull2{
+    top: 1vh;
+    transform: rotate(6deg);
+    filter: var(--filterBlack);
+    z-index: 99;
+    left: 20vw;
+    width: 10rem;
+    height: 10rem;
    }
    .trentatres{
     width: 6vw;
@@ -646,10 +742,10 @@
     left: 80vw;
    }
    .creu{
-    width: 35vw;
-    height: 35vw;
-    top: 60vw;
-    left: 15vw;
+    width: 45vw;
+    height: 45vw;
+    top: 35vw;
+    left: 35vw;
 }
 .peace{
     width: 15vw;

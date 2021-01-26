@@ -24,6 +24,7 @@
             "text" : "El concepto “DARK peace” es dotar a las obras de alma. Como en la vida, las cosas más hermosas no se perciben a simple vista. La luz ultravioleta transporta las obras a otra dimensión. Juega con el interruptor y descubre la esencia de las obras."
         },
         "bullet" : {
+            "title" : "FILOSOFÍA",
             "name1" : "RELÁMPAGO",
             "description1" : {
                 "text1" : "La ",
@@ -61,7 +62,7 @@
         }
     },
     "about":{
-        "title1" : "Conóceme mejor",
+        "title1" : "CONÓCEME MEJOR",
         "description" : {
             "text1" : "Solo soy un ",
             "bold1" : "hombre ",
@@ -102,7 +103,11 @@
             "text19" : "aguas cristalinas. Solo soy un hombre que… ",
             "bold19" : "pinta."
         }, 
-        "title2" : "El estudio",
-        "description2" : "Este proyecto ha sido materializado en el espacio històrico industrial del REC."
+        "title2" : "EL ESTUDIO",
+        "description2" : "Este proyecto ha sido materializado en el espacio històrico industrial del REC. La luz aterciopelada que inunda este estudio, la historia de sus paredes y su entorno, catapulta cualquier inspiración a otro nivel."
+    },
+    "contact" : {
+        "title" : "CONTACTA",
+        "text" : "Antes de que cualquier obra de arte pasara a formar parte de la colección, pasó por un proceso de cuidadosa consideración y discusión, y a veces incluso fue objeto de animadas disputas. Estaremos encantados de que se ponga en contacto con nosotros para continuar el debate. Esperamos sus preguntas, comentarios y sugerencias."
     }
   }

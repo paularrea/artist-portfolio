@@ -10,14 +10,14 @@
 position: relative;
 }
 .darkSquare{
-    position: absolute;
+    position: fixed;
     width: 10rem;
     height: 5rem;
     top: 0;
     right: 0;
     z-index: 9999;
     background-color: var(--bg);
-    transition: background-color 0.8s ease-out,
+    transition: background-color 8s ease-out,
 }
 .arrows_container{
     width: 100vw;
@@ -41,6 +41,7 @@ position: relative;
 }
 
 .uv_label{
+    position: inherit;
     color: var(--textNormal);
     z-index: 999;     
     display: flex;
@@ -60,7 +61,7 @@ position: relative;
     z-index: 99;
     flex-direction: row;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     padding-top: 3rem;
     height: 90vh;
 }
@@ -73,12 +74,12 @@ position: relative;
 
 .description{
     width: 25vw;
-    margin: 0 2rem;
+    margin: 0 4rem;
     color: var(--textNormal);
 }
 
 .link{
-    margin: 2rem;
+    margin-left: 4rem;
     color: var(--textImportant);
     padding: 0;
     padding-bottom: 3px;
@@ -93,24 +94,70 @@ position: relative;
     border-bottom: 2px solid var(--textImportant) !important;
 }
 .templateToggle{
-    margin: 2rem;
+    margin: 2rem 4rem;
     width: 100%;
 }
 .detail_info{
     padding-bottom: 2rem;
 }
-
+.contact{
+    margin: 0 4rem;
+    color: var(--textImportant);
+    a{
+        color: var(--btn);
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 80vw;
+        .container_div, .detail_info{
+            width: 40vw;
+            height: fit-content;
+        }
+        .img{
+            width: 40vw;
+        }
+        .detail_info{
+            .description{
+                width: 100%;
+            }
+        }
+    }
+}
 @media (max-width: 600px) {
     .container{
         flex-direction: column;
         width: 90vw;
         height: auto;
         padding: 0;
+        .container_div, .detail_info{
+            width: 90vw;
+        }
+        .img{
+            width: 90vw;
+        }
+        .detail_info{
+            margin: 0 auto;
+            padding-top: 5rem;
+            width: 65vw;
+            padding-left: 2rem;
+            padding-bottom: 0;
+        }
+    }
+    .contact{
+        margin: 0 auto;
+        width: 65vw;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        color: var(--textImportant);
+        a{
+            color: var(--btn);
+        }
     }
     .arrows_container{
         width: 100%;
-        height: auto;
-        position: unset;
+        top: 18vh;
+        position: absolute;
         z-index: 9999;
         display: flex;
         justify-content: space-between;
@@ -120,8 +167,7 @@ position: relative;
     .arrow{
         margin: 0;
         padding: 0;
-        padding-top: 1rem;
-       background-color: transparent;
+        background-color: transparent;
     }
     .img{
         width:90vw;
@@ -134,10 +180,33 @@ position: relative;
         color: var(--textNormal);
     }
     .link{
-        margin: 0;
+        margin: 0 auto;
+        width: fit-content;
+        margin-bottom: 2rem;
     }
     .darkSquare{
-        z-index: 99;
-        background-color: transparent;
+        display: none;
+    }
+    .uv_label{
+        position: fixed;
+        top: 9px;
+        right: 18px;
+        color: var(--textNormal);
+        z-index: 999999;     
+        width: fit-content;
+        margin: 0 !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            width: 3.5rem;
+            filter: var(--filterImg);
+        }
+    }
+    .templateToggle{
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 9999999999;
     }
 }

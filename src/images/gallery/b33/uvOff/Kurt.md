@@ -1,6 +1,6 @@
 ---
 title: "Kurt"
-date: 7
+date: 99
 description: uvOff
 collection: "b33"
 featuredImage: ./Kurt.jpg

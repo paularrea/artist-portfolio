@@ -18,7 +18,8 @@ body {
     --textTitle: rgb(70, 70, 70);
    
     --btn: #FF6506;
-    --btn-hover:whitesmoke;
+    --btn-hover:black;
+    --text-btn-hover:whitesmoke;
     --active-btn:black;
 
     --spinner:rgb(41, 41, 41);
@@ -27,7 +28,7 @@ body {
 
     --filterImg:invert(10%);
     --filterWhite: invert(97%);
-    --filterBlack: invert(30%);
+    --filterBlack: invert(15%);
     --filterVideo:grayscale(0%);
   }
   
@@ -52,6 +53,7 @@ body {
 
     --btn:#A966DA; 
     --btn-hover:whitesmoke;
+    --text-btn-hover:whitesmoke;
     --active-btn:white;
 
     --spinner:#A966DA;

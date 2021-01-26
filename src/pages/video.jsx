@@ -46,7 +46,7 @@ const Videos = props => {
             onReady={() => setVideoLoaded(true)}
           />
         </div>
-        <h3>THE MAKING OF</h3>
+        <h3 className={styles.makingOf}>THE MAKING OF</h3>
         <div className={styles.video_grid}>
           {makingOff.map(id => (
             <>

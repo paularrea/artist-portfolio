@@ -27,7 +27,8 @@
         font-size: 14px;
     }
     a{
-        font-size: 14px;  
+        margin: .3vw 0;
+        font-size: 16px;  
     }
     a:hover{
         font-weight: bolder;
@@ -39,14 +40,15 @@
     .contentOne{
         display: flex;
         margin: 0;
-        width: 30vw;
+        width: 35vw;
         justify-content: space-between;
         div{
             width: auto;
+            min-width: 10vw;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          align-items: center;
+          align-items: left;
         }
     }
 }
@@ -57,6 +59,7 @@
     height: auto;
     img{
         max-width: 100%;
+        transform: rotate(5deg);
         max-height: 100%;
     }
 
@@ -78,12 +81,14 @@
     padding: 0;
     margin: 0;
     padding-bottom: 1rem;
-    li{
+    li, button{
+        padding: 0;
         margin: .3vw 0;
+        cursor: pointer;
         color: var(--textNormal);
-        font-size: 14px;
+        font-size: 16px;
     }
-    li:hover{
+    li:hover, button:hover{
         font-weight: bolder;
     }
 }
@@ -98,13 +103,22 @@
 .copyright{
     position: absolute;
     bottom: 2vw;
+    p{
+        font-size: 16px;
+    }
 }
 
 .container a{
     color: var(--textNormal);
     text-decoration:none;
 }
-
+@media (max-width: 1200px) {
+    .content{
+        .contentOne{
+            width: 45vw;
+    }
+    }
+}
   @media (max-width: 850px) {
 .container{
     padding-top: 4rem;
@@ -131,7 +145,7 @@
               display: flex;
               flex-direction: column;
               justify-content: left;
-              align-items: center;
+              align-items: left;
             }
         }
     }
@@ -144,10 +158,10 @@
         bottom: 4rem;
     }
     .requesensLogo{
-        width: 60vw;
+        width: 12rem;
     }
     .tqContainer{
-        width: 30vw;
+        width: 6rem;
     }
     .contactMobile{
         padding-bottom: 2rem;

@@ -84,7 +84,7 @@
     overflow-x: scroll;
     
 }
-h3{
+.makingOf{
     text-align: center;
     margin: 20px 0;
     letter-spacing: 2px;
@@ -112,11 +112,16 @@ h3{
         height: 35vh;
     }
     .principalVideo{
+        img{
+            padding-bottom: 2rem;
+            width: 40vw;
+        }
         margin: 0 auto;
-        padding: 2rem 0;
+        padding: 0;
+        padding-bottom:2rem;
     }
 
-    h3{
+    .makingOf{
         padding-left: 5vw;
         text-align: left;
         font-size: 14px;

@@ -1,6 +1,6 @@
 ---
 title: "Diamond"
-date: 3
+date: 83
 description: uvOn
 collection: "b33"
 featuredImage: ./Diamonduv.jpg

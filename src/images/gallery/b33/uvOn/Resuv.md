@@ -1,6 +1,6 @@
 ---
 title: "Res"
-date: 10
+date: 90
 description: uvOn
 collection: "b33"
 featuredImage: ./Resuv.jpg

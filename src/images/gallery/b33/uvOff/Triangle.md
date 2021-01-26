@@ -1,6 +1,6 @@
 ---
 title: "Triangle"
-date: 11
+date: 103
 description: uvOff
 collection: "b33"
 featuredImage: ./Triangle.jpg

@@ -6,17 +6,14 @@ import Media from "react-media"
 import "./switcher.css"
 import { navigate } from "gatsby"
 
-
-
 const Header = props => {
   const intl = useIntl();
   
   const changeBg = () => {
     localStorage.setItem("theme", 'light');
     navigate('/gallery')
-    let underline = document.getElementsByClassName('navItem');
-    underline.add('activeNavItem')
   }
+  
   return (
     <div className={headerStyles.container}>
       <header className={headerStyles.header}>
