@@ -4,7 +4,7 @@ import footerStyles from "./footer.module.scss"
 import TransitionLink from "gatsby-plugin-transition-link"
 import testimo from "../../images/pngs/testimo.png"
 import requesens from "../../images/pngs/requesensLletres.png"
-import Media from "react-media"
+import MediaQuery from "react-responsive"
 import { navigate } from "gatsby"
 
 const Footer = () => {
@@ -41,7 +41,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <Media query={{ minWidth: 750 }}>
+          <MediaQuery minWidth={750}>
             <div className={footerStyles.contentOne}>
               <div>
                 <h3>Explore</h3>
@@ -127,8 +127,8 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-          </Media>
-          <Media query={{ maxWidth: 750 }}>
+          </MediaQuery>
+          <MediaQuery maxWidth={750}>
             <div>
               <div className={footerStyles.contentOne}>
                 <div>
@@ -224,7 +224,7 @@ const Footer = () => {
                 <a href="tel:+34 606 54 50 00">+34 606 54 50 00</a>
               </div>{" "}
             </div>
-          </Media>
+          </MediaQuery>
         </div>
       </div>
     </footer>

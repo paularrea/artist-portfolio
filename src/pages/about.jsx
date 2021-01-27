@@ -1,15 +1,14 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/Layout/layout"
 import { useIntl, Link } from "gatsby-plugin-intl"
 import { graphql, useStaticQuery } from "gatsby"
 import style from "../styles/about.module.scss"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
-import Media from "react-media"
+import MediaQuery from "react-responsive"
 import Carousel from "../components/carousel/carousel"
 
 const About = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -86,7 +85,7 @@ const About = () => {
             {intl.formatMessage({ id: "about.description.text19" })}{" "}
             <b>{intl.formatMessage({ id: "about.description.bold19" })}</b>
           </p>
-          <Link to="/actor/home">Actor site</Link>
+          <Link to="/actor">Actor site</Link>
         </div>
         <div className={style.parallax}></div>
         <div className={style.aboutText2}>
@@ -94,10 +93,10 @@ const About = () => {
           <p>{intl.formatMessage({ id: "about.description2" })}</p>
         </div>
         <div className={style.studio_imgs}>
-          <Media query={{ minWidth: 500 }}>
+          <MediaQuery minWidth={500}>
             <Carousel />
-          </Media>
-          <Media query={{ maxWidth: 501 }}>
+          </MediaQuery>
+          <MediaQuery maxWidth={501}>
             <div>
               {data.allFile.edges.map(({ node }) => (
                 <Img
@@ -106,7 +105,7 @@ const About = () => {
                 />
               ))}
             </div>
-          </Media>
+          </MediaQuery>
         </div>
       </div>
     </Layout>

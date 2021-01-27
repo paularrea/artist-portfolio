@@ -1,31 +1,32 @@
-import { Link } from "gatsby"
-import React from "react"
-import ActorLayout from "../../components/Layout/Actor-Layout/actor-layout"
+import React, { useEffect } from "react"
+import Layout from "../../components/Layout/Actor-Layout/actor-layout"
+import { useIntl, Link } from "gatsby-plugin-intl"
 import style from "../../styles/about.module.scss"
+import SEO from "../../components/seo"
 
-function About() {
+const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  const intl = useIntl()
+
   return (
-    <ActorLayout>
-            <div className={style.container}>
-          <h1>About</h1>
+    <Layout>
+      <SEO title={intl.formatMessage({ id: "seo.about" })} />
+      <div className={style.container}>
+        <div className={style.aboutText}>
+          <h2>KNOW ME BETTER</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            perspiciatis eligendi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            perspiciatis eligendi libero veniam explicabo ratione delectus ipsam
-            tempore quo ad nulla animi magnam exercitationem accusantium eos
-            tempora, fugit nisi? Omnis! libero veniam explicabo ratione delectus ipsam
-            tempore quo ad nulla animi magnam exercitationem accusantium eos
-            tempora, fugit nisi?
-          </p>
-          <p>
-            Eligendi libero veniam explicabo ratione delectus ipsam
-            tempore quo ad nulla animi magnam exercitationem accusantium eos
-            tempora, fugit nisi? Omnis!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa id
+            deleniti ut recusandae, quasi eaque. Dolorum suscipit reprehenderit
+            voluptatem quidem, autem nihil! Repudiandae aspernatur, doloremque
+            laboriosam ex obcaecati blanditiis impedit.
           </p>
           <Link to="/">Painter site</Link>
         </div>
-    </ActorLayout>
+      </div>
+    </Layout>
   )
 }
-
 export default About

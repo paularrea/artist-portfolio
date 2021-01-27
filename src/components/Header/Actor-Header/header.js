@@ -20,7 +20,7 @@ const Header = () => {
                 }}
                   className={headerStyles.navItem_actor}
                   activeClassName={headerStyles.active_navItem_actor}
-                  to="/actor/home"
+                  to="/actor"
                 >
                   HOME
                 </TransitionLink>

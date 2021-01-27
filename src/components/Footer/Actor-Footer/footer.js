@@ -1,9 +1,13 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import InstagramIcon from "@material-ui/icons/Instagram"
 import footerStyles from "../footer.module.scss"
+import TransitionLink from "gatsby-plugin-transition-link"
+import testimo from "../../../images/pngs/testimo.png"
+import requesens from "../../../images/pngs/requesensLletres.png"
+import MediaQuery from "react-responsive"
 
 const Footer = () => {
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -15,30 +19,214 @@ const Footer = () => {
   `)
   return (
     <footer>
-      <div
-        className={footerStyles.container}
-        style={{ backgroundColor: "#3b3b3b" }}
-      >
-        <div
-          className={footerStyles.content}
-          style={{ backgroundColor: "#3b3b3b", color: "white" }}
-        >
-          <div>
-            © {new Date().getFullYear()}, by
-            {` `}
-            {data.site.siteMetadata.author}
-          </div>
-          <div className={footerStyles.icons}>
-            <div>
-              <a
-                className={footerStyles.normal_link}
-                href="https://www.instagram.com/requesens_/"
-                target="blank"
-              >
-                <InstagramIcon style={{ fill: "white" }} />
-              </a>
+      <div className={footerStyles.container}>
+        <div className={footerStyles.content}>
+          <div className={footerStyles.requesens}>
+            <div className={footerStyles.requesensLogo}>
+              <img src={requesens} alt="testimo logo" />
+            </div>
+            <div className={footerStyles.tqContainer}>
+              <img src={testimo} alt="testimo logo" />
+            </div>
+            <div className={footerStyles.copyright}>
+              <p>
+                © {new Date().getFullYear()}, by
+                {` `}
+                {data.site.siteMetadata.author}.<br /> All Rights Reserved.
+              </p>
             </div>
           </div>
+          <MediaQuery minWidth={750}>
+            <div className={footerStyles.contentOne}>
+              <div>
+                <h3>Explore</h3>
+                <ul className={footerStyles.navList}>
+                  <li>
+                    <TransitionLink
+                      entry={{
+                        delay: 0.3,
+                      }}
+                      to="/"
+                    >
+                      Home
+                    </TransitionLink>
+                  </li>
+                  <li>
+                  <TransitionLink
+                      entry={{
+                        delay: 0.3,
+                      }}
+                      to="/actor/gallery"
+                    >
+                      Gallery
+                    </TransitionLink>
+                  </li>
+                  <li>
+                    <TransitionLink
+                      entry={{
+                        delay: 0.3,
+                      }}
+                      to="/actor/video"
+                    >
+                      Video
+                    </TransitionLink>
+                  </li>
+                  <li>
+                    <TransitionLink
+                      entry={{
+                        delay: 0.3,
+                      }}
+                      to="/actor/about"
+                    >
+                      About
+                    </TransitionLink>
+                  </li>
+                  <li>
+                    <TransitionLink
+                      entry={{
+                        delay: 0.3,
+                      }}
+                      to="/actor/contact"
+                    >
+                      Contact
+                    </TransitionLink>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>Contact me</h3>
+                <a
+                  href="mailto:hello@requesens.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hello@requesens.com
+                </a>{" "}
+                <a href="tel:+34 606 54 50 00">+34 606 54 50 00</a>
+              </div>{" "}
+              <div>
+                <h3>Follow</h3>
+                <a
+                  className={footerStyles.normal_link}
+                  href="https://www.instagram.com/requesens_/"
+                  target="blank"
+                >
+                  Instagram
+                </a>
+                <a
+                  className={footerStyles.normal_link}
+                  href="https://www.facebook.com/pau.requesens.1"
+                  target="blank"
+                >
+                  Facebook
+                </a>
+                <a
+                  className={footerStyles.normal_link}
+                  href="https://www.youtube.com/user/paurequesens"
+                  target="blank"
+                >
+                  Youtube
+                </a>
+              </div>
+            </div>
+          </MediaQuery>
+          <MediaQuery maxWidth={750}>
+            <div>
+              <div className={footerStyles.contentOne}>
+                <div>
+                  <h3>Explore</h3>
+                  <ul className={footerStyles.navList}>
+                    <li>
+                      <TransitionLink
+                        entry={{
+                          delay: 0.3,
+                        }}
+                        to="/actor/"
+                      >
+                        Home
+                      </TransitionLink>
+                    </li>
+                    <li>
+                      <TransitionLink
+                        entry={{
+                          delay: 0.3,
+                        }}
+                        to="/actor/gallery"
+                      >
+                        Gallery
+                      </TransitionLink>
+                    </li>
+                    <li>
+                      <TransitionLink
+                        entry={{
+                          delay: 0.3,
+                        }}
+                        to="/actor/video"
+                      >
+                        Video
+                      </TransitionLink>
+                    </li>
+                    <li>
+                      <TransitionLink
+                        entry={{
+                          delay: 0.3,
+                        }}
+                        to="/actor/about"
+                      >
+                        About
+                      </TransitionLink>
+                    </li>
+                    <li>
+                      <TransitionLink
+                        entry={{
+                          delay: 0.3,
+                        }}
+                        to="/actor/contact"
+                      >
+                        Contact
+                      </TransitionLink>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Follow</h3>
+                  <a
+                    className={footerStyles.normal_link}
+                    href="https://www.instagram.com/requesens_/"
+                    target="blank"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    className={footerStyles.normal_link}
+                    href="https://www.facebook.com/pau.requesens.1"
+                    target="blank"
+                  >
+                    Facebook
+                  </a>
+                  <a
+                    className={footerStyles.normal_link}
+                    href="https://www.youtube.com/user/paurequesens"
+                    target="blank"
+                  >
+                    Youtube
+                  </a>
+                </div>
+              </div>
+              <div className={footerStyles.contact}>
+                <h3>Contact me</h3>
+                <a
+                  href="mailto:hello@requesens.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hello@requesens.com
+                </a>{" "}
+                <br />
+                <a href="tel:+34 606 54 50 00">+34 606 54 50 00</a>
+              </div>{" "}
+            </div>
+          </MediaQuery>
         </div>
       </div>
     </footer>

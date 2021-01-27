@@ -17,7 +17,7 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/actor/home"
+          to="/actor"
           id="actor-home"
           className={style.menu_item}
         >

@@ -1,93 +1,126 @@
-import React from "react"
-import emailjs from "emailjs-com"
+import React, { useState, useEffect } from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import styles from "../../styles/contact.module.scss"
 import ActorLayout from "../../components/Layout/Actor-Layout/actor-layout"
+import SEO from "../../components/seo"
 
+import estrella1 from "../../images/pngs/estrella1.png"
+import estrella2 from "../../images/pngs/estrella2.png"
+import estrella3 from "../../images/pngs/estrella3.png"
+import estrella4 from "../../images/pngs/estrella4.png"
+import estrella5 from "../../images/pngs/estrella5.png"
+import ullObert from "../../images/pngs/ullObert.png"
+import ullTancat from "../../images/pngs/ullTancat.png"
+import creu from "../../images/pngs/creu.png"
 
 export default function Contact() {
-  function sendEmail(e) {
-    e.preventDefault()
+  const [hover, setHover] = useState(false)
+  const intl = useIntl()
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "pau-portfolio",
-        e.target,
-        "user_sWXayM2Q5oM9pReV8U7as"
-      )
-      .then(
-        result => {
-          // MySwal.fire({
-          //   icon: 'success',
-          //   title: 'Your message has been sent',
-          //   text: 'I will answer you as soon as possible!',
-          // })
-          alert('Your message has been sent')
-          console.log(result.text)
-        },
-        error => {
-          // MySwal.fire({
-          //   icon: 'error',
-          //   title: 'Oops...',
-          //   text: 'Something went wrong!',
-          // })
-          alert('Something went wrong...')
-          console.log(error.text)
-        }
-      )
-  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <ActorLayout>
-      <div className={styles.email_container}>
-        <div className={styles.email_wrapper}>
-          <h1 className={styles.email_form_title}>SEND ME A MESSAGE</h1>
-          <form className={styles.test_mailing} onSubmit={sendEmail}>
-            <br />
-            <div style={{ fontSize: "1.2rem", height: "100%" }}>
-              <div className={styles.name_email_wrapper}>
-                <input
-                  name="user_name"
-                  type="text"
-                  id="name"
-                  // onChange={this.nameChange}
-                  required
-                  placeholder="Name"
-                  className={styles.name_email_inputs}
-                  label="name"
-                />
+      <SEO title={intl.formatMessage({ id: "seo.contact" })} />
+      <div className={styles.contact}>
+        <div className={styles.logo_container}>
+          <button
+            className={styles.ull}
+            onFocus={() => setHover(true)}
+            onBlur={() => setHover(false)}
+            onMouseOut={() => setHover(false)}
+            onMouseOver={() => setHover(true)}
+          >
+            <img src={hover ? ullObert : ullTancat} alt="ull obert" />
+          </button>
+          <button
+            className={styles.ull2}
+            onFocus={() => setHover(true)}
+            onBlur={() => setHover(false)}
+            onMouseOut={() => setHover(false)}
+            onMouseOver={() => setHover(true)}
+          >
+            <img src={hover ? ullObert : ullTancat} alt="ull obert" />
+          </button>
+          <button
+            className={styles.ull3}
+            onFocus={() => setHover(true)}
+            onBlur={() => setHover(false)}
+            onMouseOut={() => setHover(false)}
+            onMouseOver={() => setHover(true)}
+          >
+            <img src={hover ? ullObert : ullTancat} alt="ull obert" />
+          </button>
+          <button
+            className={styles.ull4}
+            onFocus={() => setHover(true)}
+            onBlur={() => setHover(false)}
+            onMouseOut={() => setHover(false)}
+            onMouseOver={() => setHover(true)}
+          >
+            <img src={hover ? ullObert : ullTancat} alt="ull obert" />
+          </button>
+          {/* estrellas */}
+          <div className={styles.estrella1}>
+            <img src={estrella1} alt="estrella 1" />
+          </div>
+          <div className={styles.estrella2}>
+            <img src={estrella2} alt="estrella 2" />
+          </div>
+          <div className={styles.estrella3}>
+            <img src={estrella3} alt="estrella 3" />
+          </div>
+          <div className={styles.estrella4}>
+            <img src={estrella4} alt="estrella 4" />
+          </div>
+          <div className={styles.estrella5}>
+            <img src={estrella5} alt="estrella 5" />
+          </div>
+          <div className={styles.estrella6}>
+            <img src={estrella2} alt="estrella 6" />
+          </div>
+          <div className={styles.estrella7}>
+            <img src={estrella3} alt="estrella 7" />
+          </div>
+          <div className={styles.estrella8}>
+            <img src={estrella5} alt="estrella 8" />
+          </div>
+          <div className={styles.estrella9}>
+            <img src={estrella5} alt="estrella 9" />
+          </div>
+          <div className={styles.estrella10}>
+            <img src={estrella1} alt="estrella 10" />
+          </div>
+          <div className={styles.estrella11}>
+            <img src={estrella2} alt="estrella 11" />
+          </div>
+          <div className={styles.estrella12}>
+            <img src={estrella3} alt="estrella 12" />
+          </div>
+          {/* creu */}
+          <div className={styles.creu}>
+            <img src={creu} alt="creu logo" />
+          </div>
+        </div>
 
-                <input
-                  name="user_email"
-                  type="text"
-                  // onChange={this.emailChange}
-                  required
-                  placeholder="Email"
-                  className={styles.name_email_inputs}
-                  id="email"
-                  label="email"
-                />
-              </div>
-              <textarea
-                id="message"
-                name="message"
-                // onChange={this.messageChange}
-                placeholder="Put your message here"
-                required
-                className={styles.message_input}
-                label="message"
-                multiline
-                rowsMax={4}
-              />
-            </div>
-            <div className={styles.btn_container}>
-              <button type="submit" value="submit" className={styles.btn}>
-                Submit
-              </button>
-            </div>
-          </form>
+        <div className={styles.email_container}>
+          <h2>{intl.formatMessage({ id: "contact.title" })}</h2>
+          <p>{intl.formatMessage({ id: "contact.text" })}</p>
+          <a
+            onFocus={() => setHover(true)}
+            onBlur={() => setHover(false)}
+            onMouseOut={() => setHover(false)}
+            onMouseOver={() => setHover(true)}
+            href="mailto:hello@requesens.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@requesens.com
+          </a>
         </div>
       </div>
-    </ActorLayout>
+      </ActorLayout>
   )
 }
