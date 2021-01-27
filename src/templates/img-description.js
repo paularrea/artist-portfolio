@@ -143,7 +143,7 @@ const ImgDescription = props => {
         </div>
       </Media>
 
-      <Media query={{ maxWidth: 599 }}>
+      <Media query={{ maxWidth: 600 }}>
         <div className={styles.containerBig}>
           <Layout>
             <div className={styles.templateToggle}>
