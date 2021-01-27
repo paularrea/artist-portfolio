@@ -144,7 +144,7 @@ const ImgDescription = props => {
       </Media>
 
       <Media query={{ maxWidth: 600 }}>
-        <div className={styles.containerBig}>
+        {/* <div className={styles.containerBig}>
           <Layout>
             <div className={styles.templateToggle}>
               <ThemeToggler>
@@ -229,7 +229,10 @@ const ImgDescription = props => {
               </button>
             </div>
           </Layout>
-        </div>
+        </div> */}
+        <div
+          style={{ backgroundColor: "red", width: "100vw", height: "100vh" }}
+        ></div>
       </Media>
     </>
   )
