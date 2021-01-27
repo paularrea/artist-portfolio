@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/Layout/layout"
 import IntroVideo from "../components/Video/introVideo"
@@ -38,6 +38,10 @@ const Home = props => {
     let underline = document.getElementsByClassName('navItem');
     underline.add('activeNavItem')
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div style={{ position: "relative" }}>

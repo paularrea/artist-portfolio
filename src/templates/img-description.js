@@ -93,27 +93,21 @@ const ImgDescription = props => {
                 ></div>
 
                 <div className={styles.contact}>
-                  Contact{' '}
+                  Contact{" "}
                   <a
                     href="mailto:hello@requesens.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     hello@requesens.com
-                  </a>
-                  {' '}to purchase
+                  </a>{" "}
+                  to purchase
                 </div>
 
                 <div className={styles.templateToggle}>
                   <ThemeToggler>
                     {({ theme, toggleTheme }) => (
                       <div className={styles.uv_label}>
-                        <div>
-                          <img
-                            src={theme === "dark" ? darkPeace2 : darkPeace}
-                            alt="dark peace logo"
-                          />
-                        </div>
                         <Switch
                           style={{ color: "var(--switcher)" }}
                           checked={theme === "dark"}
@@ -124,6 +118,12 @@ const ImgDescription = props => {
                           name="checkedA"
                           inputProps={{ "aria-label": "secondary checkbox" }}
                         />
+                        <div>
+                          <img
+                            src={theme === "dark" ? darkPeace2 : darkPeace}
+                            alt="dark peace logo"
+                          />
+                        </div>
                       </div>
                     )}
                   </ThemeToggler>
@@ -171,21 +171,30 @@ const ImgDescription = props => {
               </ThemeToggler>
             </div>
             <div className={styles.container}>
-              <div className={styles.arrows_container}>
-                <div className={styles.arrow}>
-                  {prev && (
-                    <Link to={`/gallery/${prev.fields.slug}`}>
-                      <ArrowLeft />
-                    </Link>
-                  )}
+              <div className={styles.container_div}>
+                <div className={styles.arrows_container}>
+                  <div className={styles.arrow}>
+                    {prev && (
+                      <Link to={`/gallery/${prev.fields.slug}`}>
+                        <ArrowLeft />
+                      </Link>
+                    )}
+                  </div>
+                  <div className={styles.arrow}>
+                    {next && (
+                      <Link to={`/gallery/${next.fields.slug}`}>
+                        <ArrowRight />
+                      </Link>
+                    )}
+                  </div>
                 </div>
-                <div className={styles.arrow}>
-                  {next && (
-                    <Link to={`/gallery/${next.fields.slug}`}>
-                      <ArrowRight />
-                    </Link>
-                  )}
-                </div>
+                <Img
+                  className={styles.img}
+                  fluid={
+                    props.data.markdownRemark.frontmatter.featuredImage
+                      .childImageSharp.fluid
+                  }
+                />
               </div>
               <div className={styles.detail_info}>
                 <div
@@ -196,25 +205,19 @@ const ImgDescription = props => {
                 ></div>
               </div>
               <div className={styles.contact}>
-                  Contact<br/>
-                  <a
-                    href="mailto:hello@requesens.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    hello@requesens.com
-                  </a><br/>
-                  to purchase
-                </div>
-              <div className={styles.container_div}>
-                <Img
-                  className={styles.img}
-                  fluid={
-                    props.data.markdownRemark.frontmatter.featuredImage
-                      .childImageSharp.fluid
-                  }
-                />
+                Contact
+                <br />
+                <a
+                  href="mailto:hello@requesens.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hello@requesens.com
+                </a>
+                <br />
+                to purchase
               </div>
+
               <button
                 className={styles.link}
                 onClick={() => changeBg()}

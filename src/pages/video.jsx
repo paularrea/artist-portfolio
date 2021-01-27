@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styles from "../styles/videos.module.scss"
 import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/Layout/layout"
@@ -19,6 +19,11 @@ const makingOff = [
 const Videos = props => {
   const intl = useIntl()
   const [videoLoaded, setVideoLoaded] = useState(false)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
   return (
     <Layout page={"videos"}>

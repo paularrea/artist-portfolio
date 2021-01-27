@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import Layout from "../components/Layout/layout"
 import { useIntl, Link } from "gatsby-plugin-intl"
 import { graphql, useStaticQuery } from "gatsby"
@@ -9,6 +9,11 @@ import Media from "react-media"
 import Carousel from "../components/carousel/carousel"
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const intl = useIntl()
   const data = useStaticQuery(graphql`
     query MyQuery {

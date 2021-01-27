@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import styles from "../styles/contact.module.scss"
 import Layout from "../components/Layout/layout"
@@ -11,15 +11,20 @@ import estrella4 from "../images/pngs/estrella4.png"
 import estrella5 from "../images/pngs/estrella5.png"
 import ullObert from "../images/pngs/ullObert.png"
 import ullTancat from "../images/pngs/ullTancat.png"
-import trentatres from "../images/pngs/33.png"
-import love from "../images/pngs/love.png"
-import peace from "../images/pngs/peace.png"
-import glory from "../images/pngs/glory.png"
+// import trentatres from "../images/pngs/33.png"
+// import love from "../images/pngs/love.png"
+// import peace from "../images/pngs/peace.png"
+// import glory from "../images/pngs/glory.png"
 import creu from "../images/pngs/creu.png"
 
 export default function Contact() {
   const [hover, setHover] = useState(false)
   const intl = useIntl()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Layout>
       <SEO title={intl.formatMessage({ id: "seo.contact" })} />

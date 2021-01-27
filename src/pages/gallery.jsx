@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState , useEffect} from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import UvSwitch from "../components/galleryUv/uvSwitch"
 import Layout from "../components/Layout/layout"
@@ -18,6 +18,10 @@ const Gallery = () => {
       setDarkOn(false)
     }
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <Layout changeUv={changeUv}>

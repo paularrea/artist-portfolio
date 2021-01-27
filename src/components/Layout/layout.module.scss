@@ -35,3 +35,9 @@
         padding-top: 3rem;
     }
 }
+
+@media (max-height: 450px) {
+    .pages{
+        padding-top: 1rem;
+    }
+}

@@ -14,7 +14,7 @@
     background-color: transparent !important;
     color: var(--textTitle);
     text-decoration: none;
-    height: auto;
+    height: 9rem;
 }
 .title:hover{
     font-style: italic;
@@ -154,7 +154,7 @@
 }
 
 //sm screen
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .logo{
         width: 90vw;
         height: auto;
@@ -175,7 +175,9 @@
     .uv_label{
         color: var(--textNormal);
         z-index: 999; 
-       padding: .5rem 1rem;   
+        top: 9px;
+        right: 18px;
+        position: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -224,5 +226,26 @@
     .title{
         font-size: 6vw;
         letter-spacing: .3rem;
+    }
+  }
+
+  @media (max-height: 450px) and (max-width: 850px) {
+      .header{
+          height: 2.5rem;
+          padding: 0;
+      }
+      .burger_container{
+          height: 2.5rem;
+      }
+
+      .uv_label{
+        img{
+            // width: 2.5rem;
+            filter: var(--filterImg);
+            padding: .1rem .5rem !important;
+        }
+        // div{
+        //     padding: .1rem .5rem;
+        // }
     }
   }

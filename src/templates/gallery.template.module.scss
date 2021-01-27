@@ -130,24 +130,26 @@ position: relative;
         width: 90vw;
         height: auto;
         padding: 0;
+        padding-top: 2rem;
         .container_div, .detail_info{
             width: 90vw;
+        }
+        .container_div{
+            position: relative;
         }
         .img{
             width: 90vw;
         }
         .detail_info{
             margin: 0 auto;
-            padding-top: 5rem;
-            width: 65vw;
-            padding-left: 2rem;
+            padding-top: 0rem;
+            width: 90vw;
             padding-bottom: 0;
         }
     }
     .contact{
         margin: 0 auto;
-        width: 65vw;
-        padding-left: 2rem;
+        width: 90vw;
         padding-bottom: 2rem;
         color: var(--textImportant);
         a{
@@ -155,8 +157,11 @@ position: relative;
         }
     }
     .arrows_container{
-        width: 100%;
-        top: 18vh;
+        width: 95%;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: auto;
         position: absolute;
         z-index: 9999;
         display: flex;
@@ -167,7 +172,9 @@ position: relative;
     .arrow{
         margin: 0;
         padding: 0;
-        background-color: transparent;
+        background-color: rgba($color: #000000, $alpha: .1);
+        width: 2rem;
+        height: 2rem;
     }
     .img{
         width:90vw;
@@ -209,4 +216,32 @@ position: relative;
         right: 1rem;
         z-index: 9999999999;
     }
+}
+
+@media (max-height: 450px) and (max-width:850px) {
+  .container{
+      padding-top: 1rem;
+      height: auto;
+  }
+  .description{
+    padding-top: 0rem;
+    width: 80% !important;
+}
+.darkSquare{
+    height: 2.5rem;
+}
+
+.detail_info{
+    padding-bottom: 6rem;
+}
+.uv_label{
+    position: absolute;
+    z-index: 9999;
+    top: 1rem;
+    right: -1rem;
+    img{
+        width: 3.5rem;
+        filter: var(--filterImg);
+    }
+}
 }

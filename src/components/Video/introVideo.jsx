@@ -1,20 +1,20 @@
 import React from "react"
 import videoStyle from "./introVideo.module.scss"
-import teaserColor from "../../videos/teaserColor.mp4"
+import ReactPlayer from "react-player/lazy"
+import url from "../../videos/teaserColor.mp4"
 
 function IntroVideo() {
   return (
-    <video
-      className={videoStyle.container}
-      id="background-video"
-      loop
-      autoPlay
+    <ReactPlayer
+      url={url}
+      playsinline
+      playing
+      width="100%"
+      height="auto"
       muted
-    >
-      <source src={teaserColor} type="video/mp4" />
-      <source src={teaserColor} type="video/ogg" />
-      Your browser does not support the video tag.
-    </video>
+      loop
+      className={videoStyle.container}
+    />
   )
 }
 

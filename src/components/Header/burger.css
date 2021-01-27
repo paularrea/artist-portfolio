@@ -74,3 +74,18 @@
     width: 100vw !important;
     top: 0;
   }
+
+
+  @media (max-height: 450px) {
+    .bm-burger-button {
+      position: fixed;
+      width: 20px;
+      height: 15px;
+      left: 15px;
+      top: 15px;
+    }
+    .bm-menu {
+      padding: 1rem 1rem 0;
+    }
+     
+}

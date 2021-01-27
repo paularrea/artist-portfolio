@@ -172,3 +172,9 @@
         }
     }
 }
+
+@media (max-height: 450px) and (max-width:850px) {
+    .aboutText{
+        padding-top: 2rem;
+    }
+}
