@@ -17,6 +17,7 @@
     
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-breakpoints',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

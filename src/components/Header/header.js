@@ -2,7 +2,7 @@ import React from "react"
 import headerStyles from "./header.module.scss"
 import { useIntl, Link } from "gatsby-plugin-intl"
 import Burger from "./burger"
-import Media from "react-media"
+import MediaQuery from "react-responsive"
 import "./switcher.css"
 import { navigate } from "gatsby"
 
@@ -17,7 +17,7 @@ const Header = props => {
   return (
     <div className={headerStyles.container}>
       <header className={headerStyles.header}>
-        <Media query={{ minWidth: 950 }}>
+      <MediaQuery minWidth={950}>
           <nav className={headerStyles.nav}>
             <ul className={headerStyles.navList}>
               <li>
@@ -92,13 +92,13 @@ const Header = props => {
             </ul>
             <div className={headerStyles.uv}>{props.uvToggle}</div>
           </nav>
-        </Media>
-        <Media query={{ maxWidth: 950 }}>
+        </MediaQuery>
+        <MediaQuery maxWidth={950}>
           <div className={headerStyles.burger_container}>
             <Burger />
             <div>{props.uvToggle}</div>
           </div>
-        </Media>
+        </MediaQuery>
       </header>
     </div>
   )
