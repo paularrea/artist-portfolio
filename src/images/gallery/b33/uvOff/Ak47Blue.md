@@ -1,9 +1,9 @@
 ---
-title: "Ak47 Blau"
-date: 81
-description: uvOn
+title: "Ak47 Blue"
+date: 93
+description: uvOff
 collection: "b33"
-featuredImage: ./Ak47Blauuv.jpg
+featuredImage: ./Ak47Blue.jpg
 ---
 
 ## LOOKING FOR HOUSE KEYS IN THE VANILLA MILKSHAKE FLATS 

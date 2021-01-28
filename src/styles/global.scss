@@ -30,6 +30,8 @@ body {
     --filterWhite: invert(97%);
     --filterBlack: invert(15%);
     --filterVideo:grayscale(0%);
+
+    --onTop:8;
   }
   
   body.dark {
@@ -61,4 +63,6 @@ body {
     --filterWhite: invert(100%);
     --filterBlack: invert(14%);
     --filterVideo:grayscale(100%);
+
+    --onTop:99;
   }

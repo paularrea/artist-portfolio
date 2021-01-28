@@ -10,38 +10,46 @@
 .title{
     display: flex;
     margin: 0 auto;
+    width: 100%;
+    position: relative;
     justify-content: center;
     background-color: transparent !important;
     color: var(--textTitle);
     text-decoration: none;
-    height: 9rem;
+    height: 8rem;
 }
-.title:hover{
-    font-style: italic;
-}
+
 .logo{
     width: 40vw;
     padding-top: .5rem;
     transform: rotate(5deg);
-    filter: var(--filterImg);
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    filter: var(--filterBlack);
+    z-index: 80;
     opacity: 1;
     transition-delay: 2s;
     transition: opacity 1s ease-out;
     }
-    .logo:hover{
-    opacity: 0;
-    }
 .logoFirma{
     width: 40vw;
+    position: absolute;
+    left:0;
+    top: 1;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     padding-top: .5rem;
     transform: rotate(2deg);
-    filter: var(--filterImg);
-    opacity: 0;
+    z-index: var(--onTop);
+    filter: var(--filterWhite);
+    opacity: 1;
     transition-delay: 2s;
     transition: opacity 1s ease-in;
-    }
-.logoFirma:hover{
-        opacity: 1;
     }
 .navList{
     font-weight: bolder;
@@ -84,12 +92,7 @@
         border-bottom: 2px solid var(--active-btn);
     }
 }
-.uv{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: .5rem 2rem;
-}
+
 
 //actor
 
@@ -141,6 +144,12 @@
 
 
 //uv
+.uv{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem 2rem;
+}
 .uv_label{
     color: var(--textNormal);
     z-index: 999;     
@@ -154,7 +163,7 @@
 }
 
 //sm screen
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .logo{
         width: 90vw;
         height: auto;
@@ -231,11 +240,11 @@
 
   @media (max-height: 450px) and (max-width: 850px) {
       .header{
-          height: 2.5rem;
+          height: 3.5rem;
           padding: 0;
       }
       .burger_container{
-          height: 2.5rem;
+          height: 3.5rem;
       }
 
       .uv_label{

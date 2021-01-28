@@ -187,7 +187,7 @@ const UvSwitch = props => {
               selected === 1 ? styles.selected : ""
             }`}
           >
-            "33"
+            33
           </h2>
         </div>
         <div
@@ -201,7 +201,7 @@ const UvSwitch = props => {
               selected === 2 ? styles.selected : ""
             }`}
           >
-            "before 33"
+            BEFORE 33
           </h2>
         </div>
       </div>

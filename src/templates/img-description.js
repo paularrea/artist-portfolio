@@ -47,15 +47,36 @@ const ImgDescription = props => {
   const changeBg = () => {
     localStorage.setItem("theme", "light")
     navigate("/gallery")
-    let underline = document.getElementsByClassName("navItem")
-    underline.add("activeNavItem")
   }
 
   return (
     <>
-      <MediaQuery minWidth={600}>
+      <MediaQuery minWidth={800}>
         <div className={styles.containerBig}>
-          <div className={styles.darkSquare}></div>
+        <div className={styles.uv}>
+                  <ThemeToggler>
+                    {({ theme, toggleTheme }) => (
+                      <div className={styles.uv_label}>
+                        <Switch
+                          style={{ color: "var(--switcher)" }}
+                          checked={theme === "dark"}
+                          onClick={routeChange}
+                          onChange={e => {
+                            toggleTheme(e.target.checked ? "dark" : "light")
+                          }}
+                          name="checkedA"
+                          inputProps={{ "aria-label": "secondary checkbox" }}
+                        />
+                        <div>
+                          <img
+                            src={theme === "dark" ? darkPeace2 : darkPeace}
+                            alt="dark peace logo"
+                          />
+                        </div>
+                      </div>
+                    )}
+                  </ThemeToggler>
+                </div>
           <Layout>
             <div className={styles.container}>
               <div className={styles.arrows_container}>
@@ -103,31 +124,6 @@ const ImgDescription = props => {
                   </a>{" "}
                   to purchase
                 </div>
-
-                <div className={styles.templateToggle}>
-                  <ThemeToggler>
-                    {({ theme, toggleTheme }) => (
-                      <div className={styles.uv_label}>
-                        <Switch
-                          style={{ color: "var(--switcher)" }}
-                          checked={theme === "dark"}
-                          onClick={routeChange}
-                          onChange={e => {
-                            toggleTheme(e.target.checked ? "dark" : "light")
-                          }}
-                          name="checkedA"
-                          inputProps={{ "aria-label": "secondary checkbox" }}
-                        />
-                        <div>
-                          <img
-                            src={theme === "dark" ? darkPeace2 : darkPeace}
-                            alt="dark peace logo"
-                          />
-                        </div>
-                      </div>
-                    )}
-                  </ThemeToggler>
-                </div>
                 <button
                   className={styles.link}
                   onClick={() => changeBg()}
@@ -142,7 +138,7 @@ const ImgDescription = props => {
           </Layout>
         </div>
         </MediaQuery>
-        <MediaQuery maxWidth={600}>
+        <MediaQuery maxWidth={800}>
           <div className={styles.containerBig}>
             <Layout>
               <div className={styles.templateToggle}>

@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
 }
 .hide {
     display: none !important;
@@ -21,7 +22,9 @@
         margin: 0 20px;
         .tabTitle {
             font-size: 18px;
-            font-weight: normal;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 0;
             @include mobile {
                 font-size: 14px;
             }
@@ -91,5 +94,10 @@ margin-bottom: 30px;
 @media (max-width: 700px) {
     .tabs {
         font-size: 16px;
+    }
+}
+@media (max-height: 450px) and (max-width: 850px) {
+    .gallery_container{
+        padding-top: 2rem;
     }
 }

@@ -1,9 +1,9 @@
 ---
-title: "Blau"
-date: 94
-description: uvOff
+title: "Blue"
+date: 82
+description: uvOn
 collection: "b33"
-featuredImage: ./Blau.jpg
+featuredImage: ./Blueuv.jpg
 ---
 
 ## Blau

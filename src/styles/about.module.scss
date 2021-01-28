@@ -1,5 +1,6 @@
 .container{
     width: 100vw;
+    padding-bottom: 2rem;
 }
 .aboutText{
     padding-top: 1rem;
@@ -74,12 +75,6 @@
     img{
         width: 50vw;
         height: auto;
-    }
-}
-
-@media (max-width: 450px) {
-    .container{
-        padding-top: 2rem;
     }
 }
 
@@ -159,6 +154,20 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .container{
+        padding-top: 2rem;
+    }
+    .parallax {
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size:175vh
+      }
+}
+
 
 @media (max-height: 450px) and (max-width:850px) {
     .aboutText{

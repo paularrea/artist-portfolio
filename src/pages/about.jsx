@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import Layout from "../components/Layout/layout"
-import { useIntl, Link } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import { graphql, useStaticQuery } from "gatsby"
 import style from "../styles/about.module.scss"
 import Img from "gatsby-image"
@@ -85,7 +85,7 @@ const About = () => {
             {intl.formatMessage({ id: "about.description.text19" })}{" "}
             <b>{intl.formatMessage({ id: "about.description.bold19" })}</b>
           </p>
-          <Link to="/actor">Actor site</Link>
+          {/* <Link to="/actor">Actor site</Link> */}
         </div>
         <div className={style.parallax}></div>
         <div className={style.aboutText2}>
