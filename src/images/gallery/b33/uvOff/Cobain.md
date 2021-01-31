@@ -1,9 +1,9 @@
 ---
 title: "Kurt"
-date: 87
-description: uvOn
+date: 99
+description: uvOff
 collection: "b33"
-featuredImage: ./Kurtuv.jpg
+featuredImage: ./Cobain.jpg
 ---
 
 ## Kurt

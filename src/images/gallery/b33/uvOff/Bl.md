@@ -1,12 +1,12 @@
 ---
-title: "Ak47 Blue"
-date: 93
+title: "Blau"
+date: 94
 description: uvOff
 collection: "b33"
-featuredImage: ./Ak47Blue.jpg
+featuredImage: ./Bl.jpg
 ---
 
-## LOOKING FOR HOUSE KEYS IN THE VANILLA MILKSHAKE FLATS 
+## Blau
 
 Acrylic, crayon, pencil
 14x15" wood panel

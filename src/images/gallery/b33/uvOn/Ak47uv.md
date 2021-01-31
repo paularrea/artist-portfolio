@@ -1,12 +1,12 @@
 ---
-title: "Kurt"
-date: 99
-description: uvOff
+title: "Ak47 Blue"
+date: 81
+description: uvOn
 collection: "b33"
-featuredImage: ./Kurt.jpg
+featuredImage: ./Ak47uv.jpg
 ---
 
-## Kurt
+## LOOKING FOR HOUSE KEYS IN THE VANILLA MILKSHAKE FLATS 
 
 Acrylic, crayon, pencil
 14x15" wood panel

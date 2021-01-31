@@ -1,12 +1,12 @@
 ---
-title: "Blue"
-date: 94
-description: uvOff
+title: "Kurt"
+date: 87
+description: uvOn
 collection: "b33"
-featuredImage: ./Blue.jpg
+featuredImage: ./Cobainuv.jpg
 ---
 
-## Blau
+## Kurt
 
 Acrylic, crayon, pencil
 14x15" wood panel
