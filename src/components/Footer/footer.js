@@ -94,11 +94,11 @@ const Footer = () => {
               <div>
                 <h3>Contact me</h3>
                 <a
-                  href="mailto:hello@requesens.com"
+                  href="mailto:hello@paurequesens.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  hello@requesens.com
+                  hello@paurequesens.com
                 </a>{" "}
                 <a href="tel:+34 606 54 50 00">+34 606 54 50 00</a>
               </div>{" "}
@@ -214,11 +214,11 @@ const Footer = () => {
               <div className={footerStyles.contact}>
                 <h3>Contact me</h3>
                 <a
-                  href="mailto:hello@requesens.com"
+                  href="mailto:hello@paurequesens.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  hello@requesens.com
+                  hello@paurequesens.com
                 </a>{" "}
                 <br />
                 <a href="tel:+34 606 54 50 00">+34 606 54 50 00</a>

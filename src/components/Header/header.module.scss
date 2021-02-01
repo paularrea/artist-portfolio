@@ -17,8 +17,8 @@
     color: var(--textTitle);
     text-decoration: none;
     height: 8rem;
+    padding-top: 10rem;
 }
-
 .logo{
     width: 40vw;
     transform: rotate(5deg);
@@ -90,10 +90,7 @@
         border-bottom: 2px solid var(--active-btn);
     }
 }
-
-
 //actor
-
 .navItem_actor {
     color: gray;
     font-size: 0.9rem;
@@ -102,17 +99,13 @@
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out !important;
 }
-
 .navItem_actor:hover {
     color: rgb(49, 49, 49);
 }
-
 .active_navItem_actor {
     color: black;
 }
-
 //burger
-
 .burger_container{
     display: flex;
     justify-content: space-between;
@@ -123,7 +116,6 @@
     z-index: 99;
     transition: background-color 0.8s ease-out,
 }
-
 .burger_container_actor{
     display: flex;
     justify-content: space-between;
@@ -138,9 +130,6 @@
     background-color: transparent;
     border-bottom: 2px solid var(--textNormal);
   }
-   
-
-
 //uv
 .uv{
     position: absolute;
@@ -159,7 +148,6 @@
         filter: var(--filterImg);
     }
 }
-
 //sm screen
 @media (max-width: 700px) {
     .logo{
@@ -171,13 +159,12 @@
             top: 0;
             }
     .title{
-        font-size: 9vw;
+        font-size: 4rem;
         letter-spacing: .2rem;
         padding-bottom: 1rem ;
-        padding-top: 1rem;
+        padding-top: 5rem;
         height: 5rem;
     }
-
     .uv_label{
         color: var(--textNormal);
         z-index: 999; 
@@ -192,27 +179,38 @@
             filter: var(--filterImg);
         }
     }
+    .lang_container{
+        margin-top: 2rem;
+        color: var(--btn);
+        font-size: 27px;
+        color: white !important;
+
+        a{
+            color: white !important;
+        }
+        .activeLang{
+            color: var(--active-btn) !important;
+            border-bottom: 2px solid var(--active-btn);
+        }
+    }
 }   
 @media (max-width: 1100px) {
     .navList{
         max-width: 40vw;
     }
 }
-
 //ipad
-@media (min-width: 700px) {
-    
+@media (min-width: 700px) { 
     .title{
-        font-size: 6vw;
+        font-size: 8rem;
         letter-spacing: .3rem;
         padding-bottom: 1rem ;
+
     }
     .uv_label{
         font-size: 1rem;   
     }
-    
   }
-
 //ipad
   @media (min-width: 600px) and (max-width: 950px) {
     .burger_container{
@@ -225,16 +223,13 @@
         background-color: var(--bg);
         z-index: 999999;
     }
-    
   }
-
   @media (min-width: 1200px) {
     .title{
-        font-size: 6vw;
+        font-size: 8rem;
         letter-spacing: .3rem;
     }
   }
-
   @media (max-height: 450px) and (max-width: 850px) {
       .header{
           height: 3.5rem;
@@ -243,15 +238,14 @@
       .burger_container{
           height: 3.5rem;
       }
-
+      .title{
+          margin-top: 2rem;
+        height: 6rem;
+      }
       .uv_label{
         img{
-            // width: 2.5rem;
             filter: var(--filterImg);
             padding: .1rem .5rem !important;
         }
-        // div{
-        //     padding: .1rem .5rem;
-        // }
     }
   }

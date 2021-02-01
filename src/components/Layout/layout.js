@@ -9,7 +9,7 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import layoutStyles from "./layout.module.scss"
 import headerStyles from "../Header/header.module.scss"
 import "../UvToggle/switcher.css"
-import darkPeace from "../../images/pngs/darkPeace.png"
+import darkPeace from "../../images/darkPeace.png"
 import darkPeace2 from "../../images/pngs/darkPeace2.png"
 
 const Layout = ({ children, changeUv = () => {} }) => {

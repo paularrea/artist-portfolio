@@ -9,7 +9,7 @@ import ArrowLeft from "@material-ui/icons/ArrowLeft"
 import Switch from "@material-ui/core/Switch"
 import ArrowRight from "@material-ui/icons/ArrowRight"
 import "./icons.css"
-import darkPeace from "../images/pngs/darkPeace.png"
+import darkPeace from "../images/darkPeace.png"
 import darkPeace2 from "../images/pngs/darkPeace2.png"
 import MediaQuery from "react-responsive"
 
@@ -116,11 +116,11 @@ const ImgDescription = props => {
                 <div className={styles.contact}>
                   Contact{" "}
                   <a
-                    href="mailto:hello@requesens.com"
+                    href="mailto:hello@paurequesens.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    hello@requesens.com
+                    hello@paurequesens.com
                   </a>{" "}
                   to purchase
                 </div>

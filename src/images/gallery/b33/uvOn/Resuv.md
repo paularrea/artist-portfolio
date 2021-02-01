@@ -8,11 +8,8 @@ featuredImage: ./Resuv.jpg
 
 ## Res
 
-Acrylic, crayon, pencil
-14x15" wood panel
+Acrylic on wood<br/>
+70x70cm wood panel
 
-Signed and ready to hang.
+Signed and ready to hang.<br/>
 Painted in Jorba Town, Catalonia. 2020.
-
-€€€ + shipping
-Contact: hello@requesens.com to purchase

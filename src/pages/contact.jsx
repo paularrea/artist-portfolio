@@ -181,11 +181,11 @@ export default function Contact() {
             onBlur={() => setHover(false)}
             onMouseOut={() => setHover(false)}
             onMouseOver={() => setHover(true)}
-            href="mailto:hello@requesens.com"
+            href="mailto:hello@paurequesens.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            hello@requesens.com
+            hello@paurequesens.com
           </a>
         </div>
       </div>

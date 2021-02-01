@@ -17,11 +17,15 @@
         "intro": "El proyecto R3SURR3CT es la metamorfosis de un ser humano que renace personal y artísticamente, una creación profundamente íntima.",
         "process" : {
             "name" : "EL PROCESO",
-            "text" : "Este ha sido un proceso introspectivo que parte del amor. LOVE, és querer la propia imperfección. Amar lo que eres y amar lo que haces te llena de PEACE. Y esta comunión entre amor y paz inapelablemente te eleva a la GLORY, un estado de inspiración absoluta."
+            "text1" : "Este ha sido un proceso introspectivo que parte del amor.",
+            "text2" : "es querer la propia imperfección. Amar lo que eres y amar lo que haces te llena de",
+            "text3" : ". Y esta comunión entre amor y paz inapelablemente te eleva a la",
+            "text4" : ", un estado de inspiración absoluta."
         },
         "concept" : {
             "name" : "EL CONCEPTO",
-            "text" : "El concepto “DARK peace” es dotar a las obras de alma. Como en la vida, las cosas más hermosas no se perciben a simple vista. La luz ultravioleta transporta las obras a otra dimensión. Juega con el interruptor y descubre la esencia de las obras."
+            "text1" : "El concepto",
+            "text2" : "es dotar a las obras de alma. Como en la vida, las cosas más hermosas no se perciben a simple vista. La luz ultravioleta transporta las obras a otra dimensión. Juega con el interruptor y descubre la esencia de las obras."
         },
         "bullet" : {
             "title" : "FILOSOFÍA",

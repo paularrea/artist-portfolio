@@ -3,7 +3,7 @@ import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/Layout/layout"
 import IntroVideo from "../components/Video/introVideo"
 import Logo from "../components/Header/requesens"
-import {navigate} from "gatsby"
+import { navigate } from "gatsby"
 import style from "../styles/home.module.scss"
 import SEO from "../components/seo"
 import resurrect from "../images/pngs/resurrect.png"
@@ -22,6 +22,11 @@ import super1 from "../images/pngs/super1.png"
 import super2 from "../images/pngs/super2.png"
 import creu from "../images/pngs/creu.png"
 
+import LoveIcon from "../components/words/love"
+import PeaceIcon from "../components/words/peace"
+import GloryIcon from "../components/words/glory"
+import DarkPeaceIcon from "../components/words/darkPeace"
+
 const Home = props => {
   const [hoverLlamp, setHoverLlamp] = useState(false)
   const [hoverFlama, setHoverFlama] = useState(false)
@@ -33,10 +38,10 @@ const Home = props => {
   const intl = useIntl()
 
   const changeBg = () => {
-    localStorage.setItem("theme", 'light');
-    navigate('/gallery')
-    let underline = document.getElementsByClassName('navItem');
-    underline.add('activeNavItem')
+    localStorage.setItem("theme", "light")
+    navigate("/gallery")
+    let underline = document.getElementsByClassName("navItem")
+    underline.add("activeNavItem")
   }
 
   useEffect(() => {
@@ -56,11 +61,31 @@ const Home = props => {
           </div>
           <div className={style.intro_text2}>
             <h4>{intl.formatMessage({ id: "home.process.name" })}</h4>
-            <p>{intl.formatMessage({ id: "home.process.text" })}</p>
+            <p>
+              {intl.formatMessage({ id: "home.process.text1" })}
+              <span className={style.processSpan}>
+                <LoveIcon />
+              </span>
+              {intl.formatMessage({ id: "home.process.text2" })}
+              <span className={style.processSpan}>
+                <PeaceIcon />
+              </span>
+              {intl.formatMessage({ id: "home.process.text3" })}
+              <span className={style.processSpan}>
+                <GloryIcon />
+              </span>
+              {intl.formatMessage({ id: "home.process.text4" })}
+            </p>
           </div>
           <div className={style.intro_text2}>
-            <h4>{intl.formatMessage({ id: "home.concept.name" })}</h4>
-            <p>{intl.formatMessage({ id: "home.concept.text" })}</p>
+            <h4 style={{padding:0}}>{intl.formatMessage({ id: "home.concept.name" })}</h4>
+            <p>
+              {intl.formatMessage({ id: "home.concept.text1" })}
+              <span className={style.darkPeace}>
+                <DarkPeaceIcon />
+              </span>
+              {intl.formatMessage({ id: "home.concept.text2" })}
+            </p>
           </div>
           <div className={style.philosophy}>
             <h4>{intl.formatMessage({ id: "home.bullet.title" })}</h4>

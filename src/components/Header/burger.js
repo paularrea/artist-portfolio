@@ -1,5 +1,6 @@
 import { slide as Menu } from "react-burger-menu"
 import React from "react"
+import { Link } from "gatsby-plugin-intl"
 import TransitionLink from "gatsby-plugin-transition-link"
 import "./burger.css"
 
@@ -9,13 +10,13 @@ import { navigate } from "gatsby"
 
 class Burger extends React.Component {
   constructor(props) {
-    super(props);
-    this.changeBg = this.changeBg.bind(this);
+    super(props)
+    this.changeBg = this.changeBg.bind(this)
   }
 
   changeBg() {
-    localStorage.setItem("theme", 'light');
-    navigate('/gallery')
+    localStorage.setItem("theme", "light")
+    navigate("/gallery")
   }
 
   showSettings(event) {
@@ -25,14 +26,13 @@ class Burger extends React.Component {
   render() {
     return (
       <Menu className="bm-menu">
-        <TransitionLink 
+        <TransitionLink
           entry={{
             delay: 0.3,
           }}
           to="/"
           id="home"
           className={style.menu_item}
-
         >
           Home
         </TransitionLink>
@@ -42,16 +42,11 @@ class Burger extends React.Component {
           }}
           onClick={this.changeBg}
           id="gallery"
-          className='button_burger'
+          className="button_burger"
         >
           Gallery
         </button>
-        <TransitionLink
-       
-          to="/video"
-          id="video"
-          className={style.menu_item}
-        >
+        <TransitionLink to="/video" id="video" className={style.menu_item}>
           Video
         </TransitionLink>
         <TransitionLink
@@ -74,6 +69,16 @@ class Burger extends React.Component {
         >
           Contact
         </TransitionLink>
+        <div className={style.lang_container}>
+          <Link activeClassName={style.activeLang} language="en">
+            En{" "}
+          </Link>
+          /
+          <Link activeClassName={style.activeLang} language="es">
+            {" "}
+            Es
+          </Link>
+        </div>
       </Menu>
     )
   }
