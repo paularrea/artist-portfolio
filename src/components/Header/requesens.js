@@ -1,6 +1,6 @@
 import React from "react"
 import headerStyles from "./header.module.scss"
-import Requesens from "../../images/pngs/requesensLletres.png"
+import Requesens from "../../images/requesensLletres.png"
 import Firma from "../../images/pngs/requesensFirma.png"
 
 function Logo() {

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
@@ -11,8 +11,18 @@ import headerStyles from "../Header/header.module.scss"
 import "../UvToggle/switcher.css"
 import darkPeace from "../../images/darkPeace.png"
 import darkPeace2 from "../../images/pngs/darkPeace2.png"
+import Requesens from "../../images/requesensLletres.png"
 
 const Layout = ({ children, changeUv = () => {} }) => {
+  const [closeIntro, setCloseIntro] = useState(false)
+
+  useEffect(() => {
+    const intro = setTimeout(() => {
+      setCloseIntro(true)
+    }, 2500)
+    return () => clearTimeout(intro)
+  }, [])
+
   const uvToggle = (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
@@ -39,13 +49,26 @@ const Layout = ({ children, changeUv = () => {} }) => {
   )
 
   return (
-    <div className={layoutStyles.container}>
-      <div className={layoutStyles.content}>
-        <Header uvToggle={uvToggle} />
-        <main className={layoutStyles.pages}>{children}</main>
+    <>
+      {!closeIntro && (
+        <div className={layoutStyles.on_load}>
+          <div className={layoutStyles.animation}>
+            <img
+              src={Requesens}
+              className={headerStyles.logo}
+              alt="Lletres logo"
+            />
+          </div>
+        </div>
+      )}
+      <div className={layoutStyles.container}>
+        <div className={layoutStyles.content}>
+          <Header uvToggle={uvToggle} />
+          <main className={layoutStyles.pages}>{children}</main>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   )
 }
 

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import footerStyles from "../footer.module.scss"
 import TransitionLink from "gatsby-plugin-transition-link"
 import testimo from "../../../images/pngs/testimo.png"
-import requesens from "../../../images/pngs/requesensLletres.png"
+import requesens from "../../../images/requesensLletres.png"
 import MediaQuery from "react-responsive"
 
 const Footer = () => {
