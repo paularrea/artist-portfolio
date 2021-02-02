@@ -1,14 +1,14 @@
 import React from "react"
 import headerStyles from "./actor.header.module.scss"
 import Burger from "./burger"
-import Media from "react-media"
+import MediaQuery from "react-responsive"
 import TransitionLink from 'gatsby-plugin-transition-link'
 
 const Header = () => {
   return (
     <div>
       <header className={headerStyles.header}>
-        <Media query={{ minWidth: 950 }}>
+      <MediaQuery minWidth={950}>
           <nav>
             <ul
               className={headerStyles.navList}
@@ -75,12 +75,12 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-        </Media>
-        <Media query={{ maxWidth: 950 }}>
+        </MediaQuery>
+        <MediaQuery maxWidth={950}>
           <div className={headerStyles.burger_container_actor}>
             <Burger />
           </div>
-        </Media>
+        </MediaQuery>
       </header>
     </div>
   )

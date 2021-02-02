@@ -14,14 +14,16 @@ import darkPeace2 from "../../images/pngs/darkPeace2.png"
 import Requesens from "../../images/requesensLletres.png"
 
 const Layout = ({ children, changeUv = () => {} }) => {
-  const [closeIntro, setCloseIntro] = useState(false)
+  const initialIntro = () => window.sessionStorage.getItem('closeIntro') || false
+  const [closeIntro, setCloseIntro] = useState(initialIntro)
 
   useEffect(() => {
     const intro = setTimeout(() => {
       setCloseIntro(true)
     }, 2500)
+    window.sessionStorage.setItem('closeIntro', closeIntro)
     return () => clearTimeout(intro)
-  }, [])
+  }, [closeIntro])
 
   const uvToggle = (
     <ThemeToggler>

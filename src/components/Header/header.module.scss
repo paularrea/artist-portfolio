@@ -148,6 +148,7 @@
         filter: var(--filterImg);
     }
 }
+
 //sm screen
 @media (max-width: 700px) {
     .logo{
@@ -200,6 +201,7 @@
     }
 }
 //ipad
+
 @media (min-width: 700px) { 
     .title{
         font-size: 8rem;
@@ -208,7 +210,18 @@
 
     }
     .uv_label{
-        font-size: 1rem;   
+        color: var(--textNormal);
+        z-index: 999; 
+        top: 9px;
+        right: 18px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 3.5rem;
+            filter: var(--filterImg);
+        }
     }
   }
 //ipad
