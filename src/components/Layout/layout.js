@@ -14,7 +14,8 @@ import darkPeace2 from "../../images/pngs/darkPeace2.png"
 import Requesens from "../../images/requesensLletres.png"
 
 const Layout = ({ children, changeUv = () => {} }) => {
-  const initialIntro = () => window.sessionStorage.getItem('closeIntro') || false
+  let storage = window.sessionStorage;
+  const initialIntro = () => storage.getItem('closeIntro') || false
   const [closeIntro, setCloseIntro] = useState(initialIntro)
 
   useEffect(() => {
