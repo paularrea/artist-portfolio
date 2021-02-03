@@ -3,8 +3,8 @@
     padding-bottom: 2rem;
 }
 .aboutText{
-    padding-top: 1rem;
-    padding-bottom: 6rem;
+    padding: 1rem 0;
+    // padding-bottom: 6rem;
     width: 95vw;
     height: 100vh;
     margin: 0 auto;
@@ -62,13 +62,11 @@
 }
 .parallax_container{
     margin: 0 auto;
-    height: fit-content;
-    width: fit-content;
+    object-fit: contain;
+    img{
+       width: 100vw;
+   }
 }
-.parallax {
-    width: 100vw;
-    height: auto;
-  }
 
 .studio_imgs{
     display: flex;
@@ -156,14 +154,12 @@
     }
     .parallax_container{
         margin: 0 auto;
-        object-fit: 20%;
+        object-fit: contain;
+        img{
+           width: 100vw;
+       }
     }
-    .parallax {
-        width: 100vw;
-        height: auto;
-      }
 }
-
 
 @media (max-height: 450px) and (max-width:850px) {
     .aboutText{

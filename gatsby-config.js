@@ -16,6 +16,7 @@
     },
     
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-sharp`,
     'gatsby-plugin-breakpoints',
     {

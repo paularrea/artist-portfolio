@@ -7,8 +7,8 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import MediaQuery from "react-responsive"
 import Carousel from "../components/carousel/carousel"
-import { ParallaxProvider } from 'react-scroll-parallax';
-import ParallaxImg from "../components/parallax"
+
+import img from "../images/aboutPau.jpg"
 
 const About = () => {
   useEffect(() => {
@@ -42,7 +42,6 @@ const About = () => {
     }
   `)
   return (
-    <ParallaxProvider>
     <Layout>
       <SEO title={intl.formatMessage({ id: "seo.about" })} />
       <div className={style.container}>
@@ -90,7 +89,15 @@ const About = () => {
           </p>
           {/* <Link to="/actor">Actor site</Link> */}
         </div>
-       <ParallaxImg/>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="400"
+          data-sal-duration="800"
+          data-sal-easing="ease"
+          className={style.parallax_container}
+        >
+          <img src={img} alt="Pau Pintor" />
+        </div>
         <div className={style.aboutText2}>
           <h2>{intl.formatMessage({ id: "about.title2" })}</h2>
           <p>{intl.formatMessage({ id: "about.description2" })}</p>
@@ -112,7 +119,6 @@ const About = () => {
         </div>
       </div>
     </Layout>
-    </ParallaxProvider>
   )
 }
 export default About
