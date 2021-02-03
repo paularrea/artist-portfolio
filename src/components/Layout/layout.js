@@ -14,12 +14,10 @@ import darkPeace2 from "../../images/pngs/darkPeace2.png"
 import Requesens from "../../images/requesensLletres.png"
 
 const Layout = ({ children, changeUv = () => {} }) => {
-  let storage = typeof window !== 'undefined' && window.sessionStorage
-  const initialIntro = () => storage.getItem("closeIntro") || false
+  const initialIntro = () => window.sessionStorage.getItem("closeIntro") || false
   const [closeIntro, setCloseIntro] = useState(initialIntro)
-  
+
   useEffect(() => {
-    
     const intro = setTimeout(() => {
       setCloseIntro(true)
     }, 2500)
@@ -54,17 +52,19 @@ const Layout = ({ children, changeUv = () => {} }) => {
 
   return (
     <>
-      {!closeIntro && (
-        <div className={layoutStyles.on_load}>
-          <div className={layoutStyles.animation}>
-            <img
-              src={Requesens}
-              className={headerStyles.logo}
-              alt="Lletres logo"
-            />
-          </div>
-        </div>
-      )}
+      {typeof window !== "undefined"
+        ? !closeIntro && (
+            <div className={layoutStyles.on_load}>
+              <div className={layoutStyles.animation}>
+                <img
+                  src={Requesens}
+                  className={headerStyles.logo}
+                  alt="Lletres logo"
+                />
+              </div>
+            </div>
+          )
+        : null}
       <div className={layoutStyles.container}>
         <div className={layoutStyles.content}>
           <Header uvToggle={uvToggle} />
