@@ -90,7 +90,7 @@ const About = () => {
           {/* <Link to="/actor">Actor site</Link> */}
         </div>
         <div
-          data-sal="slide-up"
+          data-sal="slide-up "
           data-sal-delay="400"
           data-sal-duration="800"
           data-sal-easing="ease"
