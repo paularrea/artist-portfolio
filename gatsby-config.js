@@ -8,7 +8,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-sharp`,
     'gatsby-plugin-breakpoints',
     `gatsby-transformer-remark`,
