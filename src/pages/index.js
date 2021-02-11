@@ -29,8 +29,7 @@ import DarkPeaceIcon from "../components/words/darkPeace"
 import Requesens from "../images/requesensLletres.png"
 
 const Home = props => {
-  const initialIntro = () => sessionStorage.getItem("closeIntro") || false
-  const [closeIntro, setCloseIntro] = useState(initialIntro)
+  const [closeIntro, setCloseIntro] = useState(false)
   const [hoverLlamp, setHoverLlamp] = useState(false)
   const [hoverFlama, setHoverFlama] = useState(false)
   const [hoverSimbol, setHoverSimbol] = useState(false)
@@ -51,7 +50,6 @@ const Home = props => {
     const intro = setTimeout(() => {
       setCloseIntro(true)
     }, 2500)
-    sessionStorage.setItem("closeIntro", closeIntro)
     return () => clearTimeout(intro)
   }, [closeIntro])
 
