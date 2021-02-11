@@ -80,7 +80,6 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-images`,
-          `gatsby-remark-images-medium-zoom`,
         ],
       },
     },
