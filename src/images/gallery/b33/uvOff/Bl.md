@@ -1,5 +1,5 @@
 ---
-title: "Blau"
+title: "Bl"
 date: 94
 description: uvOff
 collection: "b33"

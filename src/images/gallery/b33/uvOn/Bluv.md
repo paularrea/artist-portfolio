@@ -1,5 +1,5 @@
 ---
-title: "Blau"
+title: "Bl"
 date: 82
 description: uvOn
 collection: "b33"

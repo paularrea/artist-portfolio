@@ -1,5 +1,5 @@
 ---
-title: "Kurt"
+title: "Cobain"
 date: 87
 description: uvOn
 collection: "b33"
