@@ -26,8 +26,11 @@ import LoveIcon from "../components/words/love"
 import PeaceIcon from "../components/words/peace"
 import GloryIcon from "../components/words/glory"
 import DarkPeaceIcon from "../components/words/darkPeace"
+import Requesens from "../images/requesensLletres.png"
 
 const Home = props => {
+  const initialIntro = () => sessionStorage.getItem("closeIntro") || false
+  const [closeIntro, setCloseIntro] = useState(initialIntro)
   const [hoverLlamp, setHoverLlamp] = useState(false)
   const [hoverFlama, setHoverFlama] = useState(false)
   const [hoverSimbol, setHoverSimbol] = useState(false)
@@ -45,11 +48,27 @@ const Home = props => {
   }
 
   useEffect(() => {
+    const intro = setTimeout(() => {
+      setCloseIntro(true)
+    }, 2500)
+    sessionStorage.setItem("closeIntro", closeIntro)
+    return () => clearTimeout(intro)
+  }, [closeIntro])
+
+
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
   return (
     <div style={{ position: "relative" }}>
+       {!closeIntro && (
+        <div className={style.on_load}>
+          <div className={style.animation}>
+            <img src={Requesens} alt="Requesens intro" />
+          </div>
+        </div>
+      )}
       <Layout>
         <SEO title={intl.formatMessage({ id: "seo.home" })} />
         <Logo />

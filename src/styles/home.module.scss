@@ -1,3 +1,37 @@
+
+//animation
+.on_load{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(41, 41, 41);
+    z-index: 9999999999999999;
+  }
+  
+  .on_load div{
+    font-size: 1.5rem;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+      
+      img{
+          filter: invert(90%);
+          width: 15rem;
+      }
+  }
+
+
 section{
     width: 70vw;
     min-width: 750px;
