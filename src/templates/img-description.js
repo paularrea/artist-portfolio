@@ -12,7 +12,7 @@ import "./icons.css"
 import darkPeace from "../images/darkPeace.png"
 import darkPeace2 from "../images/pngs/darkPeace2.png"
 import MediaQuery from "react-responsive"
-import ReactImageMagnify from "@milosmladenovicwork/react-image-magnify"
+// import ReactImageMagnify from "@milosmladenovicwork/react-image-magnify"
 
 const ImgDescription = props => {
   const [mode, setMode] = useState("")
@@ -97,7 +97,7 @@ const ImgDescription = props => {
                 </div>
               </div>
               <div className={styles.container_div}>
-                <ReactImageMagnify
+                {/* <ReactImageMagnify
                   {...{
                     isHintEnabled: true,
                     shouldHideHintAfterFirstActivation: false,
@@ -126,14 +126,14 @@ const ImgDescription = props => {
                       height: "100%",
                     },
                   }}
-                />
-                {/* <Img
+                /> */}
+                <Img
                   className={styles.img}
                   fluid={
                     props.data.markdownRemark.frontmatter.featuredImage
                       .childImageSharp.fluid
                   }
-                /> */}
+                />
               </div>
 
               <div className={styles.detail_info}>
