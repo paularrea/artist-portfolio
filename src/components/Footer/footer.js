@@ -1,10 +1,11 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import footerStyles from "./footer.module.scss"
 import TransitionLink from "gatsby-plugin-transition-link"
 import testimo from "../../images/pngs/testimo.png"
 import requesens from "../../images/requesensLletres.png"
 import MediaQuery from "react-responsive"
+
 import { navigate } from "gatsby"
 
 const Footer = () => {
@@ -27,9 +28,11 @@ const Footer = () => {
       <div className={footerStyles.container}>
         <div className={footerStyles.content}>
           <div className={footerStyles.requesens}>
+          <Link to='/'>
             <div className={footerStyles.requesensLogo}>
               <img src={requesens} alt="testimo logo" />
             </div>
+          </Link>
             <div className={footerStyles.tqContainer}>
               <img src={testimo} alt="testimo logo" />
             </div>

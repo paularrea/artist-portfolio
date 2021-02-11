@@ -91,25 +91,24 @@ const Home = props => {
             <h4>{intl.formatMessage({ id: "home.bullet.title" })}</h4>
           </div>
           <div className={style.bullet_container}>
-            <button
+          <button
               className={style.bullet}
-              onBlur={() => setHoverLlamp(false)}
-              onMouseOut={() => setHoverLlamp(false)}
-              onMouseOver={() => setHoverLlamp(true)}
-              onFocus={() => setHoverLlamp(true)}
+              onBlur={() => setHoverEstrella(false)}
+              onMouseOut={() => setHoverEstrella(false)}
+              onMouseOver={() => setHoverEstrella(true)}
+              onFocus={() => setHoverEstrella(true)}
             >
               <img
                 className={style.llamp}
-                src={hoverLlamp ? llamp2 : llamp}
+                src={hoverEstrella ? estrella2 : estrella}
                 alt="llamp"
               />
-              <h5>{intl.formatMessage({ id: "home.bullet.name1" })}</h5>
+              <h5>{intl.formatMessage({ id: "home.bullet.name4" })}</h5>
               <p>
-                {intl.formatMessage({ id: "home.bullet.description1.text1" })}
                 <b>
-                  {intl.formatMessage({ id: "home.bullet.description1.bold1" })}
+                  {intl.formatMessage({ id: "home.bullet.description4.bold1" })}
                 </b>
-                {intl.formatMessage({ id: "home.bullet.description1.text2" })}
+                {intl.formatMessage({ id: "home.bullet.description4.text1" })}
               </p>
             </button>
 
@@ -134,7 +133,49 @@ const Home = props => {
                 {intl.formatMessage({ id: "home.bullet.description2.text2" })}
               </p>
             </button>
-
+            <button
+              className={style.bullet}
+              onBlur={() => setHoverLlamp(false)}
+              onMouseOut={() => setHoverLlamp(false)}
+              onMouseOver={() => setHoverLlamp(true)}
+              onFocus={() => setHoverLlamp(true)}
+            >
+              <img
+                className={style.llamp}
+                src={hoverLlamp ? llamp2 : llamp}
+                alt="llamp"
+              />
+              <h5>{intl.formatMessage({ id: "home.bullet.name1" })}</h5>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description1.text1" })}
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description1.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description1.text2" })}
+              </p>
+            </button>
+          </div>
+          <div className={style.bullet_container2}>
+            <button
+              className={style.bullet}
+              onBlur={() => setHoverSuper(false)}
+              onMouseOut={() => setHoverSuper(false)}
+              onMouseOver={() => setHoverSuper(true)}
+              onFocus={() => setHoverSuper(true)}
+            >
+              <img
+                className={style.darkPeace}
+                src={hoverSuper ? super2 : super1}
+                alt="darkPeace"
+              />
+              <h5>{intl.formatMessage({ id: "home.bullet.name6" })}</h5>
+              <p>
+                <b>
+                  {intl.formatMessage({ id: "home.bullet.description6.bold1" })}
+                </b>
+                {intl.formatMessage({ id: "home.bullet.description6.text1" })}
+              </p>
+            </button>
             <button
               className={style.bullet}
               onBlur={() => setHoverCalavera(false)}
@@ -156,29 +197,6 @@ const Home = props => {
                 {intl.formatMessage({ id: "home.bullet.description3.text2" })}
               </p>
             </button>
-          </div>
-          <div className={style.bullet_container2}>
-            <button
-              className={style.bullet}
-              onBlur={() => setHoverEstrella(false)}
-              onMouseOut={() => setHoverEstrella(false)}
-              onMouseOver={() => setHoverEstrella(true)}
-              onFocus={() => setHoverEstrella(true)}
-            >
-              <img
-                className={style.llamp}
-                src={hoverEstrella ? estrella2 : estrella}
-                alt="llamp"
-              />
-              <h5>{intl.formatMessage({ id: "home.bullet.name4" })}</h5>
-              <p>
-                <b>
-                  {intl.formatMessage({ id: "home.bullet.description4.bold1" })}
-                </b>
-                {intl.formatMessage({ id: "home.bullet.description4.text1" })}
-              </p>
-            </button>
-
             <button
               className={style.bullet}
               onBlur={() => setHoverSimbol(false)}
@@ -198,27 +216,6 @@ const Home = props => {
                   {intl.formatMessage({ id: "home.bullet.description5.bold1" })}
                 </b>
                 {intl.formatMessage({ id: "home.bullet.description5.text2" })}
-              </p>
-            </button>
-
-            <button
-              className={style.bullet}
-              onBlur={() => setHoverSuper(false)}
-              onMouseOut={() => setHoverSuper(false)}
-              onMouseOver={() => setHoverSuper(true)}
-              onFocus={() => setHoverSuper(true)}
-            >
-              <img
-                className={style.darkPeace}
-                src={hoverSuper ? super2 : super1}
-                alt="darkPeace"
-              />
-              <h5>{intl.formatMessage({ id: "home.bullet.name6" })}</h5>
-              <p>
-                <b>
-                  {intl.formatMessage({ id: "home.bullet.description6.bold1" })}
-                </b>
-                {intl.formatMessage({ id: "home.bullet.description6.text1" })}
               </p>
             </button>
           </div>

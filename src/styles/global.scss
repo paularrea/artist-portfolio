@@ -3,7 +3,7 @@
 body {
     --bg:  whitesmoke;
     --bg-arrow: rgb(233, 233, 233);
-    --bg-header: whitesmoke;
+    --bg-header: rgba(245, 245, 245, .9);
     --bg-footer: rgb(240, 240, 240);
     --bg-container:whitesmoke;
     --bg-input:whitesmoke;
@@ -32,11 +32,13 @@ body {
     --filterVideo:grayscale(0%);
 
     --onTop:8;
+    --fontSize:25px;
+    --fontWeight:400;
+    --fontAboutColor:#6D6D6D;
   }
   
   body.dark {
     -webkit-font-smoothing: antialiased;
-  
     --bg: rgb(41, 41, 41);
     --bg-arrow: rgb(51, 51, 51);
     --bg-header:  rgba(41, 41, 41, .9);
@@ -65,4 +67,7 @@ body {
     --filterVideo:grayscale(100%);
 
     --onTop:99;
+    --fontSize:30px;
+    --fontWeight:500;
+    --fontAboutColor:rgb(78, 78, 78);
   }

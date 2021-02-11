@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/Layout/layout"
 import { useIntl } from "gatsby-plugin-intl"
 import { graphql, useStaticQuery } from "gatsby"
@@ -11,10 +11,6 @@ import Carousel from "../components/carousel/carousel"
 import img from "../images/aboutPau.jpg"
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   const intl = useIntl()
   const data = useStaticQuery(graphql`
     query MyQuery {
@@ -87,7 +83,6 @@ const About = () => {
             {intl.formatMessage({ id: "about.description.text19" })}{" "}
             <b>{intl.formatMessage({ id: "about.description.bold19" })}</b>
           </p>
-          {/* <Link to="/actor">Actor site</Link> */}
         </div>
         <div
           data-sal="slide-up "

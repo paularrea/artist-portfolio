@@ -1,38 +1,3 @@
- module.exports = {
-  siteMetadata: {
-    title: `Requesens`,
-    description: `Web del artista Pau Requesens, donde comparte todas sus creaciones`,
-    author: `Pau Larrea Llopis`,
-    siteUrl: "https://www.paurequesens.com",
-  },
-  plugins: [
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
-      },
-    },
-    
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-scroll-reveal`,
-    `gatsby-plugin-sharp`,
-    'gatsby-plugin-breakpoints',
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-      },
-    },
-    `gatsby-transformer-remark`,
-  ],
-}
 module.exports = {
   siteMetadata: {
     title: `Requesens`,
@@ -42,6 +7,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-sharp`,
+    'gatsby-plugin-breakpoints',
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-intl`,
       options: {
@@ -49,6 +20,13 @@ module.exports = {
         languages: [`en`, `es`],
         defaultLanguage: `en`,
         redirect: "/en",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -84,8 +62,6 @@ module.exports = {
         path: `${__dirname}/src/images/gallery/b33`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -105,14 +81,8 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-relative-images`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 750,
-              linkImagesToOriginal: false,
-            },
-          },
+          `gatsby-remark-images`,
+          `gatsby-remark-images-medium-zoom`,
         ],
       },
     },

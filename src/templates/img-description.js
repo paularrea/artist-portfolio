@@ -12,6 +12,7 @@ import "./icons.css"
 import darkPeace from "../images/darkPeace.png"
 import darkPeace2 from "../images/pngs/darkPeace2.png"
 import MediaQuery from "react-responsive"
+import ReactImageMagnify from "@milosmladenovicwork/react-image-magnify"
 
 const ImgDescription = props => {
   const [mode, setMode] = useState("")
@@ -53,30 +54,30 @@ const ImgDescription = props => {
     <>
       <MediaQuery minWidth={800}>
         <div className={styles.containerBig}>
-        <div className={styles.uv}>
-                  <ThemeToggler>
-                    {({ theme, toggleTheme }) => (
-                      <div className={styles.uv_label}>
-                        <Switch
-                          style={{ color: "var(--switcher)" }}
-                          checked={theme === "dark"}
-                          onClick={routeChange}
-                          onChange={e => {
-                            toggleTheme(e.target.checked ? "dark" : "light")
-                          }}
-                          name="checkedA"
-                          inputProps={{ "aria-label": "secondary checkbox" }}
-                        />
-                        <div>
-                          <img
-                            src={theme === "dark" ? darkPeace2 : darkPeace}
-                            alt="dark peace logo"
-                          />
-                        </div>
-                      </div>
-                    )}
-                  </ThemeToggler>
+          <div className={styles.uv}>
+            <ThemeToggler>
+              {({ theme, toggleTheme }) => (
+                <div className={styles.uv_label}>
+                  <Switch
+                    style={{ color: "var(--switcher)" }}
+                    checked={theme === "dark"}
+                    onClick={routeChange}
+                    onChange={e => {
+                      toggleTheme(e.target.checked ? "dark" : "light")
+                    }}
+                    name="checkedA"
+                    inputProps={{ "aria-label": "secondary checkbox" }}
+                  />
+                  <div>
+                    <img
+                      src={theme === "dark" ? darkPeace2 : darkPeace}
+                      alt="dark peace logo"
+                    />
+                  </div>
                 </div>
+              )}
+            </ThemeToggler>
+          </div>
           <Layout>
             <div className={styles.container}>
               <div className={styles.arrows_container}>
@@ -96,13 +97,43 @@ const ImgDescription = props => {
                 </div>
               </div>
               <div className={styles.container_div}>
-                <Img
+                <ReactImageMagnify
+                  {...{
+                    isHintEnabled: true,
+                    shouldHideHintAfterFirstActivation: false,
+                    // imageClassName: "img",
+                    // enlargedImageClassName: "img",
+                    enlargedImagePosition: "over",
+                    smallImage: {
+                      alt: "Wristwatch by Ted Baker London",
+                      isFluidWidth: true,
+                      src:
+                        props.data.markdownRemark.frontmatter.featuredImage
+                          .childImageSharp.fluid.src,
+                    },
+                    largeImage: {
+                      src:
+                        props.data.markdownRemark.frontmatter.featuredImage
+                          .childImageSharp.fluid.src,
+                      width: 640,
+                      // height: 480,
+                    },
+                    enlargedImageContainerStyle: {
+                      zIndex: "1500",
+                    },
+                    enlargedImageContainerDimensions: {
+                      width: "100%",
+                      height: "100%",
+                    },
+                  }}
+                />
+                {/* <Img
                   className={styles.img}
                   fluid={
                     props.data.markdownRemark.frontmatter.featuredImage
                       .childImageSharp.fluid
                   }
-                />
+                /> */}
               </div>
 
               <div className={styles.detail_info}>
@@ -137,95 +168,95 @@ const ImgDescription = props => {
             </div>
           </Layout>
         </div>
-        </MediaQuery>
-        <MediaQuery maxWidth={800}>
-          <div className={styles.containerBig}>
-            <Layout>
-              <div className={styles.templateToggle}>
-                <ThemeToggler>
-                  {({ theme, toggleTheme }) => (
-                    <div className={styles.uv_label}>
-                      <Switch
-                        style={{ color: "var(--switcher)" }}
-                        checked={theme === "dark"}
-                        onClick={routeChange}
-                        onChange={e => {
-                          toggleTheme(e.target.checked ? "dark" : "light")
-                        }}
-                        name="checkedA"
-                        inputProps={{ "aria-label": "secondary checkbox" }}
+      </MediaQuery>
+      <MediaQuery maxWidth={800}>
+        <div className={styles.containerBig}>
+          <Layout>
+            <div className={styles.templateToggle}>
+              <ThemeToggler>
+                {({ theme, toggleTheme }) => (
+                  <div className={styles.uv_label}>
+                    <Switch
+                      style={{ color: "var(--switcher)" }}
+                      checked={theme === "dark"}
+                      onClick={routeChange}
+                      onChange={e => {
+                        toggleTheme(e.target.checked ? "dark" : "light")
+                      }}
+                      name="checkedA"
+                      inputProps={{ "aria-label": "secondary checkbox" }}
+                    />
+                    <div>
+                      <img
+                        src={theme === "dark" ? darkPeace2 : darkPeace}
+                        alt="dark peace logo"
                       />
-                      <div>
-                        <img
-                          src={theme === "dark" ? darkPeace2 : darkPeace}
-                          alt="dark peace logo"
-                        />
-                      </div>
-                    </div>
-                  )}
-                </ThemeToggler>
-              </div>
-              <div className={styles.container}>
-                <div className={styles.container_div}>
-                  <div className={styles.arrows_container}>
-                    <div className={styles.arrow}>
-                      {prev && (
-                        <Link to={`/gallery/${prev.fields.slug}`}>
-                          <ArrowLeft />
-                        </Link>
-                      )}
-                    </div>
-                    <div className={styles.arrow}>
-                      {next && (
-                        <Link to={`/gallery/${next.fields.slug}`}>
-                          <ArrowRight />
-                        </Link>
-                      )}
                     </div>
                   </div>
-                  <Img
-                    className={styles.img}
-                    fluid={
-                      props.data.markdownRemark.frontmatter.featuredImage
-                        .childImageSharp.fluid
-                    }
-                  />
+                )}
+              </ThemeToggler>
+            </div>
+            <div className={styles.container}>
+              <div className={styles.container_div}>
+                <div className={styles.arrows_container}>
+                  <div className={styles.arrow}>
+                    {prev && (
+                      <Link to={`/gallery/${prev.fields.slug}`}>
+                        <ArrowLeft />
+                      </Link>
+                    )}
+                  </div>
+                  <div className={styles.arrow}>
+                    {next && (
+                      <Link to={`/gallery/${next.fields.slug}`}>
+                        <ArrowRight />
+                      </Link>
+                    )}
+                  </div>
                 </div>
-                <div className={styles.detail_info}>
-                  <div
-                    className={styles.description}
-                    dangerouslySetInnerHTML={{
-                      __html: props.data.markdownRemark.html,
-                    }}
-                  ></div>
-                </div>
-                <div className={styles.contact}>
-                  Contact
-                  <br />
-                  <a
-                    href="mailto:hello@requesens.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    hello@requesens.com
-                  </a>
-                  <br />
-                  to purchase
-                </div>
-
-                <button
-                  className={styles.link}
-                  onClick={() => changeBg()}
-                  entry={{
-                    delay: 0.3,
-                  }}
-                >
-                  Back to gallery
-                </button>
+                <Img
+                  className={styles.img}
+                  fluid={
+                    props.data.markdownRemark.frontmatter.featuredImage
+                      .childImageSharp.fluid
+                  }
+                />
               </div>
-            </Layout>
-          </div>
-        </MediaQuery>
+              <div className={styles.detail_info}>
+                <div
+                  className={styles.description}
+                  dangerouslySetInnerHTML={{
+                    __html: props.data.markdownRemark.html,
+                  }}
+                ></div>
+              </div>
+              <div className={styles.contact}>
+                Contact
+                <br />
+                <a
+                  href="mailto:hello@requesens.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hello@requesens.com
+                </a>
+                <br />
+                to purchase
+              </div>
+
+              <button
+                className={styles.link}
+                onClick={() => changeBg()}
+                entry={{
+                  delay: 0.3,
+                }}
+              >
+                Back to gallery
+              </button>
+            </div>
+          </Layout>
+        </div>
+      </MediaQuery>
     </>
   )
 }

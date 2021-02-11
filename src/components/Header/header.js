@@ -5,6 +5,7 @@ import Burger from "./burger"
 import MediaQuery from "react-responsive"
 import "./switcher.css"
 import { navigate } from "gatsby"
+import Popup from "../pop-up/pop-up"
 
 const Header = props => {
   const intl = useIntl();
@@ -17,6 +18,7 @@ const Header = props => {
   return (
     <div className={headerStyles.container}>
       <header className={headerStyles.header}>
+        <Popup/>
       <MediaQuery minWidth={950}>
           <nav className={headerStyles.nav}>
             <ul className={headerStyles.navList}>

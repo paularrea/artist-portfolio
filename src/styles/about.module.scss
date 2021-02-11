@@ -4,9 +4,9 @@
 }
 .aboutText{
     padding: 1rem 0;
-    // padding-bottom: 6rem;
+    padding-bottom: 4rem;
     width: 95vw;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     text-align: justify;
     h2{
@@ -17,17 +17,21 @@
         font-weight: 500;
         color: var(--textTitle);
     }
+    p{
+        color: var(--fontAboutColor);
+    }
     p, b{
         font-size: 25px;
         line-height: 35px;
         font-weight: 300;
         margin: 0;
-        color: var(--textNormal);
         padding-bottom: 1rem;
     }
     b{
-        font-size: 30px;
+        color: var(--textNormal);
+        font-size: var(--fontSize);
         font-weight: 500;
+        font-weight: var(--fontWeight);
     }
     a{
         color: var(--textImportant);
@@ -62,12 +66,12 @@
 }
 .parallax_container{
     margin: 0 auto;
+    margin: 2rem 0;
     object-fit: contain;
     img{
        width: 100vw;
    }
 }
-
 .studio_imgs{
     display: flex;
     img{
@@ -75,7 +79,6 @@
         height: auto;
     }
 }
-
 @media (max-width: 1100px) {
     .siteImg{
         width: 100vw !important;
@@ -144,7 +147,6 @@
         }
     }
 }
-
 @media (max-width: 800px) {
     .container{
         padding-top: 2rem;
@@ -160,7 +162,6 @@
        }
     }
 }
-
 @media (max-height: 450px) and (max-width:850px) {
     .aboutText{
         padding-top: 2rem;

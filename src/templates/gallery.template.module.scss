@@ -61,6 +61,9 @@ position: relative;
     width:30vw;
     max-height: auto;
     margin-bottom: 4rem;
+    box-shadow: 0px 6px 25px 10px #696969c7;
+    -webkit-box-shadow: 0px 6px 25px 10px #696969c7;
+    -moz-box-shadow: 0px 6px 25px 10px #696969c7;
 }
 
 .description{
@@ -73,6 +76,7 @@ position: relative;
     margin-left: 4rem;
     color: var(--textImportant);
     padding: 0;
+    padding-top: 2rem;
     padding-bottom: 3px;
     border-bottom: 1.5px solid var(--textImportant) !important;
     transition: all 0.3s ease-out;

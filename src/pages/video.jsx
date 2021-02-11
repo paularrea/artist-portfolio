@@ -46,7 +46,7 @@ const Videos = props => {
         <div className={styles.principalVideo}>
           <img src={resurrect} alt="resurrect logo"/>
           <YouTube
-            videoId="sMTo46GvIU4"
+            videoId="PiRIxPFRdaw"
             className={styles.principal_size}
             onReady={() => setVideoLoaded(true)}
           />

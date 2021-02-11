@@ -8,11 +8,8 @@ featuredImage: ./Elvis.jpg
 
 ## Elvis
 
-Acrylic, crayon, pencil
-14x15" wood panel
+Acrylic on wood<br/>
+100x100cm wood panel
 
-Signed and ready to hang.
-Painted in Jorba Town, Catalonia. 2020.
-
-€€€ + shipping
-Contact: hello@requesens.com to purchase
+Signed and ready to hang.<br/>
+Painted in El REC, Catalonia. 2020.
