@@ -12,7 +12,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-plugin-breakpoints',
     `gatsby-transformer-remark`,
-    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-intl`,
       options: {
