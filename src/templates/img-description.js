@@ -12,8 +12,8 @@ import "./icons.css"
 import darkPeace from "../images/darkPeace.png"
 import darkPeace2 from "../images/pngs/darkPeace2.png"
 import MediaQuery from "react-responsive"
-import Zoom from "react-medium-image-zoom"
-import "react-medium-image-zoom/dist/styles.css"
+// import Zoom from "react-medium-image-zoom"
+// import "react-medium-image-zoom/dist/styles.css"
 
 const ImgDescription = props => {
   const [mode, setMode] = useState("")
@@ -99,7 +99,7 @@ const ImgDescription = props => {
               </div>
 
               <div className={styles.container_div}>
-                <Zoom overlayBgColorEnd="rgba(255, 255, 255, 0.15)">
+                {/* <Zoom overlayBgColorEnd="rgba(255, 255, 255, 0.15)"> */}
                   <Img
                     className={styles.img}
                     fluid={
@@ -107,7 +107,7 @@ const ImgDescription = props => {
                         .childImageSharp.fluid
                     }
                   />
-                </Zoom>
+                {/* </Zoom> */}
               </div>
 
               <div className={styles.detail_info}>
