@@ -12,7 +12,8 @@ import "./icons.css"
 import darkPeace from "../images/darkPeace.png"
 import darkPeace2 from "../images/pngs/darkPeace2.png"
 import MediaQuery from "react-responsive"
-// import ReactImageMagnify from "@milosmladenovicwork/react-image-magnify"
+import Zoom from "react-medium-image-zoom"
+import "react-medium-image-zoom/dist/styles.css"
 
 const ImgDescription = props => {
   const [mode, setMode] = useState("")
@@ -53,7 +54,7 @@ const ImgDescription = props => {
   return (
     <>
       <MediaQuery minWidth={800}>
-        <div className={styles.containerBig}>
+        <div id="container" className={styles.containerBig}>
           <div className={styles.uv}>
             <ThemeToggler>
               {({ theme, toggleTheme }) => (
@@ -96,44 +97,17 @@ const ImgDescription = props => {
                   )}
                 </div>
               </div>
+
               <div className={styles.container_div}>
-                {/* <ReactImageMagnify
-                  {...{
-                    isHintEnabled: true,
-                    shouldHideHintAfterFirstActivation: false,
-                    // imageClassName: "img",
-                    // enlargedImageClassName: "img",
-                    enlargedImagePosition: "over",
-                    smallImage: {
-                      alt: "Wristwatch by Ted Baker London",
-                      isFluidWidth: true,
-                      src:
-                        props.data.markdownRemark.frontmatter.featuredImage
-                          .childImageSharp.fluid.src,
-                    },
-                    largeImage: {
-                      src:
-                        props.data.markdownRemark.frontmatter.featuredImage
-                          .childImageSharp.fluid.src,
-                      width: 640,
-                      // height: 480,
-                    },
-                    enlargedImageContainerStyle: {
-                      zIndex: "1500",
-                    },
-                    enlargedImageContainerDimensions: {
-                      width: "100%",
-                      height: "100%",
-                    },
-                  }}
-                /> */}
-                <Img
-                  className={styles.img}
-                  fluid={
-                    props.data.markdownRemark.frontmatter.featuredImage
-                      .childImageSharp.fluid
-                  }
-                />
+                <Zoom overlayBgColorEnd="rgba(255, 255, 255, 0.15)">
+                  <Img
+                    className={styles.img}
+                    fluid={
+                      props.data.markdownRemark.frontmatter.featuredImage
+                        .childImageSharp.fluid
+                    }
+                  />
+                </Zoom>
               </div>
 
               <div className={styles.detail_info}>
