@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react"
 import styles from "./popup.module.scss"
+import { useIntl } from "gatsby-plugin-intl"
 
 export default function Popup() {
   const [visible, setVisible] = useState(false)
+
+  const intl = useIntl()
 
   useEffect(() => {
     let pop_status = sessionStorage.getItem("pop_status")
@@ -16,9 +19,7 @@ export default function Popup() {
   return (
     <div className={styles.popup}>
       <div className={styles.popupInner}>
-        <p>
-          Use this toggle to play along the website to change to Dark peace
-          mode.
+        <p>{intl.formatMessage({ id: "popup.text" })}
         </p>
         <div className={styles.buttonContainer}>
           <button

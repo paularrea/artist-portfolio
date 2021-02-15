@@ -21,11 +21,15 @@ import simbol2 from "../images/pngs/simbol2.png"
 import super1 from "../images/pngs/super1.png"
 import super2 from "../images/pngs/super2.png"
 import creu from "../images/pngs/creu.png"
+import cara2 from "../images/pngs/cara2.png"
+import cara from "../images/pngs/cara.png"
+import trentatres2 from "../images/pngs/trentatres2.png"
+import trentatres from "../images/pngs/trentatres.png"
 
-import LoveIcon from "../components/words/love"
-import PeaceIcon from "../components/words/peace"
-import GloryIcon from "../components/words/glory"
-import DarkPeaceIcon from "../components/words/darkPeace"
+import LoveIcon from "../images/love.png"
+import PeaceIcon from "../images/peace.png"
+import GloryIcon from "../images/glory.png"
+import DarkPeaceIcon from "../images/darkPeace.png"
 import Requesens from "../images/requesensLletres.png"
 
 const Home = props => {
@@ -36,23 +40,24 @@ const Home = props => {
   const [hoverSuper, setHoverSuper] = useState(false)
   const [hoverCalavera, setHoverCalavera] = useState(false)
   const [hoverEstrella, setHoverEstrella] = useState(false)
+  const [hoverTrentatres, setHoverTrentatres] = useState(false)
+  const [hoverCara, setHoverCara] = useState(false)
 
   const intl = useIntl()
 
   const changeBg = () => {
     localStorage.setItem("theme", "light")
     navigate("/gallery")
-    let underline = document.getElementsByClassName("navItem")
-    underline.add("activeNavItem")
   }
 
   useEffect(() => {
+    localStorage.setItem("theme", "light")
+    localStorage.setItem("gatsby-intl-language", "en")
     const intro = setTimeout(() => {
       setCloseIntro(true)
     }, 2500)
     return () => clearTimeout(intro)
   }, [closeIntro])
-
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -60,7 +65,7 @@ const Home = props => {
 
   return (
     <div style={{ position: "relative" }}>
-       {!closeIntro && (
+      {!closeIntro && (
         <div className={style.on_load}>
           <div className={style.animation}>
             <img src={Requesens} alt="Requesens intro" />
@@ -81,34 +86,38 @@ const Home = props => {
             <p>
               {intl.formatMessage({ id: "home.process.text1" })}
               <span className={style.processSpan}>
-                <LoveIcon />
+                <img src={LoveIcon} alt="Love Icon" />
               </span>
               {intl.formatMessage({ id: "home.process.text2" })}
               <span className={style.processSpan}>
-                <PeaceIcon />
+                <img src={PeaceIcon} alt="Peace Icon" />
               </span>
               {intl.formatMessage({ id: "home.process.text3" })}
               <span className={style.processSpan}>
-                <GloryIcon />
+                <img src={GloryIcon} alt="Glory Icon" />
               </span>
               {intl.formatMessage({ id: "home.process.text4" })}
             </p>
           </div>
           <div className={style.intro_text2}>
-            <h4 style={{padding:0}}>{intl.formatMessage({ id: "home.concept.name" })}</h4>
+            <h4>{intl.formatMessage({ id: "home.concept.name" })}</h4>
             <p>
               {intl.formatMessage({ id: "home.concept.text1" })}
               <span className={style.darkPeace}>
-                <DarkPeaceIcon />
+                <img src={DarkPeaceIcon} alt="Dark Peace Icon" />
               </span>
               {intl.formatMessage({ id: "home.concept.text2" })}
+              <b> {intl.formatMessage({ id: "home.concept.bold1" })}</b>
+              {intl.formatMessage({ id: "home.concept.text3" })}
+              <b> {intl.formatMessage({ id: "home.concept.bold2" })}</b>
+              {intl.formatMessage({ id: "home.concept.text4" })}
             </p>
           </div>
           <div className={style.philosophy}>
             <h4>{intl.formatMessage({ id: "home.bullet.title" })}</h4>
           </div>
           <div className={style.bullet_container}>
-          <button
+            <button
               className={style.bullet}
               onBlur={() => setHoverEstrella(false)}
               onMouseOut={() => setHoverEstrella(false)}
@@ -172,7 +181,7 @@ const Home = props => {
               </p>
             </button>
           </div>
-          <div className={style.bullet_container2}>
+          <div className={style.bullet_container}>
             <button
               className={style.bullet}
               onBlur={() => setHoverSuper(false)}
@@ -235,6 +244,43 @@ const Home = props => {
                 {intl.formatMessage({ id: "home.bullet.description5.text2" })}
               </p>
             </button>
+          </div>
+          <div className={style.bullet_container2}>
+            <button
+              className={style.bullet}
+              onBlur={() => setHoverTrentatres(false)}
+              onMouseOut={() => setHoverTrentatres(false)}
+              onMouseOver={() => setHoverTrentatres(true)}
+              onFocus={() => setHoverTrentatres(true)}
+            >
+              <img
+                className={style.darkPeace}
+                src={hoverTrentatres ? trentatres2 : trentatres}
+                alt="trentatres logo"
+              />
+              <h5>{intl.formatMessage({ id: "home.bullet.name7" })}</h5>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description7.text1" })}
+              </p>
+            </button>
+            <button
+              className={style.bullet}
+              onBlur={() => setHoverCara(false)}
+              onMouseOut={() => setHoverCara(false)}
+              onMouseOver={() => setHoverCara(true)}
+              onFocus={() => setHoverCara(true)}
+            >
+              <img
+                className={style.darkPeace}
+                src={hoverCara ? cara2 : cara}
+                alt="cara logo"
+              />
+              <h5>{intl.formatMessage({ id: "home.bullet.name8" })}</h5>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description8.text1" })}
+              </p>
+            </button>
+            <div className={style.bullet}></div>
           </div>
           <button className={style.toGallery} onClick={() => changeBg()}>
             SEE THE GALLERY

@@ -33,13 +33,14 @@ body {
 
     --onTop:8;
     --fontSize:25px;
+    --fontSizeMobile:18px;
     --fontWeight:400;
     --fontAboutColor:#6D6D6D;
   }
   
   body.dark {
     -webkit-font-smoothing: antialiased;
-    --bg: rgb(41, 41, 41);
+    --bg: #292929;
     --bg-arrow: rgb(51, 51, 51);
     --bg-header:  rgba(41, 41, 41, .9);
     --bg-footer: rgb(61, 61, 61);
@@ -68,6 +69,7 @@ body {
 
     --onTop:99;
     --fontSize:30px;
+    --fontSizeMobile:23px;
     --fontWeight:500;
     --fontAboutColor:rgb(78, 78, 78);
   }

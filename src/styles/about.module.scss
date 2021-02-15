@@ -116,8 +116,11 @@
             color: var(--textNormal);
             padding-bottom: 1rem;
         }
+        p{
+            color: var(--fontAboutColor);
+        }
         b{
-            font-size: 22px;
+            font-size: var(--fontSizeMobile);
             font-weight: 500;
         }
         a{

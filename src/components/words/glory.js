@@ -18,6 +18,7 @@ const GloryIcon = () => {
   if (!data?.placeholderImage?.childImageSharp?.fluid) {
     return <div>Picture not found</div>
   }
+  console.log(data, 'data')
 
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }

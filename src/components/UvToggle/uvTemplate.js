@@ -6,22 +6,18 @@ import style from "./uv.module.scss"
 import "./switcher.css"
 
 function UvTemplate() {
-
   const onClick = e => {
     e.preventDefault();
     const containUV = () => {
       let url = window.location.href;
       if (url.indexOf("uv") > -1) {
         navigate(url.replace(/u.*/,""))
-        console.log(url.replace(/u.*/,""), 'uv must be replaced')
       } else {
         navigate(url.concat('uv'))
-        console.log(url.concat('uv'), 'uv must be added')
       }
     }
     containUV();
   }
-
   return (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
@@ -33,7 +29,7 @@ function UvTemplate() {
             onClick={onClick}
             onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
             name="checkedA"
-            inputProps={{ "aria-label": "secondary checkbox" }}
+            inputProps={{"aria-label": "secondary checkbox"}}
           />
         </div>
       )}

@@ -13,6 +13,9 @@
         "about":"SOBRE MI",
         "contact":"CONTACTO"
     },
+    "popup":{
+        "text": "Juega con el interruptor y descubre la esencia de las obras."
+    },
     "home":{
         "intro": "El proyecto R3SURR3CT es la metamorfosis de un ser humano que renace personal y artísticamente, una creación profundamente íntima.",
         "process" : {
@@ -25,7 +28,11 @@
         "concept" : {
             "name" : "EL CONCEPTO",
             "text1" : "El concepto",
-            "text2" : "es dotar a las obras de alma. Como en la vida, las cosas más hermosas no se perciben a simple vista. La luz ultravioleta transporta las obras a otra dimensión. Juega con el interruptor y descubre la esencia de las obras."
+            "text2" : "es dotar a las obras de ",
+            "bold1" : "alma",
+            "text3" : ". Como en la vida, las cosas más hermosas no se perciben a simple vista. La luz ",
+            "bold2" : "ultravioleta",
+            "text4" : " transporta las obras a otra dimensión. Juega con el interruptor y descubre la esencia de las obras."
         },
         "bullet" : {
             "title" : "FILOSOFÍA",
@@ -62,6 +69,14 @@
             "description6" : {
                 "bold1" : "Actitud. ",
                 "text1" : "Ser la mejor versión de uno mismo (y evolucionar constantemente)."
+            },
+            "name7" : "TRENTA Y TRES",
+            "description7" : {
+                "text1" : "Antes del 34."
+            },
+            "name8" : "FACE",
+            "description8" : {
+                "text1" : "Aceptar el pasado. Vivir el presente. Sonreir al futuro."
             }
         }
     },
@@ -112,6 +127,6 @@
     },
     "contact" : {
         "title" : "CONTACTA",
-        "text" : "Antes de que cualquier obra de arte pasara a formar parte de la colección, pasó por un proceso de cuidadosa consideración y discusión, y a veces incluso fue objeto de animadas disputas. Estaremos encantados de que se ponga en contacto con nosotros para continuar el debate. Esperamos sus preguntas, comentarios y sugerencias."
+        "text" : "Cada una de estas obras tiene un motivo de ser, una historia, un poder transformacional. No son solo pinceladas aleatorias, son producto de pensamientos profundos que generan en el artista potentes emociones. Estaria encantado de contestar cualquier pregunta, de seguir con el debate y de que expresaras tu sentir con mi obra."
     }
   }

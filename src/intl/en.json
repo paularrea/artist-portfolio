@@ -13,8 +13,11 @@
         "about":"ABOUT",
         "contact":"CONTACT"
     },
+    "popup":{
+        "text": "Play with the switch and discover the essence of the works."
+    },
     "home":{
-        "intro": "R3SURR3CT is the metamorphosis of a human being that is personally and artistically reborn. A deeply intimate creation.",
+        "intro": "The R3SURR3CT project is the metamorphosis of a human being who is personally and artistically reborn, a deeply intimate creation.",
         "process" : {
             "name" : "THE PROCESS",
             "text1" : "This has been an introspective process that starts from love.",
@@ -25,7 +28,11 @@
         "concept" : {
             "name" : "THE CONCEPT",
             "text1" : "The",
-            "text2" : "concept is to give the works of art a soul. As in life, the most beautiful things are not perceived with the naked eye. The ultraviolet light transports the works to another dimension. Play with the switch and discover the essence of the works. "
+            "text2" : "concept is to give the works of art a ",
+            "bold1" : "soul",
+            "text3" : ". As in life, the most beautiful things are not perceived with the naked eye. The ",
+            "bold2" : "ultraviolet",
+            "text4" : " light transports the works to another dimension. Play with the switch and discover the essence of the works."
         },
         "bullet" : {
             "title" : "PHILOSOPHY",
@@ -62,6 +69,14 @@
             "description6" : {
                 "bold1" : "Attitude. ",
                 "text1" : "The best version of yourself."
+            },
+            "name7" : "THIRTY-THREE",
+            "description7" : {
+                "text1" : "Before 34."
+            },
+            "name8" : "FACE",
+            "description8" : {
+                "text1" : "Accept the past. Live in the present. Smile the future."
             }
         }
     },
@@ -82,7 +97,7 @@
             "bold6" : "A",
             "text7" : " ",
             "bold7" : "man who creates ",
-            "text8" : "cocktails with oyster water and white truffle spherifications, who likes to doze off peacefully while reading Federico Garcia Lorca in the Buttes-Chaumont park in Paris. Who, in playing Chekhov, has been ",
+            "text8" : "cocktails with oyster water and white truffle spherifications, who likes to doze off peacefully while reading Federico Garcia Lorca in the Buttes-Chaumont park in Paris. Who, when playing Chekhov, has been ",
             "bold8" : "moved to feel ",
             "text9" : "in his own skin the heartbreaking ",
             "bold9" : "love ",
@@ -108,10 +123,10 @@
             "bold19" : "paints."
         }, 
         "title2" : "THE STUDIO",
-        "description2" : "The velvety light that floods this studio, the history of its walls and its surroundings, catapults any inspiration to another level. REsurreCt."
+        "description2" : "This project has been materialized in the historical industrial space of the REC. The velvety light that floods this studio, the history of its walls and its surroundings, catapults any inspiration to another level."
     },
     "contact" : {
         "title" : "SAY HELLO",
-        "text" : "Before any artwork became a part of the collection, it went through a process of careful consideration and discussion, and sometimes even was an issue of lively dispute. We will be happy if you would like to contact us and continue the discussion! We look forward to your questions, comments and suggestions."
+        "text" : "Each of these works has a reason for being, a story, a transformational power. They are not just random brushstrokes, they are the product of deep thoughts that generate powerful emotions in the artist. I would be happy to answer any questions, to continue the debate and to express your feelings about my work."
     }
   }
