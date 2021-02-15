@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import headerStyles from "./header.module.scss"
 import { useIntl, Link } from "gatsby-plugin-intl"
 import Burger from "./burger"
@@ -8,18 +8,25 @@ import { navigate } from "gatsby"
 import Popup from "../pop-up/pop-up"
 
 const Header = props => {
-  const intl = useIntl();
-  
+  const [galleryUnderline, setGalleryUnderline] = useState(false)
+  const intl = useIntl()
+
   const changeBg = () => {
-    localStorage.setItem("theme", 'light');
-    navigate('/gallery')
+    localStorage.setItem("theme", "light")
+    navigate("/gallery")
   }
-  
+
+  useEffect(() => {
+      if(window.location.href.indexOf("gallery") > -1) {
+        setGalleryUnderline(true)
+    }
+  }, [])
+
   return (
     <div className={headerStyles.container}>
       <header className={headerStyles.header}>
-        <Popup/>
-      <MediaQuery minWidth={950}>
+        <Popup />
+        <MediaQuery minWidth={950}>
           <nav className={headerStyles.nav}>
             <ul className={headerStyles.navList}>
               <li>
@@ -36,12 +43,11 @@ const Header = props => {
               </li>
               <li>
                 <button
-                  onClick={()=>changeBg()}
+                  onClick={() => changeBg()}
                   entry={{
                     delay: 0.3,
                   }}
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
+                  className={galleryUnderline ? headerStyles.activeNavItem : headerStyles.navItem}
                 >
                   {intl.formatMessage({ id: "nav.gallery" })}
                 </button>

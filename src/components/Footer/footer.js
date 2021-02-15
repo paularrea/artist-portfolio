@@ -128,6 +128,13 @@ const Footer = () => {
                 >
                   Youtube
                 </a>
+                <a
+                  className={footerStyles.normal_link}
+                  href="https://www.tiktok.com/@paurequesens?"
+                  target="blank"
+                >
+                  TikTok
+                </a>
               </div>
             </div>
           </MediaQuery>

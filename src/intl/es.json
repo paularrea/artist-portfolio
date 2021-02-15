@@ -14,7 +14,8 @@
         "contact":"CONTACTO"
     },
     "popup":{
-        "text": "Juega con el interruptor y descubre la esencia de las obras."
+        "title" : "LUZ ULTRAVIOLETA",
+        "text": "Juega con el interruptor y descubre la esencia de las obras. Luz ultravioleta"
     },
     "home":{
         "intro": "El proyecto R3SURR3CT es la metamorfosis de un ser humano que renace personal y artísticamente, una creación profundamente íntima.",
@@ -74,9 +75,14 @@
             "description7" : {
                 "text1" : "Antes del 34."
             },
-            "name8" : "FACE",
+            "name8" : "UN SOLO TRAZO",
             "description8" : {
                 "text1" : "Aceptar el pasado. Vivir el presente. Sonreir al futuro."
+            },
+            "name9" : "EYE",
+            "description9" : {
+                "text1" : "Ver más allá de lo real, la ",
+                "bold1" : "imaginación."
             }
         }
     },

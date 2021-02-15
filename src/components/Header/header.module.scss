@@ -72,10 +72,14 @@
 }
 .navItem:hover {
     color:var(--btn-hover);
+    cursor: pointer;
 }
 .activeNavItem {
+    font-size: 0.9rem;
+    font-weight: 700;
     color: var(--active-btn);
-    border-bottom: 2px solid var(--active-btn);
+    cursor: pointer;
+    border-bottom: 2px solid var(--active-btn) !important;
 }
 .lang_container{
     color: var(--btn);

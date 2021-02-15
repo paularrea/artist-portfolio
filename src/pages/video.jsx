@@ -5,7 +5,7 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import YouTube from "react-youtube"
 import Loader from "react-loader-spinner"
-import resurrect from "../images/pngs/resurrect.png"
+import resurrect from "../images/gifs/resurrect.gif"
 
 const makingOff = [
   "sMTo46GvIU4",

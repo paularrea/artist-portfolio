@@ -14,6 +14,7 @@
         "contact":"CONTACT"
     },
     "popup":{
+        "title" : "ULTRAVIOLET LIGHT",
         "text": "Play with the switch and discover the essence of the works."
     },
     "home":{
@@ -74,9 +75,14 @@
             "description7" : {
                 "text1" : "Before 34."
             },
-            "name8" : "FACE",
+            "name8" : "SINGLE STROKE",
             "description8" : {
                 "text1" : "Accept the past. Live in the present. Smile the future."
+            },
+            "name9" : "EYE",
+            "description9" : {
+                "text1" : "See beyond the real, the ",
+                "bold1" : "imagination."
             }
         }
     },

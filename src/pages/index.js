@@ -20,20 +20,26 @@ import simbol from "../images/pngs/simbol.png"
 import simbol2 from "../images/pngs/simbol2.png"
 import super1 from "../images/pngs/super1.png"
 import super2 from "../images/pngs/super2.png"
-import creu from "../images/pngs/creu.png"
+import creu from "../images/gifs/creu.gif"
 import cara2 from "../images/pngs/cara2.png"
 import cara from "../images/pngs/cara.png"
 import trentatres2 from "../images/pngs/trentatres2.png"
 import trentatres from "../images/pngs/trentatres.png"
+import ull2 from "../images/pngs/ullObert.png"
+import ull from "../images/pngs/ullTancat.png"
 
-import LoveIcon from "../images/love.png"
-import PeaceIcon from "../images/peace.png"
-import GloryIcon from "../images/glory.png"
+import LoveIcon from "../images/gifs/love.gif"
+import PeaceIcon from "../images/gifs/peace.gif"
+import GloryIcon from "../images/gifs/glory.gif"
 import DarkPeaceIcon from "../images/darkPeace.png"
-import Requesens from "../images/requesensLletres.png"
+import ullGif from "../images/gifs/ull.gif"
+import resurrectGif from "../images/gifs/resurrect.gif"
+import firmaGif from "../images/gifs/firma.gif"
 
 const Home = props => {
   const [closeIntro, setCloseIntro] = useState(false)
+  const [moveAnimation, setMoveAnimation] = useState(false)
+
   const [hoverLlamp, setHoverLlamp] = useState(false)
   const [hoverFlama, setHoverFlama] = useState(false)
   const [hoverSimbol, setHoverSimbol] = useState(false)
@@ -42,6 +48,7 @@ const Home = props => {
   const [hoverEstrella, setHoverEstrella] = useState(false)
   const [hoverTrentatres, setHoverTrentatres] = useState(false)
   const [hoverCara, setHoverCara] = useState(false)
+  const [hoverUll, setHoverUll] = useState(false)
 
   const intl = useIntl()
 
@@ -53,9 +60,12 @@ const Home = props => {
   useEffect(() => {
     localStorage.setItem("theme", "light")
     localStorage.setItem("gatsby-intl-language", "en")
+    setTimeout(() => {
+      setMoveAnimation(true)
+    }, 3000)
     const intro = setTimeout(() => {
       setCloseIntro(true)
-    }, 2500)
+    }, 4600)
     return () => clearTimeout(intro)
   }, [closeIntro])
 
@@ -67,9 +77,17 @@ const Home = props => {
     <div style={{ position: "relative" }}>
       {!closeIntro && (
         <div className={style.on_load}>
-          <div className={style.animation}>
-            <img src={Requesens} alt="Requesens intro" />
-          </div>
+          {!moveAnimation ? (
+            <div className={style.animation}>
+              <img src={resurrectGif} alt="resurrect gif" />
+              <p style={{color:'whitesmoke', fontSize:'30px'}}>X</p>
+              <img src={firmaGif} alt="firma gif" />
+            </div>
+          ) : (
+            <div className={style.animation}>
+              <img src={ullGif} alt="ull intro" />
+            </div>
+          )}
         </div>
       )}
       <Layout>
@@ -248,6 +266,27 @@ const Home = props => {
           <div className={style.bullet_container2}>
             <button
               className={style.bullet}
+              onBlur={() => setHoverUll(false)}
+              onMouseOut={() => setHoverUll(false)}
+              onMouseOver={() => setHoverUll(true)}
+              onFocus={() => setHoverUll(true)}
+            >
+              <img
+                className={style.darkPeace}
+                src={hoverUll ? ull2 : ull}
+                alt="ull logo"
+              />
+              <h5>{intl.formatMessage({ id: "home.bullet.name9" })}</h5>
+              <p>
+                {intl.formatMessage({ id: "home.bullet.description9.text1" })}
+                <b>
+                  {" "}
+                  {intl.formatMessage({ id: "home.bullet.description9.bold1" })}
+                </b>
+              </p>
+            </button>
+            <button
+              className={style.bullet}
               onBlur={() => setHoverTrentatres(false)}
               onMouseOut={() => setHoverTrentatres(false)}
               onMouseOver={() => setHoverTrentatres(true)}
@@ -280,7 +319,6 @@ const Home = props => {
                 {intl.formatMessage({ id: "home.bullet.description8.text1" })}
               </p>
             </button>
-            <div className={style.bullet}></div>
           </div>
           <button className={style.toGallery} onClick={() => changeBg()}>
             SEE THE GALLERY

@@ -18,9 +18,11 @@ export default function Popup() {
 
   return (
     <div className={styles.popup}>
-      <div className={styles.popupInner}>
-        <p>{intl.formatMessage({ id: "popup.text" })}
-        </p>
+      <div
+        className={styles.popupInner}
+      >
+        <p>{intl.formatMessage({ id: "popup.title" })}</p>
+        <p>{intl.formatMessage({ id: "popup.text" })}</p>
         <div className={styles.buttonContainer}>
           <button
             onKeyDown={() => setVisible(false)}

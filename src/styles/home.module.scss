@@ -12,8 +12,12 @@
     background-color:rgb(41, 41, 41);
     z-index: 9999999999999999;
   }
-  .on_load div{
-    font-size: 1.5rem;
+  .animation{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        font-size: 1.5rem;
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -138,7 +142,8 @@ section{
     align-items: flex-start;
     margin: 0 auto;
     width: 100%;
-    padding-top: 0rem;
+
+    padding-top: 2rem;
     height: auto;
 }
 .bullet_container2{
@@ -161,7 +166,7 @@ section{
     text-align: center;
     transition: all .3s ease-in-out;
     border: none;
-    width: 30vw;
+    width: 250px;
     background-color: transparent;
     
     h5{
