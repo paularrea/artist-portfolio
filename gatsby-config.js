@@ -111,7 +111,6 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          `gatsby-remark-images-medium-zoom`, 
         ],
       },
     },
