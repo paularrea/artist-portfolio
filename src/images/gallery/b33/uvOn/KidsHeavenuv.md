@@ -3,7 +3,7 @@ title: "Kid's Heaven"
 date: 86
 description: uvOn
 collection: "b33"
-featuredImage: ./KidsHeaven.jpg
+featuredImage: ./quadratDark.jpg
 ---
 
 ## Kid's Heaven
