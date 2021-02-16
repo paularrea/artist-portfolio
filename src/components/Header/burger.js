@@ -1,87 +1,73 @@
 import { slide as Menu } from "react-burger-menu"
 import React from "react"
-import { Link } from "gatsby-plugin-intl"
-import TransitionLink from "gatsby-plugin-transition-link"
+import { useIntl, Link } from "gatsby-plugin-intl"
 import "./burger.css"
-
 import style from "./header.module.scss"
-
 import { navigate } from "gatsby"
 
-class Burger extends React.Component {
-  constructor(props) {
-    super(props)
-    this.changeBg = this.changeBg.bind(this)
-  }
-
-  changeBg() {
+const Burger = () => {
+  const intl = useIntl()
+  const changeBg = () => {
     localStorage.setItem("theme", "light")
     navigate("/gallery")
   }
-
-  showSettings(event) {
-    event.preventDefault()
-  }
-
-  render() {
-    return (
-      <Menu className="bm-menu">
-        <TransitionLink
-          entry={{
-            delay: 0.3,
-          }}
-          to="/"
-          id="home"
-          className={style.menu_item}
-        >
-          Home
-        </TransitionLink>
-        <button
-          entry={{
-            delay: 0.3,
-          }}
-          onClick={this.changeBg}
-          id="gallery"
-          className="button_burger"
-        >
-          Gallery
-        </button>
-        <TransitionLink to="/video" id="video" className={style.menu_item}>
-          Video
-        </TransitionLink>
-        <TransitionLink
-          entry={{
-            delay: 0.3,
-          }}
-          to="/about"
-          id="about"
-          className={style.menu_item}
-        >
-          About
-        </TransitionLink>
-        <TransitionLink
-          entry={{
-            delay: 0.3,
-          }}
-          to="/contact"
-          id="contact"
-          className={style.menu_item}
-        >
-          Contact
-        </TransitionLink>
-        <div className={style.lang_container}>
-          <Link activeClassName={style.activeLang} language="en">
-            En{" "}
-          </Link>
-          /
-          <Link activeClassName={style.activeLang} language="es">
-            {" "}
-            Es
-          </Link>
-        </div>
-      </Menu>
-    )
-  }
+  return (
+    <Menu className="bm-menu">
+      <Link
+        entry={{
+          delay: 0.3,
+        }}
+        to="/"
+        id="home"
+        className={style.menu_item}
+      >
+        {intl.formatMessage({ id: "nav.home" })}
+      </Link>
+      <button
+        entry={{
+          delay: 0.3,
+        }}
+        onClick={changeBg}
+        id="gallery"
+        className="button_burger"
+      >
+        {intl.formatMessage({ id: "nav.gallery" })}
+      </button>
+      <Link to="/video" id="video" className={style.menu_item}>
+        {intl.formatMessage({ id: "nav.video" })}
+      </Link>
+      <Link
+        entry={{
+          delay: 0.3,
+        }}
+        to="/about"
+        id="about"
+        className={style.menu_item}
+      >
+        {intl.formatMessage({ id: "nav.about" })}
+      </Link>
+      <Link
+        entry={{
+          delay: 0.3,
+        }}
+        to="/contact"
+        id="contact"
+        className={style.menu_item}
+      >
+        {intl.formatMessage({ id: "nav.contact" })}
+      </Link>
+      <div className={style.lang_container}>
+        <Link activeClassName={style.activeLang} language="en">
+          En{" "}
+        </Link>
+        /
+        <Link activeClassName={style.activeLang} language="es">
+          {" "}
+          Es
+        </Link>
+      </div>
+    </Menu>
+  )
 }
 
 export default Burger
