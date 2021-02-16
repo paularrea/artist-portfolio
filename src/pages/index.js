@@ -32,6 +32,7 @@ import LoveIcon from "../images/gifs/love.gif"
 import PeaceIcon from "../images/gifs/peace.gif"
 import GloryIcon from "../images/gifs/glory.gif"
 import DarkPeaceIcon from "../images/darkPeace.png"
+import DarkPeace2 from "../images/pngs/darkPeace2.png"
 import ullGif from "../images/gifs/ull.gif"
 import resurrectGif from "../images/gifs/resurrect.gif"
 import firmaGif from "../images/gifs/firma.gif"
@@ -39,6 +40,7 @@ import firmaGif from "../images/gifs/firma.gif"
 const Home = props => {
   const [closeIntro, setCloseIntro] = useState(false)
   const [moveAnimation, setMoveAnimation] = useState(false)
+  const [changeToDarkPeace2, setChangeToDarkPeace2] = useState(false)
 
   const [hoverLlamp, setHoverLlamp] = useState(false)
   const [hoverFlama, setHoverFlama] = useState(false)
@@ -58,6 +60,9 @@ const Home = props => {
   }
 
   useEffect(() => {
+    if (localStorage.theme === 'dark'){
+      setChangeToDarkPeace2(true)
+    }
     localStorage.setItem("theme", "light")
     localStorage.setItem("gatsby-intl-language", "en")
     setTimeout(() => {
@@ -65,9 +70,9 @@ const Home = props => {
     }, 3000)
     const intro = setTimeout(() => {
       setCloseIntro(true)
-    }, 4600)
+    }, 4100)
     return () => clearTimeout(intro)
-  }, [closeIntro])
+  }, [closeIntro, changeToDarkPeace2])
 
   useEffect(() => {
     window.scrollTo(0, 0) 
@@ -122,7 +127,7 @@ const Home = props => {
             <p>
               {intl.formatMessage({ id: "home.concept.text1" })}
               <span className={style.darkPeace}>
-                <img src={DarkPeaceIcon} alt="Dark Peace Icon" />
+                <img src={changeToDarkPeace2 ? DarkPeace2 : DarkPeaceIcon} alt="Dark Peace Icon" />
               </span>
               {intl.formatMessage({ id: "home.concept.text2" })}
               <b> {intl.formatMessage({ id: "home.concept.bold1" })}</b>

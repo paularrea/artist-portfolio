@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import footerStyles from "./footer.module.scss"
 import TransitionLink from "gatsby-plugin-transition-link"
-import testimo from "../../images/pngs/testimo.png"
+import testimo from "../../images/gifs/testimo.gif"
 import requesens from "../../images/requesensLletres.png"
 import MediaQuery from "react-responsive"
 
@@ -116,13 +116,6 @@ const Footer = () => {
                 </a>
                 <a
                   className={footerStyles.normal_link}
-                  href="https://www.facebook.com/pau.requesens.1"
-                  target="blank"
-                >
-                  Facebook
-                </a>
-                <a
-                  className={footerStyles.normal_link}
                   href="https://www.youtube.com/user/paurequesens"
                   target="blank"
                 >
@@ -204,13 +197,6 @@ const Footer = () => {
                     target="blank"
                   >
                     Instagram
-                  </a>
-                  <a
-                    className={footerStyles.normal_link}
-                    href="https://www.facebook.com/pau.requesens.1"
-                    target="blank"
-                  >
-                    Facebook
                   </a>
                   <a
                     className={footerStyles.normal_link}

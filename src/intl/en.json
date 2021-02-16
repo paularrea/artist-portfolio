@@ -45,7 +45,7 @@
             },
             "name2" : "MELTING FIRE",
             "description2" : {
-                "text1" : "The delicate ",
+                "text1" : "Constant search for the fragile ",
                 "bold1" : "balance ",
                 "text2" : "between tension and relaxation. "
             },
@@ -68,8 +68,8 @@
             },            
             "name6" : "SUPER",
             "description6" : {
-                "bold1" : "Attitude. ",
-                "text1" : "The best version of yourself."
+                "bold1" : "Attitude ",
+                "text1" : "of being the best version of yourself."
             },
             "name7" : "THIRTY-THREE",
             "description7" : {
@@ -89,8 +89,8 @@
     "about":{
         "title1" : "KNOW ME BETTER",
         "description" : {
-            "text1" : "I’m just a ",
-            "bold1" : "man ",
+            "text1" : "I’m just ",
+            "bold1" : "a man ",
             "text2" : "who has tenderly woken up due to the sway of the waves rocking his boat, that in joy, has seen the orange and gleaming first rays of the sun in that ",
             "bold2" : "fleeting and eternal ",
             "text3" : "levitation moment of a leap into the sea. A man who has been intoxicated with the smell of freshly ground coffee and toast on the banks of the Danube, ",

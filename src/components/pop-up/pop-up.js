@@ -18,10 +18,23 @@ export default function Popup() {
 
   return (
     <div className={styles.popup}>
-      <div
-        className={styles.popupInner}
-      >
-        <p>{intl.formatMessage({ id: "popup.title" })}</p>
+      <div className={styles.popupInner}>
+        <div className={styles.flex_container}>
+          <div>
+            {" "}
+            <p>{intl.formatMessage({ id: "popup.title" })}</p>
+          </div>
+          <div>
+            {" "}
+            <button
+              onKeyDown={() => setVisible(false)}
+              onClick={() => setVisible(false)}
+            >
+              x
+            </button>
+          </div>
+        </div>
+
         <p>{intl.formatMessage({ id: "popup.text" })}</p>
         <div className={styles.buttonContainer}>
           <button

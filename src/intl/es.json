@@ -45,19 +45,19 @@
             },
             "name2" : "FUEGO DERRITIÉNDOSE",
             "description2" : {
-                "text1" : "El delicado ",
+                "text1" : "Búsqueda constante del ",
                 "bold1" : "equilibrio ",
                 "text2" : "entre tensión y relajación."
             },
             "name3" : "CALAVERA PIRATA",
             "description3" : {
-                "text1" : "Vivir la pintura sin normas ni fronteras. (con absoluta ",
-                "bold1" : "libertad ",
-                "text2" : "para encontrar los tesoros ocultos del alma)."
+                "text1" : "Vivir la pintura sin normas ni fronteras, con absoluta ",
+                "bold1" : "libertad",
+                "text2" : "."
             },
             "name4" : "ESTRELLA",
             "description4" : {
-                "bold1" : "Creer ",
+                "bold1" : "Creencia",
                 "text1" : "en la creatividad ilimitada del universo."
             },            
             "name5" : "NÚMERO ÁUREO",
@@ -68,8 +68,8 @@
             },            
             "name6" : "SUPER",
             "description6" : {
-                "bold1" : "Actitud. ",
-                "text1" : "Ser la mejor versión de uno mismo (y evolucionar constantemente)."
+                "bold1" : "Actitud ",
+                "text1" : "de ser la mejor versión de uno mismo."
             },
             "name7" : "TRENTA Y TRES",
             "description7" : {
@@ -77,11 +77,11 @@
             },
             "name8" : "UN SOLO TRAZO",
             "description8" : {
-                "text1" : "Aceptar el pasado. Vivir el presente. Sonreir al futuro."
+                "text1" : "Aceptar el pasado. Vivir el presente. Sonreír al futuro."
             },
             "name9" : "EYE",
             "description9" : {
-                "text1" : "Ver más allá de lo real, la ",
+                "text1" : "Ver más allá de lo real. La ",
                 "bold1" : "imaginación."
             }
         }
@@ -89,8 +89,8 @@
     "about":{
         "title1" : "CONÓCEME MEJOR",
         "description" : {
-            "text1" : "Solo soy un ",
-            "bold1" : "hombre ",
+            "text1" : "Solo soy ",
+            "bold1" : "un hombre ",
             "text2" : "que se ha despertado tiernamente por el vaivén de las olas meciendo su embarcación, que en júbilo, ha visto los anaranjados y destellantes primeros rayos del sol en ese ",
             "bold2" : "fugaz y eterno ",
             "text3" : "momento levitacional de un salto hacia el mar. Un hombre que se ha embriagado con el olor a café recién molido y pan tostado a orillas del Danubio, ",
@@ -133,6 +133,6 @@
     },
     "contact" : {
         "title" : "CONTACTA",
-        "text" : "Cada una de estas obras tiene un motivo de ser, una historia, un poder transformacional. No son solo pinceladas aleatorias, son producto de pensamientos profundos que generan en el artista potentes emociones. Estaria encantado de contestar cualquier pregunta, de seguir con el debate y de que expresaras tu sentir con mi obra."
+        "text" : "Cada una de estas obras tiene un motivo de ser, una historia, un poder transformacional. No son solo pinceladas aleatorias, son producto de pensamientos profundos que generan en el artista potentes emociones. Estaría encantado de contestar cualquier pregunta, de seguir con el debate y de que expresaras tu sentir con mi obra."
     }
   }

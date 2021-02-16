@@ -8,12 +8,20 @@ import Loader from "react-loader-spinner"
 import resurrect from "../images/gifs/resurrect.gif"
 
 const makingOff = [
+  "PfweikrHsOc",
+  "qU721LnzcCk",
+  "nfWhsUQFA-c",
+  "mj5juQCyT-s",
+  "GjhxCAGBdCI",
   "sMTo46GvIU4",
   "BwEHXWFgoMg",
   "BOt582m3vPY",
   "zHXe55y_dLs",
   "Jp8krgaxdB8",
   "CmAyIGN5Qvs",
+  "MhI2Kr5vNfw",
+  "YXVOMgwuSm4",
+  "PfweikrHsOc",
 ]
 
 const Videos = props => {
@@ -23,7 +31,6 @@ const Videos = props => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
 
   return (
     <Layout page={"videos"}>
@@ -44,7 +51,7 @@ const Videos = props => {
           />
         </div>
         <div className={styles.principalVideo}>
-          <img src={resurrect} alt="resurrect logo"/>
+          <img src={resurrect} alt="resurrect logo" />
           <YouTube
             videoId="PiRIxPFRdaw"
             className={styles.principal_size}
