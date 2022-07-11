@@ -106,17 +106,6 @@ export default function Contact() {
         <div className={styles.email_container}>
           <h2>{intl.formatMessage({ id: "contact.title" })}</h2>
           <p>{intl.formatMessage({ id: "contact.text" })}</p>
-          {/* <a
-            onFocus={() => setHover(true)}
-            onBlur={() => setHover(false)}
-            onMouseOut={() => setHover(false)}
-            onMouseOver={() => setHover(true)}
-            href="mailto:hello@paurequesens.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hello@paurequesens.com
-          </a> */}
           <h5>
             Johannes Maximilian Löbl <br />
             Art dealer & Art Management
@@ -129,6 +118,18 @@ export default function Contact() {
             href="tel:+34 641 26 11 96"
           >
             +34 641 26 11 96
+          </a>
+          <br />
+          <a
+            onFocus={() => setHover(true)}
+            onBlur={() => setHover(false)}
+            onMouseOut={() => setHover(false)}
+            onMouseOver={() => setHover(true)}
+            href="mailto:hello@paurequesens.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@paurequesens.com
           </a>
         </div>
       </div>

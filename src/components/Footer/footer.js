@@ -96,18 +96,18 @@ const Footer = () => {
               </div>
               <div>
                 <h3>Contact me</h3>
-                {/* <a
-                  href="mailto:hello@paurequesens.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  hello@paurequesens.com
-                </a>{" "} */}
                 <p>
                   Johannes Maximilian Löbl <br />
                   Art dealer & Art Management
                 </p>
                 <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
+                <a
+                  href="mailto:hello@paurequesens.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hello@paurequesens.com
+                </a>{" "}
               </div>{" "}
               <div>
                 <h3>Follow</h3>
@@ -220,19 +220,19 @@ const Footer = () => {
               </div>
               <div className={footerStyles.contact}>
                 <h3>Contact me</h3>
-                {/* <a
+                <p>
+                  Johannes Maximilian Löbl <br />
+                  Art dealer & Art Management
+                </p>
+                <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
+                <a
                   href="mailto:hello@paurequesens.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   hello@paurequesens.com
                 </a>{" "}
-                <br /> */}
-                <p>
-                  Johannes Maximilian Löbl <br />
-                  Art dealer & Art Management
-                </p>
-                <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
+                <br />
               </div>{" "}
             </div>
           </MediaQuery>
