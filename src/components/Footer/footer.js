@@ -28,11 +28,11 @@ const Footer = () => {
       <div className={footerStyles.container}>
         <div className={footerStyles.content}>
           <div className={footerStyles.requesens}>
-          <Link to='/'>
-            <div className={footerStyles.requesensLogo}>
-              <img src={requesens} alt="testimo logo" />
-            </div>
-          </Link>
+            <Link to="/">
+              <div className={footerStyles.requesensLogo}>
+                <img src={requesens} alt="testimo logo" />
+              </div>
+            </Link>
             <div className={footerStyles.tqContainer}>
               <img src={testimo} alt="testimo logo" />
             </div>
@@ -96,14 +96,18 @@ const Footer = () => {
               </div>
               <div>
                 <h3>Contact me</h3>
-                <a
+                {/* <a
                   href="mailto:hello@paurequesens.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   hello@paurequesens.com
-                </a>{" "}
-                <a href="tel:+34 606 54 50 00">+34 606 54 50 00</a>
+                </a>{" "} */}
+                <p>
+                  Johannes Maximilian Löbl <br />
+                  Art dealer & Art Management
+                </p>
+                <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
               </div>{" "}
               <div>
                 <h3>Follow</h3>
@@ -206,25 +210,29 @@ const Footer = () => {
                     Youtube
                   </a>
                   <a
-                  className={footerStyles.normal_link}
-                  href="https://www.tiktok.com/@paurequesens?"
-                  target="blank"
-                >
-                  TikTok
-                </a>
+                    className={footerStyles.normal_link}
+                    href="https://www.tiktok.com/@paurequesens?"
+                    target="blank"
+                  >
+                    TikTok
+                  </a>
                 </div>
               </div>
               <div className={footerStyles.contact}>
                 <h3>Contact me</h3>
-                <a
+                {/* <a
                   href="mailto:hello@paurequesens.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   hello@paurequesens.com
                 </a>{" "}
-                <br />
-                <a href="tel:+34 606 54 50 00">+34 606 54 50 00</a>
+                <br /> */}
+                <p>
+                  Johannes Maximilian Löbl <br />
+                  Art dealer & Art Management
+                </p>
+                <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
               </div>{" "}
             </div>
           </MediaQuery>

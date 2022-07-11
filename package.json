@@ -1,5 +1,5 @@
 {
-  "name": "Pau Requesens website",
+  "name": "pau-requesens-website",
   "private": true,
   "description": "Website of the spanish painter Pau Requesens",
   "version": "0.1.0",
@@ -49,6 +49,7 @@
     "react-responsive-carousel": "^3.2.11",
     "react-router-dom": "^5.2.0",
     "react-youtube": "^7.13.0",
+    "sass": "^1.53.0",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
