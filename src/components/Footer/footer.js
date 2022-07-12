@@ -101,6 +101,7 @@ const Footer = () => {
                   Art dealer & Art Management
                 </p>
                 <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
+                <br />
                 <a
                   href="mailto:hello@paurequesens.com"
                   target="_blank"
@@ -225,6 +226,7 @@ const Footer = () => {
                   Art dealer & Art Management
                 </p>
                 <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
+                <br />
                 <a
                   href="mailto:hello@paurequesens.com"
                   target="_blank"
