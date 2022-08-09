@@ -5,7 +5,7 @@ import Burger from "./burger"
 import MediaQuery from "react-responsive"
 import "./switcher.css"
 import { navigate } from "gatsby"
-import Popup from "../pop-up/pop-up"
+// import Popup from "../pop-up/pop-up"
 
 const Header = props => {
   const [galleryUnderline, setGalleryUnderline] = useState(false)
@@ -25,7 +25,7 @@ const Header = props => {
   return (
     <div className={headerStyles.container}>
       <header className={headerStyles.header}>
-        <Popup />
+        {/* <Popup /> */}
         <MediaQuery minWidth={950}>
           <nav className={headerStyles.nav}>
             <ul className={headerStyles.navList}>

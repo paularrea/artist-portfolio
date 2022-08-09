@@ -5,7 +5,6 @@ import Footer from "../Footer/footer"
 import "../../styles/index.scss"
 import Switch from "@material-ui/core/Switch"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-
 import layoutStyles from "./layout.module.scss"
 import headerStyles from "../Header/header.module.scss"
 import "../UvToggle/switcher.css"

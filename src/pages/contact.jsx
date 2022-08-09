@@ -107,17 +107,17 @@ export default function Contact() {
           <h2>{intl.formatMessage({ id: "contact.title" })}</h2>
           <p>{intl.formatMessage({ id: "contact.text" })}</p>
           <h5>
-            Johannes Maximilian Löbl <br />
-            Art dealer & Art Management
+          John Peace <br />
+            Art Management
           </h5>
           <a
             onFocus={() => setHover(true)}
             onBlur={() => setHover(false)}
             onMouseOut={() => setHover(false)}
             onMouseOver={() => setHover(true)}
-            href="tel:+34 641 26 11 96"
+            href="tel:+34 606 545 000"
           >
-            +34 641 26 11 96
+            +34 606 545 000
           </a>
           <br />
           <a
@@ -125,11 +125,11 @@ export default function Contact() {
             onBlur={() => setHover(false)}
             onMouseOut={() => setHover(false)}
             onMouseOver={() => setHover(true)}
-            href="mailto:hello@paurequesens.com"
+            href="mailto:johnpeace@paurequesens.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            hello@paurequesens.com
+            johnpeace@paurequesens.com
           </a>
         </div>
       </div>

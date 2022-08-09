@@ -97,17 +97,17 @@ const Footer = () => {
               <div>
                 <h3>Contact me</h3>
                 <p>
-                  Johannes Maximilian Löbl <br />
-                  Art dealer & Art Management
+                  John Peace <br />
+                  Art Management
                 </p>
-                <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
+                <a href="tel:+34 606 545 000">+34 606 545 000</a>
                 <br />
                 <a
-                  href="mailto:hello@paurequesens.com"
+                  href="mailto:johnpeace@paurequesens.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  hello@paurequesens.com
+                  johnpeace@paurequesens.com
                 </a>{" "}
               </div>{" "}
               <div>
@@ -222,17 +222,17 @@ const Footer = () => {
               <div className={footerStyles.contact}>
                 <h3>Contact me</h3>
                 <p>
-                  Johannes Maximilian Löbl <br />
-                  Art dealer & Art Management
+                  John Peace <br />
+                  Art Management
                 </p>
-                <a href="tel:+34 641 26 11 96">+34 641 26 11 96</a>
+                <a href="tel:+34 606 545 000">+34 606 545 000</a>
                 <br />
                 <a
-                  href="mailto:hello@paurequesens.com"
+                  href="mailto:johnpeace@paurequesens.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  hello@paurequesens.com
+                  johnpeace@paurequesens.com
                 </a>{" "}
                 <br />
               </div>{" "}
